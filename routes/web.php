@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,5 +22,7 @@ Route::get('/register', function(){
     return view('login.index');
 });
 
+
+Route::post('/register', [RegisterController::class, 'register']);
 
 
