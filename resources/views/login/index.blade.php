@@ -1,19 +1,3 @@
-<?php
-
-/////para no pasar de una pagina a otra por medio de el buscador
-  session_start();
-
-  if(isset($_SESSION['usuario'])){
-    header("location: principal.php");
-  }
-
-
-
-
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>

@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
+use Illuminate\Auth\Events\Login;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,7 +25,11 @@ Route::get('/register', function(){
     return view('login.index');
 });
 
-
+//RUTAS DE REGISTRO
 Route::post('/register', [RegisterController::class, 'register']);
 
+//RUTAS DE LOGIN
+Route::get('/login', [LoginController::class, 'show']);
+Route::post('/login', [LoginController::class, 'show']);
 
+Route::get('/home',[HomeController::class, 'index']);
