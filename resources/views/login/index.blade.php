@@ -6,18 +6,26 @@
     <title>TRANSPORT&GPS</title>
     <link rel="shortcut icon" href="assets/images/logoac.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('../') }}" />
+    <link rel="stylesheet" href="{{ asset('css/index.css') }}" />
     
 </head>
 <body>
+    <div class="contenedor__login-register">
 
-       <form action="/register" method="POST">
+    <form action="/register" method="POST">
         @csrf
-        <input type="text" name="usuario">
-        <input type="email" name="email" >
-        <input type="password" name="password">
-        <input type="submit" value="Registrar">
+        <h2>Registrarse</h2> 
+              
+        <input type="text" placeholder="Ingrese Usuario" name="usuario">
+        <input type="email" placeholder="usuario@example.com" name="email" >
+        <input type="password" placeholder="Ingrese Contraseña"     name="password">
+        <input class="btnayu" type="submit" value="Registrar">
        </form>
+       <img class="logo"   src="img/logoac.png" alt="">
+
+    </div>
+
+      
 
 
 
