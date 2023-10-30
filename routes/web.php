@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContenidoController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
@@ -33,3 +34,6 @@ Route::get('/login', [LoginController::class, 'show']);
 Route::post('/login', [LoginController::class, 'show']);
 
 Route::get('/home',[HomeController::class, 'index']);
+
+//RUTAS CONTENIDO
+Route::get('/contenido', [ContenidoController::class, 'indexContenido']);
