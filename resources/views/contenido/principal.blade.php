@@ -282,7 +282,12 @@
     </footer>
   
 <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/home.js"></script> <!--archivo JavaScript personalizado -->
 </body>
   
+
+
+<link rel="stylesheet" href="assets/css/menu.css">
+<link rel="stylesheet" href="assets/js/menu.js">
+
+
 </html>
