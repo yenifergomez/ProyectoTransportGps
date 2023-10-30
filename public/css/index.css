@@ -6,6 +6,12 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
+.contenedor__todo{
+   width: 100%;
+   max-width: 800px;
+   margin: auto;
+   position: relative;
+}
 
 
 .contenedor__login-register{
