@@ -1,14 +1,18 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="{{ asset('css/Principal.css') }}" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transport&gps</title>
+    <link rel="shortcut icon" href="img/logoac.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ asset('css/Principal.css') }}" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-   <title>Document</title>
 </head>
 <body>
-<header class="cabeza" id="inicio">
+ <header class="cabeza" id="inicio">
 
    <div class="velo"></div>
  
@@ -107,10 +111,8 @@
 
       <div class="container-carousel" id="info">
          <div class="carruseles" id="slider">
-
-
-
                <section class="slider-section">
+                 
                  <h1 class="tlmisi">MISIÓN</h1>
      
      <div class="txmisi">
@@ -124,30 +126,27 @@
           <source src="img/vprin.mp4" type="video/mp4">
         </video>
       </div> 
+     
+     
                </section>
              
-
-
-               <!-- <section class="slider-section">
+               <section class="slider-section">
+     
                  <h1 class="tlvisi">VISIÓN</h1> 
      <div class="txvisi">
      <p class="txvisi2">Se plantea que en el transcurso del año 2022 al 2023, se busca crear un software
         innovador que sea accesible al público en general, el cual pueda brindarle
         información sobre las rutas al usuario en la ciudad.</p>
      </div>
+     
      <div class="caja-video3">
-         <video autoplay loop>
+        <video autoplay loop>
           <source src="img/vprin.mp4" type="video/mp4">
-        </video> 
-      </div>
+        </video>
+      </div> 
+     
                </section>
              
-
- -->
-
-
-
-
          </div>
          <div class="btn-left"><i class='bx bx-chevron-left'></i></div>
          <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
@@ -178,7 +177,6 @@
    <div class="btn-left2"><i class='bx bx-chevron-left'></i></div>
    <div class="btn-right2"><i class='bx bx-chevron-right'></i></div>
 
-   <script src="js/home2.js"></script>
 
 </div>
 
@@ -275,11 +273,8 @@
       </div>
       <h2 class="titulo-final">&copy;  Transport&gps “Tu búsqueda te ayuda, coopera y prospera” <br>Copyright 2023 - All rights reserved</h2>
     </footer>
-
-
-
-
-
-   
+    
 </body>
+<link rel="stylesheet" href="assets/js/home2.js">
+<link rel="stylesheet" href="assets/js/home.js">
 </html>
