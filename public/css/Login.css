@@ -6,7 +6,7 @@
    text-decoration: none;
    font-family: 'Roboto', sans-serif;
 }
-
+ 
 body{
    background:url(../img/editbus.jpg);
    background-size: cover;
@@ -24,7 +24,7 @@ main{
    width: 100%;
    padding: 20px;
    margin: auto;
-   margin-top: 100px;
+   margin-top: 70px;/* mueve caja completa */
 }
 
 .contenedor__todo{
@@ -80,16 +80,6 @@ main{
    border-radius:6px;
 }
 
-.caja__trasera button:hover{
-   background: #fff;
-   color:rgb(0, 12, 176);
-   
-}
-.caja__trasera button:active{
-   background:rgb(57, 55, 58);
-   color:white;
- }
-
 /*Formularios*/
 
 .contenedor__login-register{
@@ -97,8 +87,8 @@ main{
    text-align: center;
    width: 100%;
    max-width: 380px;
-   position: relative;
-   top: -510px;
+   position: absolute;
+   top: -9%;   /*mueve blanco  */
    left: 10px;
    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
 }
@@ -144,7 +134,8 @@ main{
 .btnayu:hover{
    background:rgba(0, 26, 255, 0.873);
    color:white;
-   border: 2px solid  rgb(255, 255, 255);
+   transition-duration: 0.4s;
+
 
 }
 .btnayu:active{
@@ -161,7 +152,7 @@ main{
 .formulario__login .proyecto{
    width: 200px;
    height: 200px;
-   margin: 20px 20px;/*AQUI*/
+   margin: 0px 20px;/*AQUI*/
    position:relative;
    
 }
