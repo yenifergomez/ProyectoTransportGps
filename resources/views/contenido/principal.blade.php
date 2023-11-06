@@ -150,9 +150,9 @@
         </video>
       </div> 
      
-               </section>
-             
-         </div>
+              </section>
+            
+      </div>
          <div class="btn-left"><i class='bx bx-chevron-left'></i></div>
          <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
      </div>
