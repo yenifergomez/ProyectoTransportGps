@@ -12,7 +12,7 @@ setInterval(() => {
     moveToRight()
 }, 3000);
 
-
+ 
 let operacion = 0,
     counter = 0,
     widthImg = 40 / sliderSection.length;

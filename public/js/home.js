@@ -16,7 +16,7 @@ ventanaEmergente.addEventListener("click", (event) => {
 var botonMostrar2 = document.getElementById("mostrarFormulario2");
 var ventanaEmergente2 = document.getElementById("ventanaEmergente2");
 
-botonMostrar2.addEventListener("click", () => {
+botonMostrar2.addEventListener("click", () => { 
   ventanaEmergente2.style.display = "flex"; // Mostrar la ventana emergente
 });
 

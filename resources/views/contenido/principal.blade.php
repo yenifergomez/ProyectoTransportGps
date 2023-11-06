@@ -32,7 +32,7 @@
      <a class="barri" href="mapa.html"> Mapa </a>
      <a class="barri" href="calificar.html">Calificar</a>
      <button id="mostrarFormulario" class="ayudita">Ayuda</button>
-     <button id="mostrarFormulario2" class="ayudita">Otros..</button>
+     <button id="mostrarFormulario2" class="ayudita">Perfil</button>
 
 </nav>
 
@@ -275,6 +275,7 @@
     </footer>
     
 </body>
-<link rel="stylesheet" href="assets/js/home2.js">
-<link rel="stylesheet" href="assets/js/home.js">
+<script src="{{ asset('js/home.js') }}"></script>
+<script src="{{ asset('js/home2.js') }}"></script>
+
 </html>
