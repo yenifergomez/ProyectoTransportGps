@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setInterval(() => {
       moveToRight();
-  }, 6000);
+  }, 40000);
 
   function moveToRight() {
       if (counter >= sliderSection.length - 1) {

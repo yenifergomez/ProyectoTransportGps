@@ -403,7 +403,6 @@
     width: calc(100% / 10);
     position:relative;
     /* background-color: rgb(106, 137, 240); */
-    font-family:title-font;
 
 }
 .slider-section2{
@@ -411,7 +410,6 @@
     width: calc(100% / 10);
     position:relative;
     background-color: rgb(106, 137, 240);
-    font-family:title-font;
 }
 
 
@@ -507,7 +505,7 @@
         color:white;
         font-size:80px;
         font-weight: 500;
-       }
+       } 
        .disp{
         font-family:title-font;
         color:rgba(255, 255, 255, 0.784);
@@ -521,19 +519,19 @@
        }
        .velu2{
         position: absolute;
-        background-color: rgba(0, 0, 0, 0);
+        background:linear-gradient(black,transparent);
         height:100vh;
         width: 100%;
        }
        .velu3{
         position: absolute;
-        background-color: rgba(0, 0, 0, 0);
+        background:linear-gradient(black,transparent);
         height:100vh;
         width: 100%;
        }
        .velu4{
         position: absolute;
-        background-color: rgba(0, 0, 0, 0);
+        background:linear-gradient(black,transparent);
         height:100vh;
         width: 100%;
        }

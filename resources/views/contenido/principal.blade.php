@@ -116,9 +116,8 @@
                  <h1 class="tlmisi">MISIÓN</h1>
      
      <div class="txmisi">
-      <p class="txmisi2">Buscamos orientar a las personas nuevas en la ciudad, que no tienen conocimiento
-     sobre las rutas en la localidad y así conseguir el máximo aprovechamiento al
-     transporte público.</p>
+      <p class="txmisi2">Se busca orientar a las personas que usan el transporte público brindando información precisa y 
+         actualizada sobre las rutas, de modo que se puedan guiar a través del sistema de información . </p>
      </div>  
      
      <div class="caja-video2">
@@ -134,9 +133,8 @@
      
                  <h1 class="tlvisi">VISIÓN</h1> 
      <div class="txvisi">
-     <p class="txvisi2">Se plantea que en el transcurso del año 2022 al 2023, se busca crear un software
-        innovador que sea accesible al público en general, el cual pueda brindarle
-        información sobre las rutas al usuario en la ciudad.</p>
+     <p class="txvisi2">Se busca ofrecer un sistema de información confiable y
+       conveniente para conectar de manera efectiva al usuario con su destino a través de la información de cada ruta.</p>
      </div>
      
      <div class="caja-video3">
@@ -161,15 +159,15 @@
            <img src="img/tras pubenza.jpeg">
        </section>
        <section class="slider-section2">
-         <div class="velu2"><br><h1 class="buem">TRANSLIBERTAD</h1><h1 class="disp">DISPONIBLE</h1></div>     
+         <div class="velu2"><br><h1 class="buem">TRANSLIBERTAD</h1><h1 class="disp">NO DISPONIBLE</h1></div>     
          <img src="img/tras libertad.jpeg">
        </section>
        <section class="slider-section2">
-         <div class="velu3"><br><h1 class="buem">SOTRACAUCA METRO</h1><h1 class="disp">DISPONIBLE</h1></div>     
+         <div class="velu3"><br><h1 class="buem">SOTRACAUCA METRO</h1><h1 class="disp">NO DISPONIBLE</h1></div>     
          <img src="img/sotracauca metro.jpg">
        </section>
        <section class="slider-section2">
-         <div class="velu4"><br><h1 class="buem">TRANSTAMBO</h1><h1 class="disp">DISPONIBLE</h1></div>     
+         <div class="velu4"><br><h1 class="buem">TRANSTAMBO</h1><h1 class="disp">NO DISPONIBLE</h1></div>     
            <img src="img/tras tambo.jpeg">
        </section>
        
