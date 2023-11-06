@@ -33,8 +33,8 @@
               @csrf
              <h2>Iniciar Sesión</h2>
                 
-             <input type="text" placeholder="Usuario" name="usuario" id="">
-             <input type="password" placeholder="Contraseña" name="password" id="">
+             <input type="text" placeholder="Usuario" name="usuario" id="usuario">
+             <input type="password" placeholder="Contraseña" name="password" id="password">
              <input class="btnayu" type="submit" value="Inicio">
 
 

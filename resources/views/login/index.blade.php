@@ -38,6 +38,8 @@
              <input type="password" placeholder="Contraseña" name="password">
              <input class="btnayu" type="submit" value="Registrar">
 
+
+
                 
                
             </form> 
@@ -51,3 +53,4 @@
 
 </body>
 </html>
+
