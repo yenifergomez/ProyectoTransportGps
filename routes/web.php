@@ -29,9 +29,13 @@ Route::get('/register', function(){
 //RUTAS DE REGISTRO
 Route::post('/register', [RegisterController::class, 'register']);
 
+Route::get('/login', function(){
+    return view('login.index');
+});
+
 //RUTAS DE LOGIN
 Route::get('/login', [LoginController::class, 'show']);
-Route::post('/login', [LoginController::class, 'show']);
+Route::post('/login', [LoginController::class, 'login']);
 
 Route::get('/home',[HomeController::class, 'index']);
 

@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Validation\Factory as ValidationFactory;
+use Illuminate\Contracts\Validation\Factory as ValidationFactory;
 
 
 class LoginRequest extends FormRequest
@@ -27,7 +27,7 @@ class LoginRequest extends FormRequest
     public function rules()
     {
         return [
-            'usuario' => 'required',
+            'usuario' => 'required', 
             'password' => 'required'
         ];
     }
@@ -46,7 +46,5 @@ class LoginRequest extends FormRequest
         $factory = $this->container->make(ValidationFactory::class);
 
         return !$factory->make(['usuario' => $value], ['usuario'=> 'email'])->fails();
-    }
-
-    
+    }   
 }
