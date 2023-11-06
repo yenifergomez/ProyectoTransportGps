@@ -24,7 +24,7 @@ main{
    width: 100%;
    padding: 20px;
    margin: auto;
-   margin-top: 70px;/* mueve caja completa */
+   margin-top:5%;/* mueve caja completa */
 }
 
 .contenedor__todo{
@@ -88,14 +88,14 @@ main{
    width: 100%;
    max-width: 380px;
    position: absolute;
-   top: -9%;   /*mueve blanco  */
+   top: -10%;   /*mueve blanco  */
    left: 10px;
    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
 }
 
 .contenedor__login-register form{
    width: 100%;
-   padding: 70px 20px;
+   padding: 50px 20px;
    backdrop-filter: blur(4px);
    background:rgba(255, 255, 255, 0.678);
    position: absolute;
@@ -155,7 +155,7 @@ main{
    margin: 0px 20px;/*AQUI*/
    position:relative;
    
-}
+} 
 .formulario__login label {
    margin: 7px;
    padding:5px ;

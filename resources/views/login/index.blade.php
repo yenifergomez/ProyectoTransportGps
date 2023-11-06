@@ -20,11 +20,11 @@
             <div class="caja__trasera-login">
             </div>
             <div class="caja__trasera-register">
-<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
             </div>
         </div>
-
+ 
         <!--Formulario de Login y registro-->
         <div class="contenedor__login-register">
             <!--Login-->
