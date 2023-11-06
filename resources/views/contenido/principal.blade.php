@@ -7,7 +7,7 @@
    <link rel="shortcut icon" href="img/logoac.png" type="image/x-icon">
 
 
-   <title>Transport_GPS</title>
+   <title>Transport&gps</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -152,7 +152,7 @@
      
               </section>
             
-      </div>
+      </div> 
          <div class="btn-left"><i class='bx bx-chevron-left'></i></div>
          <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
      </div>
@@ -162,7 +162,7 @@
 <div class="container-carousel2" id="empresas">
    <div class="carruseles2" id="slider2">
        <section class="slider-section2">
-<div class="velu"><br><h1 class="buem">TRANSPUBENZA</h1><h1 class="disp">DISPONIBLE</h1></div>     
+<div class="velu"><br><h1 class="buem">TRANSPUBENZA</h1><h1 class="disp">DISPONIBLE</h1><button class="btn" id="mostrarFormulario3">Ver mas</button></div>     
            <img src="img/tras pubenza.jpeg">
        </section>
        <section class="slider-section2">
@@ -170,7 +170,7 @@
          <img src="img/tras libertad.jpeg">
        </section>
        <section class="slider-section2">
-         <div class="velu3"><br><h1 class="buem">SOTRACAUCA METRO</h1><h1 class="disp">NO DISPONIBLE</h1></div>     
+         <div class="velu3"><br><h1 class="buem">SOTRACAUCA</h1><h1 class="disp">NO DISPONIBLE</h1></div>     
          <img src="img/sotracauca metro.jpg">
        </section>
        <section class="slider-section2">
@@ -182,7 +182,11 @@
    <div class="btn-left2"><i class='bx bx-chevron-left'></i></div>
    <div class="btn-right2"><i class='bx bx-chevron-right'></i></div>
 
-
+      <div id="ventanaEmergente3" >
+      <div id="formularioEmergente3">
+         <div class="ruta-box"></div>
+      </div>
+      </div>
 </div>
 
 <!-- comentarios -->

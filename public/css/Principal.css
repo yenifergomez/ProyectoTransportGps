@@ -352,6 +352,7 @@
        top:35%;
        left:21%;
        text-align: center;
+       text-shadow: 2px 2px 5px #000;
        }
 /* informacion */
 /* carrusel */
@@ -501,42 +502,68 @@
         height: 100%;
         object-fit: cover;
     }
-    .buem{
+    .buem{ 
         color:white;
         font-size:100px;
         font-weight: 500;
-        margin-top:10%;
+        margin-top:17%;
         margin-left:25%;
+        text-shadow: 2px 2px 5px #000;
        } 
        .disp{
         font-family:title-font;
         color:rgba(255, 255, 255, 0.784);
         font-size: 30px;
+        margin-left:42%;
+
        }
        .velu{
         position: absolute;
-        background:linear-gradient(black,transparent);
+        background:linear-gradient(black,rgba(0, 0, 0, 0.316));
         height:100vh;
         width: 100%;
        }
        .velu2{
         position: absolute;
-        background:linear-gradient(black,transparent);
+        background:linear-gradient(black,rgba(0, 0, 0, 0.316));
         height:100vh;
         width: 100%;
        }
        .velu3{
         position: absolute;
-        background:linear-gradient(black,transparent);
+        background:linear-gradient(black,rgba(0, 0, 0, 0.316));
         height:100vh;
         width: 100%;
        }
        .velu4{
         position: absolute;
-        background:linear-gradient(black,transparent);
+        background:linear-gradient(black,rgba(0, 0, 0, 0.316));
         height:100vh;
         width: 100%;
        }
+       .btn{
+        background:transparent;
+        text-shadow: 2px 2px 5px #000;
+        border-radius: 2rem;
+      border: 0.5px solid #ffffff;
+      padding: 8px 20px;
+      font-size:16px;
+      color:white;
+    cursor: pointer;
+    margin-left:45%;
+    margin-top:2%;
+    }
+    .ruta-box {
+        border-radius: 6px;
+        width: 520px;
+        height: 515px;
+        backdrop-filter: blur(3px);
+       background:rgba(255, 255, 255, 0.596);
+        position: absolute;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        padding: 70px 30px;
+      }
     
     .btn-left2,
     .btn-right2 {
@@ -570,6 +597,17 @@
     .btn-right2 {
         right: 10px;
     }
+    #ventanaEmergente3{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+        justify-content: center;
+        align-items: center;
+      }
 
     /* coment */
 

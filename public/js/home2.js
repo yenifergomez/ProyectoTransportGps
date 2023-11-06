@@ -10,7 +10,7 @@ btnRight.addEventListener("click", e => moveToRight())
 
 setInterval(() => {
     moveToRight()
-}, 6000);
+}, 80000);
 
  
 let operacion = 0,
@@ -47,3 +47,17 @@ function moveToLeft() {
     
     
 }   
+
+// carteles
+var botonMostrar3 = document.getElementById("mostrarFormulario3");
+var ventanaEmergente3 = document.getElementById("ventanaEmergente3");
+
+botonMostrar3.addEventListener("click", () => { 
+  ventanaEmergente3.style.display = "flex"; // Mostrar la ventana emergente
+});
+
+ventanaEmergente3.addEventListener("click", (event) => {
+  if (event.target === ventanaEmergente3) {
+    ventanaEmergente3.style.display = "none"; // Ocultar la ventana emergente al hacer clic fuera de ella
+  }
+});
