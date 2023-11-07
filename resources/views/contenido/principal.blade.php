@@ -186,20 +186,146 @@
       <div id="formularioEmergente3">
          <div class="ruta-box">
             <h1 class="ruta">Rutas</h1>
-            <div class="r1"></div>
-            <div class="r2"></div>
-            <div class="r3"></div>
-            <div class="r4"></div>
-            <div class="r5"></div>
-            <div class="r6"></div>
-            <div class="r7"></div>
-            <div class="r8"></div>
-            <div class="r9"></div>
-            <div class="r10"></div>
-            <div class="r11"></div>
-            <div class="r12"></div>
-            <div class="r13"></div>
-            <div class="r14"></div>
+            <div class="r1">
+               <h1 class="at">AUTOPISTA</h1>
+               <h1 class="lp">L. PALMAS</h1>
+               <ul class="cm"><li>CAMPANARIO</li>
+                   <li>EXITO</li>
+                   <li>TERMINAL</li>
+                   <li>ESMERALDA</li>
+                   <li>TOMAS C.</li>
+                   <li>MIRADOR</li>
+               </ul><button class="num">1</button></div>
+           <div class="r2">
+               <h1 class="at">AUTOPISTA</h1>
+               <h1 class="lp">L. PALMAS</h1>
+               <ul class="cm"><li>CAMPANARIO</li>
+                   <li>EXITO</li>
+                   <li>TERMINAL</li>
+                   <li>ESMERALDA</li>
+                   <li>TOMAS C.</li>
+                   <li>MIRADOR</li>
+               </ul><button class="num">2</button></div>
+           <div class="r3"> 
+               <h1 class="at">AUTOPISTA</h1>
+               <h1 class="lp">L. PALMAS</h1>
+               <ul class="cm"><li>CAMPANARIO</li>
+                   <li>EXITO</li>
+                   <li>TERMINAL</li>
+                   <li>ESMERALDA</li>
+                   <li>TOMAS C.</li>
+                   <li>MIRADOR</li>
+               </ul><button class="num">2</button></div>
+           <div class="r4"> 
+               <h1 class="at">AUTOPISTA</h1>
+               <h1 class="lp">L. PALMAS</h1>
+               <ul class="cm"><li>CAMPANARIO</li>
+                   <li>EXITO</li>
+                   <li>TERMINAL</li>
+                   <li>ESMERALDA</li>
+                   <li>TOMAS C.</li>
+                   <li>MIRADOR</li>
+               </ul><button class="num">4</button></div>
+           <div class="r5"> 
+               <h1 class="at">AUTOPISTA</h1>
+               <h1 class="lp">L. PALMAS</h1>
+               <ul class="cm"><li>CAMPANARIO</li>
+                   <li>EXITO</li>
+                   <li>TERMINAL</li>
+                   <li>ESMERALDA</li>
+                   <li>TOMAS C.</li>
+                   <li>MIRADOR</li>
+               </ul><button class="num">5</button></div>
+           <div class="r6">
+                <h1 class="at">AUTOPISTA</h1>
+               <h1 class="lp">L. PALMAS</h1>
+               <ul class="cm"><li>CAMPANARIO</li>
+                   <li>EXITO</li>
+                   <li>TERMINAL</li>
+                   <li>ESMERALDA</li>
+                   <li>TOMAS C.</li>
+                   <li>MIRADOR</li>
+               </ul><button class="num">5</button></div>
+           <div class="r7">
+                <h1 class="at">AUTOPISTA</h1>
+               <h1 class="lp">L. PALMAS</h1>
+               <ul class="cm"><li>CAMPANARIO</li>
+                   <li>EXITO</li>
+                   <li>TERMINAL</li>
+                   <li>ESMERALDA</li>
+                   <li>TOMAS C.</li>
+                   <li>MIRADOR</li>
+               </ul><button class="num">6</button></div>
+           <div class="r8">
+                <h1 class="at">AUTOPISTA</h1>
+               <h1 class="lp">L. PALMAS</h1>
+               <ul class="cm"><li>CAMPANARIO</li>
+                   <li>EXITO</li>
+                   <li>TERMINAL</li>
+                   <li>ESMERALDA</li>
+                   <li>TOMAS C.</li>
+                   <li>MIRADOR</li>
+               </ul><button class="num">7</button></div>
+           <div class="r9"> 
+               <h1 class="at">AUTOPISTA</h1>
+               <h1 class="lp">L. PALMAS</h1>
+               <ul class="cm"><li>CAMPANARIO</li>
+                   <li>EXITO</li>
+                   <li>TERMINAL</li>
+                   <li>ESMERALDA</li>
+                   <li>TOMAS C.</li>
+                   <li>MIRADOR</li>
+               </ul><button class="num">7</button></div>
+           <div class="r10"> 
+               <h1 class="at">AUTOPISTA</h1>
+               <h1 class="lp">L. PALMAS</h1>
+               <ul class="cm"><li>CAMPANARIO</li>
+                   <li>EXITO</li>
+                   <li>TERMINAL</li>
+                   <li>ESMERALDA</li>
+                   <li>TOMAS C.</li>
+                   <li>MIRADOR</li>
+               </ul><button class="num">8</button></div>
+           <div class="r11"> 
+               <h1 class="at">AUTOPISTA</h1>
+               <h1 class="lp">L. PALMAS</h1>
+               <ul class="cm"><li>CAMPANARIO</li>
+                   <li>EXITO</li>
+                   <li>TERMINAL</li>
+                   <li>ESMERALDA</li>
+                   <li>TOMAS C.</li>
+                   <li>MIRADOR</li>
+               </ul><button class="num">8</button></div>
+           <div class="r12"> 
+               <h1 class="at">AUTOPISTA</h1>
+               <h1 class="lp">L. PALMAS</h1>
+               <ul class="cm"><li>CAMPANARIO</li>
+                   <li>EXITO</li>
+                   <li>TERMINAL</li>
+                   <li>ESMERALDA</li>
+                   <li>TOMAS C.</li>
+                   <li>MIRADOR</li>
+               </ul><button class="num">9</button></div>
+           <div class="r13">
+                <h1 class="at">AUTOPISTA</h1>
+               <h1 class="lp">L. PALMAS</h1>
+               <ul class="ten"><li>CAMPANARIO</li>
+                   <li>EXITO</li>
+                   <li>TERMINAL</li>
+                   <li>ESMERALDA</li>
+                   <li>TOMAS C.</li>
+                   <li>MIRADOR</li>
+               </ul><button class="num">10</button></div>
+           <div class="r14">
+                <h1 class="at">AUTOPISTA</h1>
+               <h1 class="lp">L. PALMAS</h1>
+               <ul class="elv"><li>CAMPANARIO</li>
+                   <li>EXITO</li>
+                   <li>TERMINAL</li>
+                   <li>ESMERALDA</li>
+                   <li>TOMAS C.</li>
+                   <li>MIRADOR</li>
+               </ul><button class="num">11</button></div>
          </div>
       </div>
       </div>
