@@ -555,14 +555,137 @@
     }
     .ruta-box {
         border-radius: 6px;
-        width: 520px;
-        height: 515px;
+        width: 720px;
+        height: 575px;
         backdrop-filter: blur(3px);
        background:rgba(255, 255, 255, 0.596);
         position: absolute;
         transform: translate(-50%, -50%);
-        box-sizing: border-box;
-        padding: 70px 30px;
+        padding:20px;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
+        grid-template-rows: repeat(5, 1fr);    /* 5 filas de igual tamaño */
+        gap: 10px; /* Espacio entre elementos */
+      }
+      .ruta{
+        position:relative;
+        color: rgb(13, 10, 163);
+        font-size: 60px;
+       top:20%;
+      }
+
+      .r1{
+        border-radius: 6px;
+        width: 150px;
+        height: 200px;
+        backdrop-filter: blur(3px);
+       background:rgba(93, 85, 255, 0.596);
+
+      }
+      .r2{
+        border-radius: 6px;
+        width: 150px;
+        height: 200px;
+        backdrop-filter: blur(3px);
+       background:rgba(93, 85, 255, 0.596);
+       
+      }
+      .r3{
+        border-radius: 6px;
+        width: 150px;
+        height: 200px;
+        backdrop-filter: blur(3px);
+       background:rgba(93, 85, 255, 0.596);
+        
+      }
+      .r4{
+        border-radius: 6px;
+        width: 150px;
+        height: 200px;
+        backdrop-filter: blur(3px);
+       background:rgba(93, 85, 255, 0.596);
+        
+      }
+      .r5{
+        border-radius: 6px;
+        width: 150px;
+        height: 200px;
+        backdrop-filter: blur(3px);
+       background:rgba(93, 85, 255, 0.596);
+       
+      }
+      .r6{
+        border-radius: 6px;
+        width: 150px;
+        height: 200px;
+        backdrop-filter: blur(3px);
+       background:rgba(93, 85, 255, 0.596);
+        
+      }
+      .r7{
+        border-radius: 6px;
+        width: 150px;
+        height: 200px;
+        backdrop-filter: blur(3px);
+       background:rgba(93, 85, 255, 0.596);
+        
+      }
+      .r8{
+        border-radius: 6px;
+        width: 150px;
+        height: 200px;
+        backdrop-filter: blur(3px);
+       background:rgba(93, 85, 255, 0.596);
+        
+      }
+      .r9{
+        border-radius: 6px;
+        width: 150px;
+        height: 200px;
+        backdrop-filter: blur(3px);
+       background:rgba(93, 85, 255, 0.596);
+        
+      }
+      .r10{
+        border-radius: 6px;
+        width: 150px;
+        height: 200px;
+        backdrop-filter: blur(3px);
+       background:rgba(93, 85, 255, 0.596);
+        
+      }
+      .r11{
+        border-radius: 6px;
+        width: 150px;
+        height: 200px;
+        backdrop-filter: blur(3px);
+       background:rgba(93, 85, 255, 0.596);
+        
+      }
+      .r12{
+        border-radius: 6px;
+        width: 150px;
+        height: 200px;
+        backdrop-filter: blur(3px);
+       background:rgba(93, 85, 255, 0.596);
+        
+      }
+      .r13{
+        border-radius: 6px;
+        width: 150px;
+        height: 200px;
+        backdrop-filter: blur(3px);
+       background:rgba(93, 85, 255, 0.596);
+        
+      }
+      .r14{
+        border-radius: 6px;
+        width: 150px;
+        height: 200px;
+        backdrop-filter: blur(3px);
+       background:rgba(93, 85, 255, 0.596);
+        
       }
     
     .btn-left2,

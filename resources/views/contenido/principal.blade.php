@@ -184,7 +184,23 @@
 
       <div id="ventanaEmergente3" >
       <div id="formularioEmergente3">
-         <div class="ruta-box"></div>
+         <div class="ruta-box">
+            <h1 class="ruta">Rutas</h1>
+            <div class="r1"></div>
+            <div class="r2"></div>
+            <div class="r3"></div>
+            <div class="r4"></div>
+            <div class="r5"></div>
+            <div class="r6"></div>
+            <div class="r7"></div>
+            <div class="r8"></div>
+            <div class="r9"></div>
+            <div class="r10"></div>
+            <div class="r11"></div>
+            <div class="r12"></div>
+            <div class="r13"></div>
+            <div class="r14"></div>
+         </div>
       </div>
       </div>
 </div>
