@@ -20,7 +20,7 @@
             <div class="caja__trasera-login">
             </div>
             <div class="caja__trasera-register">
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
 
             </div>
         </div>
