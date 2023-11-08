@@ -17,7 +17,7 @@
             <div class="caja__trasera-login">
             </div>
             <div class="caja__trasera-register">
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
 <h1 class="textoo">Inicia sesión para entrar en la página</h1>
 
             </div>

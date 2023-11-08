@@ -61,3 +61,17 @@ ventanaEmergente3.addEventListener("click", (event) => {
     ventanaEmergente3.style.display = "none"; // Ocultar la ventana emergente al hacer clic fuera de ella
   }
 });
+
+//fotos de las rutas rutas
+var botonMostrar4 = document.getElementById("mostrarFormulario4");
+var ventanaEmergente4 = document.getElementById("ventanaEmergente4");
+
+botonMostrar4.addEventListener("click", () => { 
+  ventanaEmergente4.style.display = "flex"; // Mostrar la ventana emergente
+});
+
+ventanaEmergente4.addEventListener("click", (event) => {
+  if (event.target === ventanaEmergente4) {
+    ventanaEmergente4.style.display = "none"; // Ocultar la ventana emergente al hacer clic fuera de ella
+  }
+});
