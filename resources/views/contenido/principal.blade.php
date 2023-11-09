@@ -258,26 +258,7 @@
                    <li>CALLE 13</li>
                    <li>CHUNE</li>
                </ul><button class="num">6</button></div>
-           <div class="r8">
-                <h1 class="at">AUTOPISTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
-               <ul class="cm"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
-                   <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
-               </ul><button class="num">7</button></div>
-           <div class="r9"> 
-               <h1 class="at">AUTOPISTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
-               <ul class="cm"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
-                   <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
-               </ul><button class="num">7</button></div>
+
            <div class="r10"> 
                <h1 class="at">AUTOPISTA</h1>
                <h1 class="lp">L. PALMAS</h1>

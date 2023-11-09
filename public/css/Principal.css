@@ -738,24 +738,7 @@
        margin-left:-47%;
  
       }
-      .r8{
-       border-radius: 6px;
-       width: 165px;
-       height: 200px;
-       backdrop-filter: blur(3px);
-       background:rgba(226, 226, 226, 0.666);
-       padding:6px 15px;
-       cursor: default;
-      }
-      .r9{
-       border-radius: 6px;
-       width: 165px;
-       height: 200px;
-       backdrop-filter: blur(3px);
-       background:rgba(226, 226, 226, 0.666);
-       padding:6px 15px;
-       cursor: default;
-      }
+
       .r10{
        border-radius: 6px;
        width: 165px;
