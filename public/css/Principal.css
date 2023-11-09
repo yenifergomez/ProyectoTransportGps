@@ -574,14 +574,16 @@
       .ruta{
          background:transparent;
          border-radius: 6px;
-       border: 0.5px solid #ffffff;
+       border: 0.5px solid #ffffffc5;
        font-size:60px;
      cursor: pointer;
      margin-top:2%;
-
         position:relative;
         color: rgb(13, 10, 163);
-
+      }
+      .ruta:hover{
+         background:rgba(140, 130, 255, 0.455);
+         transition-duration: 0.4s;
       }
       .at{
        position:relative;
