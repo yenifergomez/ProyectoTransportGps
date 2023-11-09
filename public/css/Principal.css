@@ -601,12 +601,18 @@
         background:rgba(255, 255, 255, 0.596);
          position: absolute;
          transform: translate(-50%, -50%);
-         padding:20px;
-         overflow-x: hidden;
+         padding:30px 20px;
+         overflow-x: scroll;
         display: grid;
-         grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
-         grid-template-rows: repeat(5, 1fr);    /* 5 filas de igual tamaño */
+         grid-template-columns: repeat(14, 1fr); /* 4 columnas de igual tamaño */
+         grid-template-rows: repeat(1, 1fr);    /* 5 filas de igual tamaño */
          gap: 10px; /* Espacio entre elementos */
+       }
+       .mp{
+         border-radius: 6px;
+         width: 685px;
+         height: 510px;
+         cursor: default;
        }
        #ventanaEmergente4{
          display: none;

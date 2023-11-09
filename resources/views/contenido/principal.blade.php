@@ -335,13 +335,25 @@
    <div id="ventanaEmergente4" >     
     <div id="formularioEmergente4">  
       <div class="mapa-box">
-  
-  
+  <img class="mp" src="img/r1.png" >
+  <img class="mp" src="img/r1.png" >
+  <img class="mp" src="img/r1.png" >
+  <img class="mp" src="img/r1.png" >
+  <img class="mp" src="img/r1.png" >
+  <img class="mp" src="img/r1.png" >
+  <img class="mp" src="img/r1.png" >
+  <img class="mp" src="img/r1.png" >
+  <img class="mp" src="img/r1.png" >
+  <img class="mp" src="img/r1.png" >
+  <img class="mp" src="img/r1.png" >
+  <img class="mp" src="img/r1.png" >
+  <img class="mp" src="img/r1.png" >
+  <img class="mp" src="img/r1.png" >
   
       </div>
     </div>
      </div>
-     
+
 </div>
 
 <!-- comentarios -->
