@@ -21,7 +21,7 @@ use App\Http\Controllers\InicioController;
 */
 
 Route::get('/', function () {
-    return view('login.index');
+    return view('inicio.iniciar');
 });
 
 Route::get('/register', function(){
