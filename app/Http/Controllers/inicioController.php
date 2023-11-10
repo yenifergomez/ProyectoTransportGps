@@ -7,10 +7,13 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 
-class inicioController extends Controller
-{
-     public function inicio1(){
-        return view('inicio.iniciar');
-    }
 
+class InicioController extends Controller
+{
+    //
+
+
+    public function iniciarContenido(){
+        return view('inicio.Iniciar');
+    }
 }

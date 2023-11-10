@@ -1,11 +1,13 @@
 <?php
 
 use App\Http\Controllers\ContenidoController;
+use App\Http\Controllers\IniciController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 use Illuminate\Auth\Events\Login;
+use App\Http\Controllers\InicioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,5 +44,5 @@ Route::get('/home',[HomeController::class, 'index']);
 //RUTAS CONTENIDO
 Route::get('/contenido', [ContenidoController::class, 'indexContenido']);
 
-// ruta inicial
-Route::get('/inicio', [inicioController::class, 'inicio1']);
+//RUTAS DE INICIO
+Route::get('/iniciar', [InicioController::class, 'iniciarContenido']);
