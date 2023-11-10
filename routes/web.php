@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 use Illuminate\Auth\Events\Login;
 use App\Http\Controllers\InicioController;
+use App\Http\Controllers\ForoController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +31,6 @@ Route::get('/register', function(){
 });
 
 //RUTAS DE REGISTRO
-Route::post('/register', [RegisterController::class, 'register']);
 
 Route::get('/login', function(){
     return view('login.index');
@@ -44,5 +45,6 @@ Route::get('/home',[HomeController::class, 'index']);
 //RUTAS CONTENIDO
 Route::get('/contenido', [ContenidoController::class, 'indexContenido']);
 
-//RUTAS DE INICIO
 Route::get('/iniciar', [InicioController::class, 'iniciarContenido']);
+
+Route::get('/foro', [ForoController::class, 'foroContenido']);

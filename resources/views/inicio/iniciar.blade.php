@@ -15,8 +15,8 @@
 
                 <nav class="ctboton">
                     <h1 class="titulito">TRANSPORT&GPS</h1>
-                    <button id="miBoton" class="boton1">Iniciar sesión</button>
-                    <button id="miBot" class="boton2">Registrate</button>
+                    <a href="{{ url('login') }}" class="boton1">Iniciar sesión</a>
+                    <a href="{{ url('register') }}"  class="boton2">Registrate</a>
                 </nav> 
         
         
@@ -42,3 +42,5 @@
  <script src="js/inicio.js"></script>
 </body>
 </html>
+
+<a href="{{ url('juegos2') }}" class="btn mt-2">
