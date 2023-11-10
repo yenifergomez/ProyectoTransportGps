@@ -41,3 +41,6 @@ Route::get('/home',[HomeController::class, 'index']);
 
 //RUTAS CONTENIDO
 Route::get('/contenido', [ContenidoController::class, 'indexContenido']);
+
+// ruta inicial
+Route::get('/inicio', [inicioController::class, 'inicio1']);
