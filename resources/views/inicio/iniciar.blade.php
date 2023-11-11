@@ -43,4 +43,3 @@
 </body>
 </html>
 
-<a href="{{ url('juegos2') }}" class="btn mt-2">
