@@ -38,6 +38,9 @@
              <input type="password" placeholder="Contraseña" name="password">
              <input class="btnayu" type="submit" value="Registrar">
 
+             <a href="{{ url('login') }}" class="boton1">Ya tengo una Cuenta</a>
+
+
 
 
                 

@@ -73,6 +73,16 @@
 </div>
 <!-- fin ayuda -->
 
+
+
+
+
+
+
+
+
+
+
 <!-- ventana menu -->
  <div id="ventanaEmergente2">
    <div id="formularioEmergente2">
@@ -112,6 +122,17 @@
    </div>
 </div>
 <!-- fin menu -->
+
+
+
+
+
+
+
+
+
+
+
 
 </header>
     <main>

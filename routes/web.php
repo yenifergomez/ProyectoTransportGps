@@ -9,6 +9,9 @@ use App\Http\Controllers\RegisterController;
 use Illuminate\Auth\Events\Login;
 use App\Http\Controllers\InicioController;
 use App\Http\Controllers\ForoController;
+use App\Http\Controllers\MperfilController;
+use App\Http\Controllers\PerfilController;
+
 
 
 /*
@@ -36,11 +39,15 @@ Route::get('/login', function(){
     return view('login.index');
 });
 
+
 //RUTAS DE LOGIN
 Route::get('/login', [LoginController::class, 'show']);
 Route::post('/login', [LoginController::class, 'login']);
 
 Route::get('/home',[HomeController::class, 'index']);
+
+
+Route::post('/register', [RegisterController::class, 'register']);
 
 //RUTAS CONTENIDO
 Route::get('/contenido', [ContenidoController::class, 'indexContenido']);
@@ -48,3 +55,5 @@ Route::get('/contenido', [ContenidoController::class, 'indexContenido']);
 Route::get('/iniciar', [InicioController::class, 'iniciarContenido']);
 
 Route::get('/foro', [ForoController::class, 'foroContenido']);
+
+Route::get('/perfil', [MperfilController::class, 'perfilEdit']);

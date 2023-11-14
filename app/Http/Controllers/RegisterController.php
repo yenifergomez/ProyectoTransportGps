@@ -16,22 +16,4 @@ class RegisterController extends Controller
     return redirect('/login')->with('success', 'Account created successfully');
 }
 
- public function registro (Request $request){
-    $request-> validate([
-        'usuario'=> 'required|unique:users,usuario',
-            'email'=> 'required|unique:users,email',
-            'password'=> 'required|min:8',
-
-
-    ]);
-
-    $user = new User();
-    $user-> usuario=$request->usuario; 
-    $user-> email=$request->email; 
-    $user-> password=$request->password; 
-    $user-> save(); 
-    return rasponse()->json(["mensaje"="usuario registrado correctamente"],201);
  }
-}
-
-
