@@ -571,20 +571,7 @@
         grid-template-rows: repeat(5, 1fr);    /* 5 filas de igual tamaño */
         gap: 10px; /* Espacio entre elementos */
       }
-      .ruta{
-         background:transparent;
-         border-radius: 6px;
-       border: 0.5px solid #ffffffc5;
-       font-size:60px;
-     cursor: pointer;
-     margin-top:2%;
-        position:relative;
-        color: rgb(13, 10, 163);
-      }
-      .ruta:hover{
-         background:rgba(140, 130, 255, 0.455);
-         transition-duration: 0.4s;
-      }
+
       .at{
        position:relative;
        color: rgb(0, 0, 0);
@@ -606,7 +593,7 @@
          padding:30px 20px;
          overflow-x: scroll;
         display: grid;
-         grid-template-columns: repeat(14, 1fr); /* 4 columnas de igual tamaño */
+         grid-template-columns: repeat(9, 1fr); /* 4 columnas de igual tamaño */
          grid-template-rows: repeat(1, 1fr);    /* 5 filas de igual tamaño */
          gap: 10px; /* Espacio entre elementos */
        }
@@ -617,6 +604,72 @@
          cursor: default;
        }
        #ventanaEmergente4{
+         display: none;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.542); /* Fondo semi-transparente */
+         justify-content: center;
+         align-items: center;
+       }
+       #ventanaEmergente5{
+         display: none;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.542); /* Fondo semi-transparente */
+         justify-content: center;
+         align-items: center;
+       }
+       #ventanaEmergente6{
+         display: none;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.542); /* Fondo semi-transparente */
+         justify-content: center;
+         align-items: center;
+       }
+       #ventanaEmergente7{
+         display: none;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.542); /* Fondo semi-transparente */
+         justify-content: center;
+         align-items: center;
+       }
+       #ventanaEmergente8{
+         display: none;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.542); /* Fondo semi-transparente */
+         justify-content: center;
+         align-items: center;
+       }
+       #ventanaEmergente9{
+         display: none;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.542); /* Fondo semi-transparente */
+         justify-content: center;
+         align-items: center;
+       }
+       #ventanaEmergente10{
          display: none;
          position: fixed;
          top: 0;
@@ -668,6 +721,70 @@
     margin-top:-20%;
     font-size:60px;
  }
+ .ruta{
+   background:transparent;
+   border-radius: 6px;
+ border: 0.5px solid #ffffffc5;
+ font-size:60px;
+cursor: pointer;
+margin-top:2%;
+  position:relative;
+  color: rgb(13, 10, 163);
+  width: 165px;
+  height: 200px;
+}
+.ruta:hover{
+   background:rgba(140, 130, 255, 0.455);
+   transition-duration: 0.4s;
+}
+.ruta2{
+   background:transparent;
+   border-radius: 6px;
+ border: 0.5px solid #ffffffc5;
+ font-size:60px;
+cursor: pointer;
+margin-top:2%;
+  position:relative;
+  color: rgb(177, 149, 10);
+  width: 165px;
+  height: 200px;
+}
+.ruta2:hover{
+   background:rgba(255, 232, 130, 0.455);
+   transition-duration: 0.4s;
+}
+.ruta3{
+   background:transparent;
+   border-radius: 6px;
+ border: 0.5px solid #ffffffc5;
+ font-size:60px;
+cursor: pointer;
+margin-top:2%;
+  position:relative;
+  color: rgb(177, 10, 10);
+  width: 165px;
+  height: 200px;
+}
+.ruta3:hover{
+   background:rgba(255, 130, 130, 0.455);
+   transition-duration: 0.4s;
+}
+.ruta4{
+   background:transparent;
+   border-radius: 6px;
+ border: 0.5px solid #ffffffc5;
+ font-size:60px;
+cursor: pointer;
+margin-top:2%;
+  position:relative;
+  color: rgb(50, 138, 122);
+  width: 165px;
+  height: 200px;
+}
+.ruta4:hover{
+   background: rgba(50, 138, 122, 0.353);
+   transition-duration: 0.4s;
+}
       .r1{
         border-radius: 6px;
         width: 165px;
@@ -676,6 +793,7 @@
        background:rgba(226, 226, 226, 0.666);
        padding:6px 15px;
        cursor: default;
+       margin-left:-19%;
       }
       .r2{
         border-radius: 6px;
@@ -685,7 +803,7 @@
         background:rgba(226, 226, 226, 0.666);
         padding:6px 15px;
         cursor: default;
-        margin-left:-19%;
+        margin-left:-48%;
       }
       .r3{
         border-radius: 6px;
@@ -695,7 +813,7 @@
         background:rgba(226, 226, 226, 0.666);
         padding:6px 15px;
         cursor: default;
-        margin-left:-47%;
+        margin-left:-49%;
       }
       .r4{
         border-radius: 6px;
@@ -714,7 +832,7 @@
        background:rgba(226, 226, 226, 0.666);
        padding:6px 15px;
        cursor: default;
-       
+       margin-left:-19%;
       }
       .r6{
        border-radius: 6px;
@@ -724,8 +842,7 @@
        background:rgba(226, 226, 226, 0.666);
        padding:6px 15px;
        cursor: default;
-       margin-left:-19%;
- 
+       margin-left:-48%;
       }
       .r7{
        border-radius: 6px;
@@ -735,43 +852,9 @@
        background:rgba(226, 226, 226, 0.666);
        padding:6px 15px;
        cursor: default;
-       margin-left:-47%;
- 
+       margin-left:-49%;
       }
-
-      .r10{
-       border-radius: 6px;
-       width: 165px;
-       height: 200px;
-       backdrop-filter: blur(3px);
-       background:rgba(226, 226, 226, 0.666);
-       padding:6px 15px;
-       cursor: default;
-       margin-left:-19%;
- 
-      }
-      
-      .r11{
-       border-radius: 6px;
-       width: 165px;
-       height: 200px;
-       backdrop-filter: blur(3px);
-       background:rgba(226, 226, 226, 0.666);
-       padding:6px 15px;
-       cursor: default;
-       margin-left:-47%;
-      }
-      .r12{
-       border-radius: 6px;
-       width: 165px;
-       height: 200px;
-       backdrop-filter: blur(3px);
-       background:rgba(226, 226, 226, 0.666);
-       padding:6px 15px;
-       cursor: default;
-       margin-left:27%;
-      }
-      .r13{
+      .r8{
        border-radius: 6px;
        width: 205px;
        height: 200px;
@@ -779,9 +862,8 @@
        background:rgba(226, 226, 226, 0.666);
        padding:6px 15px;
        cursor: default;
-       margin-left:23%;
       }
-      .r14{
+      .r9{
        border-radius: 6px;
        width: 205px;
        height: 200px;
@@ -789,7 +871,6 @@
        background:rgba(226, 226, 226, 0.666);
        padding:6px 15px;
        cursor: default;
-       margin-left:25%;
       }
  
     

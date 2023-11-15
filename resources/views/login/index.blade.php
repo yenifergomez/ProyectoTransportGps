@@ -11,7 +11,7 @@
     
 </head> 
 <body> 
-  <main>
+  <main> 
  
     <div class="contenedor__todo">
         <div class="caja__trasera">
