@@ -17,13 +17,13 @@
                     <h1 class="titulito">TRANSPORT&GPS</h1>
                     <a href="{{ url('login') }}" class="boton1">Iniciar sesión</a>
                     <a href="{{ url('register') }}"  class="boton2">Registrate</a>
+                    <a href="{{ url('') }}"  class="boton3">Administrar</a>
                 </nav> 
         
         
         <section class="banner contenedor">
             <div class="banner_title">
                 <h2>Si no sabes como ubicarte, <br> nosotros podemos ayudarte.</h2>
-                <button id="map" class="ubicar">Conoce tu ubicacion</button>
             </div>
             
                 <img src="img/logoac.png" class="loguito">
@@ -39,7 +39,6 @@
     
      </div>
  </header>
- <script src="js/inicio.js"></script>
 </body>
 </html>
 

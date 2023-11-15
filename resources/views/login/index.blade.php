@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{ asset('css/index.css') }}" />
     
 </head> 
-<body>
+<body> 
   <main>
  
     <div class="contenedor__todo">
