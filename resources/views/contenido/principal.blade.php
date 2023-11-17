@@ -191,52 +191,52 @@
             <button class="ruta" id="mostrarFormulario4">Rutas</button>
             <div class="r1">
                <h1 class="at">AUTOPISTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
+               <h1 class="lp">LOMAS G.</h1>
                <ul class="cm"><li>CAMPANARIO</li>
                    <li>EXITO</li>
                    <li>TERMINAL</li>
                    <li>ESMERALDA</li>
                    <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
+                   <li>LAS PALMAS</li>
                </ul><button class="num">1</button></div>
            <div class="r2">
-               <h1 class="cam">CAMPANARIO</h1>
+               <h1 class="cam">ASTURIAS</h1>
                <h1 class="lp">VARIANTE</h1>
-               <ul class="cm"><li>ESTADIO</li>
+               <ul class="cm"><li>CAMPANARIO</li>
+                   <li>ESTADIO</li>
                    <li>TELECOM</li>
-                   <li>PLAZA TOROS</li>
+                   <li>CALLE 13</li>
                    <li>PAJONAL</li>
                    <li>MIRADOR</li>
                </ul><button class="num">2</button></div>
            <div class="r3"> 
-               <h1 class="at">AUTOPISTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
-               <ul class="cm"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
+               <h1 class="at">LACTEOS</h1>
+               <h1 class="lp">NARANJOS</h1>
+               <ul class="cm"><li>ESTADIO</li>
+                   <li>B. BOLIVAR</li>
+                   <li>TELECOM</li>
+                   <li>CALLE 13</li>
                    <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
+                   <li>CHUNE</li>
                </ul><button class="num">4</button></div>
            <div class="r4"> 
-               <h1 class="at">AUTOPISTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
-               <ul class="cm"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
-                   <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
+               <h1 class="at">LACTEOS</h1>
+               <h1 class="lp">SAUCES</h1>
+               <ul class="cm"><li>ESTADIO</li>
+                   <li>HOSPITAL</li>
+                   <li>TELECOM</li>
+                   <li>CENTRO</li>
+                   <li>KELVIN</li>
                </ul><button class="num">5</button></div>
            <div class="r5"> 
-               <h1 class="at">AUTOPISTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
-               <ul class="cm"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
+               <h1 class="at">LACTEOS</h1>
+               <h1 class="lp">NARANJOS</h1>
+               <ul class="cm"><li>ESTADIO</li>
+                   <li>TELECOM</li>
+                   <li>CALLE 13</li>
                    <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
+                   <li>CHUNE</li>
+                   <li>LA MARIA</li>
                </ul><button class="num">6</button></div>
            <div class="r6">
                 <h1 class="at">LACTEOS</h1>
@@ -249,40 +249,38 @@
                    <li>SAUCES</li>
                </ul><button class="num">8</button></div>
            <div class="r7">
-                            <h1 class="at">LACTEOS</h1>
-               <h1 class="lp">NARANJOS</h1>
-               <ul class="cm"><li>ESTADIO</li>
+            <h1 class="at">R. BLANCO</h1>
+               <h1 class="lp">L. PALMAS</h1>
+               <ul class="cm"><li>SENA</li>
+                   <li>CAMPANARIO</li>
                    <li>HOSPITAL</li>
-                   <li>BOLIVAR</li>
                    <li>TELECOM</li>
                    <li>CALLE 13</li>
-                   <li>CHUNE</li>
+                   <li>CABUYERA</li>
                </ul><button class="num">9</button></div>
 
            <div class="r8">
-                <h1 class="at">AUTOPISTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
-               <ul class="ten"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
+                <h1 class="at">CAMPANARIO</h1>
+               <h1 class="lp">LOMAS G.</h1>
+               <ul class="ten"><li>EXITO</li>
                    <li>TERMINAL</li>
-                   <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
+                   <li>CHUNE</li>
+                   <li>LA MARIA</li>
+                   <li>LAS GARZAS</li>
                </ul><button class="num">10</button></div>
            <div class="r9">
-                <h1 class="at">CENTRO</h1>
-               <h1 class="lp">CALIBIO</h1>
-               <ul class="elv"><li>ESTADIO</li>
-                   <li>LACTEOS</li>
-                   <li>TERRAPLAZA</li>
-                   <li>RIO BLANCO</li>
-                   <li>CABUYERA</li>
+                <h1 class="at">R. BLANCO</h1>
+               <h1 class="lp">CENTRO</h1>
+               <ul class="elv"><li>SENA</li>
+                   <li>CAMPANARIO</li>
+                   <li>ESTADIO</li>
+                   <li>B. BOLIVAR</li>
                </ul><button class="num">11</button></div>
          </div>
       </div>
       </div>
 
-      <!-- fotos mapas -->
+      <!--mapas pubenza -->
    <div id="ventanaEmergente4" >     
     <div id="formularioEmergente4">  
       <div class="mapa-box">
@@ -305,27 +303,37 @@
       <div id="formularioEmergente5">
          <div class="ruta-box">
             <button class="ruta2" id="mostrarFormulario6">Rutas</button>
-            <div class="r1">
+            <div class="r1l">
+               <h1 class="at">CAMPANARIO</h1>
+               <h1 class="lp">ORTIGAL</h1>
+               <ul class="cm"><li>B. BOLIVAR</li>
+                   <li>TELECOM</li>
+                   <li>FLORESTA</li>
+                   <li>COMUNEROS</li>
+                   <li>H. VIAS</li>
+                   <li>LAS PALMAS</li>
+               </ul><button class="num">1</button></div>
+           <div class="r2l">
+               <h1 class="cam">MICROBUS</h1>
+               <h1 class="lp">CHUNE</h1>
+               <ul class="cm"><li>ASTURIAS</li>
+                   <li>CAMPANARIO</li>
+                   <li>HOSPITAL</li>
+                   <li>CRA 9</li>
+                   <li>CALLE 4</li>
+                   <li>ESMERALDA</li>
+               </ul><button class="num">1</button></div>
+           <div class="r3l"> 
                <h1 class="at">AUTOPISTA</h1>
                <h1 class="lp">L. PALMAS</h1>
                <ul class="cm"><li>CAMPANARIO</li>
                    <li>EXITO</li>
                    <li>TERMINAL</li>
                    <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
-               </ul><button class="num">1</button></div>
-           <div class="r2">
-               <h1 class="cam">CAMPANARIO</h1>
-               <h1 class="lp">VARIANTE</h1>
-               <ul class="cm"><li>ESTADIO</li>
-                   <li>TELECOM</li>
-                   <li>PLAZA TOROS</li>
-                   <li>PAJONAL</li>
                    <li>MIRADOR</li>
                </ul><button class="num">2</button></div>
-           <div class="r3"> 
-               <h1 class="at">AUTOPISTA</h1>
+           <div class="r4l"> 
+               <h1 class="at">FALTA</h1>
                <h1 class="lp">L. PALMAS</h1>
                <ul class="cm"><li>CAMPANARIO</li>
                    <li>EXITO</li>
@@ -333,29 +341,19 @@
                    <li>ESMERALDA</li>
                    <li>TOMAS C.</li>
                    <li>MIRADOR</li>
+               </ul><button class="num">3</button></div>
+           <div class="r5l"> 
+           <h1 class="at">LA PAZ</h1>
+               <h1 class="lp">LA MARIA</h1>
+               <ul class="cm"><li>LACTEOS</li>
+                   <li>B. BOLIVAR</li>
+                   <li>TELECOM</li>
+                   <li>CALLE 13</li>
+                   <li>JUZGADOS</li>
+                   <li>ESMERALDA</li>
                </ul><button class="num">4</button></div>
-           <div class="r4"> 
-               <h1 class="at">AUTOPISTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
-               <ul class="cm"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
-                   <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
-               </ul><button class="num">5</button></div>
-           <div class="r5"> 
-               <h1 class="at">AUTOPISTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
-               <ul class="cm"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
-                   <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
-               </ul><button class="num">6</button></div>
-           <div class="r6">
-                <h1 class="at">LACTEOS</h1>
+           <div class="r6l">
+                <h1 class="at">FALTA</h1>
                <h1 class="lp">CHUNE</h1>
                <ul class="cm"><li>ESTADIO</li>
                    <li>HOSPITAL</li>
@@ -363,9 +361,9 @@
                    <li>TELECOM</li>
                    <li>CALLE 13</li>
                    <li>SAUCES</li>
-               </ul><button class="num">8</button></div>
-           <div class="r7">
-                            <h1 class="at">LACTEOS</h1>
+               </ul><button class="num">5</button></div>
+           <div class="r7l">
+         <h1 class="at">FALTA</h1>
                <h1 class="lp">NARANJOS</h1>
                <ul class="cm"><li>ESTADIO</li>
                    <li>HOSPITAL</li>
@@ -373,27 +371,18 @@
                    <li>TELECOM</li>
                    <li>CALLE 13</li>
                    <li>CHUNE</li>
-               </ul><button class="num">9</button></div>
+               </ul><button class="num">7</button></div>
+               <div class="r8l">
+                <h1 class="at">FALTA</h1>
+               <h1 class="lp">NARANJOS</h1>
+               <ul class="cm"><li>ESTADIO</li>
+                   <li>HOSPITAL</li>
+                   <li>BOLIVAR</li>
+                   <li>TELECOM</li>
+                   <li>CALLE 13</li>
+                   <li>CHUNE</li>
+               </ul><button class="num">8</button></div>
 
-           <div class="r8">
-                <h1 class="at">AUTOPISTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
-               <ul class="ten"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
-                   <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
-               </ul><button class="num">10</button></div>
-           <div class="r9">
-                <h1 class="at">CENTRO</h1>
-               <h1 class="lp">CALIBIO</h1>
-               <ul class="elv"><li>ESTADIO</li>
-                   <li>LACTEOS</li>
-                   <li>TERRAPLAZA</li>
-                   <li>RIO BLANCO</li>
-                   <li>CABUYERA</li>
-               </ul><button class="num">11</button></div>
          </div>
       </div>
       </div>
@@ -420,27 +409,37 @@
       <div id="formularioEmergente7">
          <div class="ruta-box">
             <button class="ruta3" id="mostrarFormulario8">Rutas</button>
-            <div class="r1">
-               <h1 class="at">AUTOPISTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
-               <ul class="cm"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
-                   <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
+            <div class="r1l">
+               <h1 class="at">CAMPANARIO</h1>
+               <h1 class="lp">ORTIGAL</h1>
+               <ul class="cm"><li>TRANSITO</li>
+                   <li>TELECOM</li>
+                   <li>FLORESTA</li>
+                   <li>COMUNEROS</li>
+                   <li>H. VIAS</li>
+                   <li>LAS PALMAS</li>
                </ul><button class="num">1</button></div>
-           <div class="r2">
+           <div class="r2l">
                <h1 class="cam">CAMPANARIO</h1>
-               <h1 class="lp">VARIANTE</h1>
-               <ul class="cm"><li>ESTADIO</li>
-                   <li>TELECOM</li>
-                   <li>PLAZA TOROS</li>
-                   <li>PAJONAL</li>
-                   <li>MIRADOR</li>
+               <h1 class="lp">JULUMITO</h1>
+               <ul class="cm"><li>EXITO</li>
+                   <li>TERMINAL</li>
+                   <li>CRA 9</li>
+                   <li>CALLE 4</li>
+                   <li>ESMERALDA</li>
+                   <li>LOMAS G.</li>
                </ul><button class="num">2</button></div>
-           <div class="r3"> 
+           <div class="r3l"> 
                <h1 class="at">AUTOPISTA</h1>
+               <h1 class="lp">L. PALMAS</h1>
+               <ul class="cm"><li>CAMPANARIO</li>
+                   <li>EXITO</li>
+                   <li>TERMINAL</li>
+                   <li>ESMERALDA</li>
+                   <li>MIRADOR</li>
+               </ul><button class="num">7</button></div>
+           <div class="r4l"> 
+               <h1 class="at">FALTA</h1>
                <h1 class="lp">L. PALMAS</h1>
                <ul class="cm"><li>CAMPANARIO</li>
                    <li>EXITO</li>
@@ -448,67 +447,17 @@
                    <li>ESMERALDA</li>
                    <li>TOMAS C.</li>
                    <li>MIRADOR</li>
-               </ul><button class="num">4</button></div>
-           <div class="r4"> 
-               <h1 class="at">AUTOPISTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
-               <ul class="cm"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
-                   <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
-               </ul><button class="num">5</button></div>
-           <div class="r5"> 
-               <h1 class="at">AUTOPISTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
-               <ul class="cm"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
-                   <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
-               </ul><button class="num">6</button></div>
-           <div class="r6">
-                <h1 class="at">LACTEOS</h1>
-               <h1 class="lp">CHUNE</h1>
-               <ul class="cm"><li>ESTADIO</li>
-                   <li>HOSPITAL</li>
-                   <li>BOLIVAR</li>
-                   <li>TELECOM</li>
-                   <li>CALLE 13</li>
-                   <li>SAUCES</li>
                </ul><button class="num">8</button></div>
-           <div class="r7">
-                            <h1 class="at">LACTEOS</h1>
-               <h1 class="lp">NARANJOS</h1>
-               <ul class="cm"><li>ESTADIO</li>
-                   <li>HOSPITAL</li>
-                   <li>BOLIVAR</li>
+           <div class="r5l"> 
+           <h1 class="at">LA PAZ</h1>
+               <h1 class="lp">LA MARIA</h1>
+               <ul class="cm"><li>LACTEOS</li>
+                   <li>B. BOLIVAR</li>
                    <li>TELECOM</li>
                    <li>CALLE 13</li>
-                   <li>CHUNE</li>
-               </ul><button class="num">9</button></div>
-
-           <div class="r8">
-                <h1 class="at">AUTOPISTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
-               <ul class="ten"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
+                   <li>JUZGADOS</li>
                    <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
-               </ul><button class="num">10</button></div>
-           <div class="r9">
-                <h1 class="at">CENTRO</h1>
-               <h1 class="lp">CALIBIO</h1>
-               <ul class="elv"><li>ESTADIO</li>
-                   <li>LACTEOS</li>
-                   <li>TERRAPLAZA</li>
-                   <li>RIO BLANCO</li>
-                   <li>CABUYERA</li>
-               </ul><button class="num">11</button></div>
+               </ul><button class="num">9</button></div>
          </div>
       </div>
       </div>
@@ -535,95 +484,47 @@
       <div id="formularioEmergente9">
          <div class="ruta-box">
             <button class="ruta4" id="mostrarFormulario10">Rutas</button>
-            <div class="r1">
-               <h1 class="at">AUTOPISTA1</h1>
-               <h1 class="lp">L. PALMAS</h1>
-               <ul class="cm"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
-                   <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
-               </ul><button class="num">1</button></div>
-           <div class="r2">
-               <h1 class="cam">CAMPANARIO</h1>
-               <h1 class="lp">VARIANTE</h1>
-               <ul class="cm"><li>ESTADIO</li>
-                   <li>TELECOM</li>
-                   <li>PLAZA TOROS</li>
-                   <li>PAJONAL</li>
-                   <li>MIRADOR</li>
-               </ul><button class="num">2</button></div>
-           <div class="r3"> 
-               <h1 class="at">AUTOPISTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
-               <ul class="cm"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
-                   <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
-               </ul><button class="num">4</button></div>
-           <div class="r4"> 
-               <h1 class="at">AUTOPISTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
-               <ul class="cm"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
-                   <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
-               </ul><button class="num">5</button></div>
-           <div class="r5"> 
-               <h1 class="at">AUTOPISTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
-               <ul class="cm"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
-                   <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
-               </ul><button class="num">6</button></div>
-           <div class="r6">
-                <h1 class="at">LACTEOS</h1>
-               <h1 class="lp">CHUNE</h1>
-               <ul class="cm"><li>ESTADIO</li>
-                   <li>HOSPITAL</li>
-                   <li>BOLIVAR</li>
-                   <li>TELECOM</li>
-                   <li>CALLE 13</li>
-                   <li>SAUCES</li>
-               </ul><button class="num">8</button></div>
-           <div class="r7">
-                            <h1 class="at">LACTEOS</h1>
-               <h1 class="lp">NARANJOS</h1>
-               <ul class="cm"><li>ESTADIO</li>
-                   <li>HOSPITAL</li>
-                   <li>BOLIVAR</li>
-                   <li>TELECOM</li>
-                   <li>CALLE 13</li>
+            <div class="r1l">
+               <h1 class="at">PISOJE</h1>
+               <h1 class="lp">CAJETE</h1>
+               <ul class="cm"><li>LACTEOS</li>
+                   <li>ESTADIO</li>
+                   <li>LOTERIA</li>
+                   <li>CENTRO</li>
                    <li>CHUNE</li>
-               </ul><button class="num">9</button></div>
-
-           <div class="r8">
-                <h1 class="at">AUTOPISTA</h1>
+                   <li>LAS PALMAS</li>
+               </ul><button class="num">1</button></div>
+           <div class="r2l">
+               <h1 class="cam">SENA</h1>
+               <h1 class="lp">ORTIGAL</h1>
+               <ul class="cm"><li>CAMPANARIO</li>
+                   <li>TERMINAL</li>
+                   <li>ESMERALDA</li>
+                   <li>CHUNE</li>
+                   <li>LA MARIA</li>
+                   <li>NARANJOS</li>
+               </ul><button class="num">2</button></div>
+           <div class="r3l"> 
+               <h1 class="at">PENAL</h1>
                <h1 class="lp">L. PALMAS</h1>
-               <ul class="ten"><li>CAMPANARIO</li>
+               <ul class="cm"><li>LA PAZ</li>
+                   <li>LACTEOS</li>
+                   <li>LOTERIA</li>
+                   <li>CENTRO</li>
+                   <li>CHUNE</li>
+                   <li>TOMAS C.</li>
+               </ul><button class="num">4</button></div>
+           <div class="r4l"> 
+           <h1 class="at">PENAL</h1>
+               <h1 class="lp">CAJETE</h1>
+               <ul class="cm"><li>LA PAZ</li>
+                   <li>CAMPANARIO</li>
                    <li>EXITO</li>
                    <li>TERMINAL</li>
                    <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
-               </ul><button class="num">10</button></div>
-           <div class="r9">
-                <h1 class="at">CENTRO</h1>
-               <h1 class="lp">CALIBIO</h1>
-               <ul class="elv"><li>ESTADIO</li>
-                   <li>LACTEOS</li>
-                   <li>TERRAPLAZA</li>
-                   <li>RIO BLANCO</li>
-                   <li>CABUYERA</li>
-               </ul><button class="num">11</button></div>
+                   <li>LA MARIA</li>
+               </ul><button class="num">6</button></div>
+           
          </div>
       </div>
       </div>

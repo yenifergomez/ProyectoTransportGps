@@ -785,94 +785,169 @@ margin-top:2%;
    background: rgba(50, 138, 122, 0.353);
    transition-duration: 0.4s;
 }
-      .r1{
-        border-radius: 6px;
-        width: 165px;
-        height: 200px;
-        backdrop-filter: blur(3px);
-       background:rgba(226, 226, 226, 0.666);
-       padding:6px 15px;
-       cursor: default;
-       margin-left:-19%;
-      }
-      .r2{
-        border-radius: 6px;
-        width: 165px;
-        height: 200px;
-        backdrop-filter: blur(3px);
-        background:rgba(226, 226, 226, 0.666);
-        padding:6px 15px;
-        cursor: default;
-        margin-left:-48%;
-      }
-      .r3{
-        border-radius: 6px;
-        width: 165px;
-        height: 200px;
-        backdrop-filter: blur(3px);
-        background:rgba(226, 226, 226, 0.666);
-        padding:6px 15px;
-        cursor: default;
-        margin-left:-49%;
-      }
-      .r4{
-        border-radius: 6px;
-        width: 165px;
-        height: 200px;
-        backdrop-filter: blur(3px);
-        background:rgba(226, 226, 226, 0.666);
-        padding:6px 15px;
-        cursor: default;
-      }
-      .r5{
-       border-radius: 6px;
-       width: 165px;
-       height: 200px;
-       backdrop-filter: blur(3px);
-       background:rgba(226, 226, 226, 0.666);
-       padding:6px 15px;
-       cursor: default;
-       margin-left:-19%;
-      }
-      .r6{
-       border-radius: 6px;
-       width: 165px;
-       height: 200px;
-       backdrop-filter: blur(3px);
-       background:rgba(226, 226, 226, 0.666);
-       padding:6px 15px;
-       cursor: default;
-       margin-left:-48%;
-      }
-      .r7{
-       border-radius: 6px;
-       width: 165px;
-       height: 200px;
-       backdrop-filter: blur(3px);
-       background:rgba(226, 226, 226, 0.666);
-       padding:6px 15px;
-       cursor: default;
-       margin-left:-49%;
-      }
-      .r8{
-       border-radius: 6px;
-       width: 205px;
-       height: 200px;
-       backdrop-filter: blur(3px);
-       background:rgba(226, 226, 226, 0.666);
-       padding:6px 15px;
-       cursor: default;
-      }
-      .r9{
-       border-radius: 6px;
-       width: 205px;
-       height: 200px;
-       backdrop-filter: blur(3px);
-       background:rgba(226, 226, 226, 0.666);
-       padding:6px 15px;
-       cursor: default;
-      }
- 
+  .r1{
+    border-radius: 6px;
+    width: 165px;
+    height: 200px;
+    backdrop-filter: blur(3px);
+   background:rgba(226, 226, 226, 0.666);
+   padding:6px 15px;
+   cursor: default;
+   margin-left:-19%;
+  }
+  .r2{
+    border-radius: 6px;
+    width: 165px;
+    height: 200px;
+    backdrop-filter: blur(3px);
+    background:rgba(226, 226, 226, 0.666);
+    padding:6px 15px;
+    cursor: default;
+    margin-left:-48%;
+  }
+  .r3{
+    border-radius: 6px;
+    width: 165px;
+    height: 200px;
+    backdrop-filter: blur(3px);
+    background:rgba(226, 226, 226, 0.666);
+    padding:6px 15px;
+    cursor: default;
+    margin-left:-49%;
+  }
+  .r4{
+    border-radius: 6px;
+    width: 165px;
+    height: 200px;
+    backdrop-filter: blur(3px);
+    background:rgba(226, 226, 226, 0.666);
+    padding:6px 15px;
+    cursor: default;
+  }
+  .r5{
+   border-radius: 6px;
+   width: 165px;
+   height: 200px;
+   backdrop-filter: blur(3px);
+   background:rgba(226, 226, 226, 0.666);
+   padding:6px 15px;
+   cursor: default;
+   margin-left:-19%;
+  }
+  .r6{
+   border-radius: 6px;
+   width: 165px;
+   height: 200px;
+   backdrop-filter: blur(3px);
+   background:rgba(226, 226, 226, 0.666);
+   padding:6px 15px;
+   cursor: default;
+   margin-left:-48%;
+  }
+  .r7{
+   border-radius: 6px;
+   width: 165px;
+   height: 200px;
+   backdrop-filter: blur(3px);
+   background:rgba(226, 226, 226, 0.666);
+   padding:6px 15px;
+   cursor: default;
+   margin-left:-49%;
+  }
+  .r8{
+   border-radius: 6px;
+   width: 205px;
+   height: 200px;
+   backdrop-filter: blur(3px);
+   background:rgba(226, 226, 226, 0.666);
+   padding:6px 15px;
+   cursor: default;
+  }
+  .r9{
+   border-radius: 6px;
+   width: 205px;
+   height: 200px;
+   backdrop-filter: blur(3px);
+   background:rgba(226, 226, 226, 0.666);
+   padding:6px 15px;
+   cursor: default;
+  }
+ /* rutas libertad */
+ .r1l{
+   border-radius: 6px;
+   width: 165px;
+   height: 200px;
+   backdrop-filter: blur(3px);
+  background:rgba(226, 226, 226, 0.666);
+  padding:6px 15px;
+  cursor: default;
+ }
+ .r1l > .at {
+font-size:20px;
+ }
+ .r2l{
+   border-radius: 6px;
+   width: 165px;
+   height: 200px;
+   backdrop-filter: blur(3px);
+   background:rgba(226, 226, 226, 0.666);
+   padding:6px 15px;
+   cursor: default;
+ }
+ .r3l{
+   border-radius: 6px;
+   width: 165px;
+   height: 200px;
+   backdrop-filter: blur(3px);
+   background:rgba(226, 226, 226, 0.666);
+   padding:6px 15px;
+   cursor: default;
+ }
+ .r4l{
+   border-radius: 6px;
+   width: 165px;
+   height: 200px;
+   backdrop-filter: blur(3px);
+   background:rgba(226, 226, 226, 0.666);
+   padding:6px 15px;
+   cursor: default;
+ }
+ .r5l{
+  border-radius: 6px;
+  width: 165px;
+  height: 200px;
+  backdrop-filter: blur(3px);
+  background:rgba(226, 226, 226, 0.666);
+  padding:6px 15px;
+  cursor: default;
+ }
+ .r6l{
+  border-radius: 6px;
+  width: 165px;
+  height: 200px;
+  backdrop-filter: blur(3px);
+  background:rgba(226, 226, 226, 0.666);
+  padding:6px 15px;
+  cursor: default;
+ }
+ .r7l{
+  border-radius: 6px;
+  width: 165px;
+  height: 200px;
+  backdrop-filter: blur(3px);
+  background:rgba(226, 226, 226, 0.666);
+  padding:6px 15px;
+  cursor: default;
+ }
+ .r8l{
+   border-radius: 6px;
+   width: 165px;
+   height: 200px;
+   backdrop-filter: blur(3px);
+   background:rgba(226, 226, 226, 0.666);
+   padding:6px 15px;
+   cursor: default;
+  }
     
     .btn-left2,
     .btn-right2 {
