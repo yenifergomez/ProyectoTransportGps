@@ -285,14 +285,14 @@
    <div id="ventanaEmergente4" >     
     <div id="formularioEmergente4">  
       <div class="mapa-box">
+  <img class="mp" src="img/r1pub.png" >
+  <img class="mp" src="img/r2pub.png" >
+  <img class="mp" src="img/r4pub.png" >
+  <img class="mp" src="img/r5pub.png" >
+  <img class="mp" src="img/r6pub.png" >
   <img class="mp" src="img/r1.png" >
   <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
+  <img class="mp" src="img/r10pub.png" >
   <img class="mp" src="img/r1.png" >
       </div>
     </div>
@@ -432,12 +432,13 @@
                </ul><button class="num">2</button></div>
            <div class="r3l"> 
                <h1 class="at">AUTOPISTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
+               <h1 class="lp">JULUMITO</h1>
                <ul class="cm"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
+                   <li>HOSPITAL</li>
+                   <li>CALLE 13</li>
                    <li>ESMERALDA</li>
-                   <li>MIRADOR</li>
+                   <li>CHUNE</li>
+                   <li>LOMAS G.</li>
                </ul><button class="num">7</button></div>
            <div class="r4l"> 
                <h1 class="at">FALTA</h1>
@@ -450,14 +451,12 @@
                    <li>MIRADOR</li>
                </ul><button class="num">8</button></div>
            <div class="r5l"> 
-           <h1 class="at">LA PAZ</h1>
-               <h1 class="lp">LA MARIA</h1>
-               <ul class="cm"><li>LACTEOS</li>
-                   <li>B. BOLIVAR</li>
+           <h1 class="at">R. BLANCO</h1>
+               <h1 class="lp">JULUMITO</h1>
+               <ul class="cm"><li>TERRAPLAZA</li>
+                   <li>LACTEOS</li>
+                   <li>ESTADIO</li>
                    <li>TELECOM</li>
-                   <li>CALLE 13</li>
-                   <li>JUZGADOS</li>
-                   <li>ESMERALDA</li>
                </ul><button class="num">9</button></div>
          </div>
       </div>
@@ -467,15 +466,12 @@
    <div id="ventanaEmergente8" >     
     <div id="formularioEmergente8">  
       <div class="mapa-box">
+  <img class="mp" src="img/r1m.png" >
+  <img class="mp" src="img/r2m.png" >
   <img class="mp" src="img/r1.png" >
   <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
+  <img class="mp" src="img/r9m.png" >
+
       </div>
     </div>
      </div>
@@ -534,15 +530,10 @@
    <div id="ventanaEmergente10" >     
     <div id="formularioEmergente10">  
       <div class="mapa-box">
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
+  <img class="mp" src="img/r1t.png" >
+  <img class="mp" src="img/r2t.png" >
+  <img class="mp" src="img/r4t.png" >
+  <img class="mp" src="img/r6t.png" >
       </div>
     </div>
      </div>
