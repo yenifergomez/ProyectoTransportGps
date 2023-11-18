@@ -11,6 +11,8 @@ use App\Http\Controllers\InicioController;
 use App\Http\Controllers\ForoController;
 use App\Http\Controllers\MperfilController;
 use App\Http\Controllers\PerfilController;
+use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
 
 
@@ -57,3 +59,9 @@ Route::get('/iniciar', [InicioController::class, 'iniciarContenido']);
 Route::get('/foro', [ForoController::class, 'foroContenido']);
 
 Route::get('/perfil', [MperfilController::class, 'perfilEdit']);
+
+
+//RUTAS LOGOUT
+Route::get('/logout', 'App\Http\Controllers\Auth\AuthenticatedSessionController@logout')
+    ->name('logout.get');
+

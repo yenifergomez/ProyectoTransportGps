@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('css/MiPerfil.css') }}" />
-    <title>Mi perfil</title>
+    <title>Cerrar Sesión</title>
 </head>
 <body>
+    <h1>Mi Perfil</h1>
 
-
-
-
+    <a href="{{ route('logout.get') }}">Cerrar Sesión</a>
 </body>
 </html>

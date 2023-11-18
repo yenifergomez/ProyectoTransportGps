@@ -39,7 +39,8 @@
      <a class="barri" href="mapa.html"> Mapa </a>
      <a class="barri" href="calificar.html">Calificar</a>
      <button id="mostrarFormulario" class="ayudita">Ayuda</button>
-     <button id="mostrarFormulario2" class="ayudita">Perfil</button>
+     <a href="{{ url('perfil') }}" class="ayudita">Mi Perfil</a>
+
 
 </nav>
 
