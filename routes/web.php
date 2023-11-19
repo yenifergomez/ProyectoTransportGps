@@ -66,7 +66,7 @@ Route::get('/perfil', [MperfilController::class, 'perfilEdit']);
 Route::get('/logout', 'App\Http\Controllers\Auth\AuthenticatedSessionController@logout')
     ->name('logout.get');
 
-//RUTAS MOSTRAR USUARIOS
+//RUTAS MOSTRAR, EDITAR, ELIMINAR Users...ADMINISTRACION
 
  Route::get('/perfil', [UserController::class, 'index'])->name('admin.perfil'); 
 
@@ -74,3 +74,4 @@ Route::get('/logout', 'App\Http\Controllers\Auth\AuthenticatedSessionController@
 
  Route::put('/perfil/{user}', [UserController::class, 'update'])->name('admin.perfil.update'); 
 
+ Route::delete('/admin/perfil/{user}', [UserController::class, 'destroy'])->name('admin.perfil.delete');
