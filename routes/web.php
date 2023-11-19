@@ -13,6 +13,7 @@ use App\Http\Controllers\MperfilController;
 use App\Http\Controllers\PerfilController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\UserController;
 
 
 
@@ -64,4 +65,12 @@ Route::get('/perfil', [MperfilController::class, 'perfilEdit']);
 //RUTAS LOGOUT
 Route::get('/logout', 'App\Http\Controllers\Auth\AuthenticatedSessionController@logout')
     ->name('logout.get');
+
+//RUTAS MOSTRAR USUARIOS
+
+ Route::get('/perfil', [UserController::class, 'index'])->name('admin.perfil'); 
+
+ Route::get('/perfil/{user}/edit', [UserController::class, 'edit'])->name('admin.perfil.edit'); 
+
+ Route::put('/perfil/{user}', [UserController::class, 'update'])->name('admin.perfil.update'); 
 
