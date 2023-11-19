@@ -442,14 +442,14 @@
                    <li>LOMAS G.</li>
                </ul><button class="num">7</button></div>
            <div class="r4l"> 
-               <h1 class="at">FALTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
-               <ul class="cm"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
+               <h1 class="at">LACTEOS</h1>
+               <h1 class="lp">FIGUEROA</h1>
+               <ul class="cm"><li>ESTADIO</li>
+                   <li>LOTERIA</li>
+                   <li>CENTRO</li>
                    <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
+                   <li>CHUNE</li>
+                   <li>V. TORRES</li>
                </ul><button class="num">8</button></div>
            <div class="r5l"> 
            <h1 class="at">R. BLANCO</h1>
@@ -469,8 +469,8 @@
       <div class="mapa-box">
   <img class="mp" src="img/r1m.png" >
   <img class="mp" src="img/r2m.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
+  <img class="mp" src="img/r7m.png" >
+  <img class="mp" src="img/r8m.png" >
   <img class="mp" src="img/r9m.png" >
 
       </div>
