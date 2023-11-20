@@ -363,27 +363,7 @@
                    <li>TELECOM</li>
                    <li>CALLE 13</li>
                    <li>SAUCES</li>
-               </ul><button class="num">5</button></div>
-           <div class="r7l">
-         <h1 class="at">FALTA</h1>
-               <h1 class="lp">NARANJOS</h1>
-               <ul class="cm"><li>ESTADIO</li>
-                   <li>HOSPITAL</li>
-                   <li>BOLIVAR</li>
-                   <li>TELECOM</li>
-                   <li>CALLE 13</li>
-                   <li>CHUNE</li>
-               </ul><button class="num">7</button></div>
-               <div class="r8l">
-                <h1 class="at">FALTA</h1>
-               <h1 class="lp">NARANJOS</h1>
-               <ul class="cm"><li>ESTADIO</li>
-                   <li>HOSPITAL</li>
-                   <li>BOLIVAR</li>
-                   <li>TELECOM</li>
-                   <li>CALLE 13</li>
-                   <li>CHUNE</li>
-               </ul><button class="num">8</button></div>
+               </ul><button class="num">6</button></div>
 
          </div>
       </div>
@@ -393,15 +373,13 @@
    <div id="ventanaEmergente6" >     
     <div id="formularioEmergente6">  
       <div class="mapa-box">
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
+  <img class="mp" src="img/r1l.png" >
+  <img class="mp" src="img/r1mrb.png" >
+  <img class="mp" src="img/r2l.png" >
+  <img class="mp" src="img/r3l.png" >
+  <img class="mp" src="img/r4l.png" >
+  <img class="mp" src="img/r6l.png" >
+
       </div>
     </div>
      </div>

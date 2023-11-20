@@ -930,24 +930,7 @@ font-size:20px;
   padding:6px 15px;
   cursor: default;
  }
- .r7l{
-  border-radius: 6px;
-  width: 165px;
-  height: 200px;
-  backdrop-filter: blur(3px);
-  background:rgba(226, 226, 226, 0.666);
-  padding:6px 15px;
-  cursor: default;
- }
- .r8l{
-   border-radius: 6px;
-   width: 165px;
-   height: 200px;
-   backdrop-filter: blur(3px);
-   background:rgba(226, 226, 226, 0.666);
-   padding:6px 15px;
-   cursor: default;
-  }
+
     
     .btn-left2,
     .btn-right2 {
