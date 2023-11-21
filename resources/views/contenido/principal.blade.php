@@ -36,7 +36,6 @@
      <a class="barri" href="#empresas">Empresas de transporte</a>
      <a class="barri" href="#comentarios">Expectativas</a>
      <a class="barri" href="#desarrolladores">Creadores</a>
-     <a class="barri" href="mapa.html"> Mapa </a>
      <a href="{{ url('foro') }}" class="ayudita">Foro</a>
      <a class="barri" href="calificar.html">Calificar</a>
      <button id="mostrarFormulario" class="ayudita">Ayuda</button>
@@ -241,14 +240,13 @@
                    <li>LA MARIA</li>
                </ul><button class="num">6</button></div>
            <div class="r6">
-                <h1 class="at">LACTEOS</h1>
-               <h1 class="lp">CHUNE</h1>
-               <ul class="cm"><li>ESTADIO</li>
-                   <li>HOSPITAL</li>
-                   <li>BOLIVAR</li>
+                <h1 class="at">CAMPANARIO</h1>
+               <h1 class="lp">DOS BRAZOS</h1>
+               <ul class="cm"><li>TERMINAL</li>
+                   <li>EXITO</li>
+                   <li>LOTERIA</li>
                    <li>TELECOM</li>
                    <li>CALLE 13</li>
-                   <li>SAUCES</li>
                </ul><button class="num">8</button></div>
            <div class="r7">
             <h1 class="at">R. BLANCO</h1>
@@ -271,12 +269,14 @@
                    <li>LAS GARZAS</li>
                </ul><button class="num">10</button></div>
            <div class="r9">
-                <h1 class="at">R. BLANCO</h1>
-               <h1 class="lp">CENTRO</h1>
-               <ul class="elv"><li>SENA</li>
-                   <li>CAMPANARIO</li>
-                   <li>ESTADIO</li>
+                <h1 class="at">SENA</h1>
+               <h1 class="lp">L. VIRGEN</h1>
+               <ul class="elv"><li>LACTEOS</li>
                    <li>B. BOLIVAR</li>
+                   <li>LOTERIA</li>
+                   <li>CRA. 9</li>
+                   <li>ESMERALDA</li>
+                   <li>CARVAJAL</li>
                </ul><button class="num">11</button></div>
          </div>
       </div>
@@ -291,10 +291,10 @@
   <img class="mp" src="img/r4pub.png" >
   <img class="mp" src="img/r5pub.png" >
   <img class="mp" src="img/r6pub.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
+  <img class="mp" src="img/r8pub.png" >
+  <img class="mp" src="img/r9pub.png" >
   <img class="mp" src="img/r10pub.png" >
-  <img class="mp" src="img/r1.png" >
+  <img class="mp" src="img/r11pub.png" >
       </div>
     </div>
      </div>
@@ -335,14 +335,13 @@
                    <li>MIRADOR</li>
                </ul><button class="num">2</button></div>
            <div class="r4l"> 
-               <h1 class="at">FALTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
-               <ul class="cm"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
+               <h1 class="at">LACTEOS</h1>
+               <h1 class="lp">LA MARIA</h1>
+               <ul class="cm"><li>B. BOLIVAR</li>
+                   <li>TELECOM</li>
+                   <li>CALLE 13</li>
                    <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
+                   <li>CHUNE</li>
                </ul><button class="num">3</button></div>
            <div class="r5l"> 
            <h1 class="at">LA PAZ</h1>
@@ -363,8 +362,17 @@
                    <li>TELECOM</li>
                    <li>CALLE 13</li>
                    <li>SAUCES</li>
-               </ul><button class="num">6</button></div>
+               </ul><button class="num">5</button></div>
 
+               <div class="r6l">
+                <h1 class="at">CAMPANARIO</h1>
+               <h1 class="lp">ORTIGAL</h1>
+               <ul class="cm"><li>EXITO</li>
+                   <li>TERMINAL</li>
+                   <li>ESMERALDA</li>
+                   <li>CHUNE</li>
+                   <li>NARANJOS</li>
+               </ul><button class="num">7</button></div>
          </div>
       </div>
       </div>
@@ -378,7 +386,8 @@
   <img class="mp" src="img/r2l.png" >
   <img class="mp" src="img/r3l.png" >
   <img class="mp" src="img/r4l.png" >
-  <img class="mp" src="img/r6l.png" >
+  <img class="mp" src="img/r5l.png" >
+  <img class="mp" src="img/r7l.png" >
 
       </div>
     </div>

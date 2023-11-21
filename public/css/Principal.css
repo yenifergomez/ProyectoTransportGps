@@ -844,6 +844,12 @@ margin-top:2%;
    cursor: default;
    margin-left:-48%;
   }
+  .r6 > .at {
+   font-size:21px;
+    }
+.r6 > .lp {
+      font-size:21px;
+       }
   .r7{
    border-radius: 6px;
    width: 165px;
