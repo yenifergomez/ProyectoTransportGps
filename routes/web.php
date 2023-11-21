@@ -14,7 +14,8 @@ use App\Http\Controllers\PerfilController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\UserController;
-
+use App\Http\Controllers\CommentController;
+use App\Http\Controllers\PostController;
 
 
 /*
@@ -42,6 +43,9 @@ Route::get('/login', function(){
     return view('login.index');
 });
 
+//RUTAS AUTENTICACION
+
+
 
 //RUTAS DE LOGIN
 Route::get('/login', [LoginController::class, 'show']);
@@ -56,8 +60,6 @@ Route::post('/register', [RegisterController::class, 'register']);
 Route::get('/contenido', [ContenidoController::class, 'indexContenido']);
 
 Route::get('/iniciar', [InicioController::class, 'iniciarContenido']);
-
-Route::get('/foro', [ForoController::class, 'foroContenido']);
 
 Route::get('/perfil', [MperfilController::class, 'perfilEdit']);
 
@@ -75,3 +77,15 @@ Route::get('/logout', 'App\Http\Controllers\Auth\AuthenticatedSessionController@
  Route::put('/perfil/{user}', [UserController::class, 'update'])->name('admin.perfil.update'); 
 
  Route::delete('/admin/perfil/{user}', [UserController::class, 'destroy'])->name('admin.perfil.delete');
+
+ //RUTAS COMENTARIOS -> FORO
+
+ Route::get('/foro', [ForoController::class, 'foroContenido']);
+
+ Route::post('/posts/{post}/comments', [CommentController::class, 'store'])->name('comments.store');
+
+ Route::get('/posts/{postId}', [CommentController::class, 'show'])->name('posts.show');
+
+ Route::delete('/comments/{comment}', [CommentController::class, 'destroy'])->name('comments.destroy');
+
+/////////////

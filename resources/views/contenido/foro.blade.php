@@ -7,7 +7,7 @@
     <title>Foro</title>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <h1>Foro de últimas novedades</h1>
     </header>
 
@@ -64,7 +64,60 @@
 
             <button type="submit">Publicar</button>
         </form>
-    </footer>
+    </footer> -->
+
+
+
+
+
+<h1>FORO</h1>
+
+
+<!-- Formulario para agregar un nuevo comentario -->
+@if(Auth::check())
+    @if(isset($post))
+        <form method="POST" action="{{ route('comments.store', $post->id) }}">
+            @csrf
+            <textarea name="body" rows="3" cols="50" placeholder="Agregar un comentario"></textarea><br>
+            <button type="submit">Publicar comentario</button>
+        </form>
+    @else
+        <p>No se ha encontrado la publicación.</p>
+    @endif
+@else
+    <p>Por favor <a href="{{ route('login') }}">inicie sesión</a> para agregar comentarios.</p>
+@endif
+
+
+
+
+<!-- Mostrar los comentarios existentes -->
+@if(isset($post) && $post->comments->count() > 0)
+    <h3>Comments:</h3>
+    <ul>
+        @foreach($post->comments as $comment)
+            <li>
+                {{ $comment->body }}
+                @if(Auth::check() && Auth::id() === $comment->user_id)
+                    <form method="POST" action="{{ route('comments.destroy', $comment->id) }}">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit">Delete</button>
+                    </form>
+                @endif
+            </li>
+        @endforeach
+    </ul>
+    @endif
+
+
+
+
+
+
+
+
+
 </body>
 </html>
 

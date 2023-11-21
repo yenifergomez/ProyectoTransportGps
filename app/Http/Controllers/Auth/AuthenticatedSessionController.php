@@ -18,8 +18,8 @@ class AuthenticatedSessionController  extends Controller
      */
     public function logout()
     {
-        Auth::logout(); // Cierra la sesión del usuario
-        return redirect('/iniciar'); // Redirige a la página principal u otra ruta deseada después de cerrar sesión
+        Auth::logout(); 
+        return redirect('/iniciar'); 
     }
     
 }
