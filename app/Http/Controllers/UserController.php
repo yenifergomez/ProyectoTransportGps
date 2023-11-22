@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
+use Spatie\Permission\Models\Role;
 
 
 
@@ -18,16 +19,25 @@ class UserController extends Controller
     public function edit($id)
     {
         $user = User::find($id);
-        return view('users.edit', ['user' => $user]);
+        $roles = Role::all(); // Obtener todos los roles
+        return view('users.edit', ['user' => $user, 'roles' => $roles]);
+
     }
 
     public function update(Request $request, $id)
     {
         $user = User::find($id);
         $user->usuario = $request->input('usuario');
-        // Actualizar otros campos si es necesario
         $user->save();
-        return redirect()->route('admin.perfil')->with('success', 'Usuario actualizado exitosamente');
+
+        $selectedRoles = $request->input('roles'); // Obtener los roles seleccionados desde el formulario
+
+        if ($selectedRoles) {
+            $user->syncRoles($selectedRoles); // Asignar roles al usuario
+        }
+
+        return redirect()->route('admin.perfil')->with('success', 'Usuario actualizado exitosamente');    
+
     }
 
     public function destroy($id)
@@ -39,5 +49,20 @@ class UserController extends Controller
         }
         return Redirect::route('admin.perfil')->with('error', 'No se pudo eliminar el usuario');
     }
+
+    public function showUsers()
+{
+    
+}
+
+
+public function assignRole(User $user) {
+
+    $users = User::all();
+    $roles = Role::all(); // Obtener todos los roles
+    return view('admin.perfil', ['users' => $users, 'roles' => $roles]);
+
+}
+
 
 }

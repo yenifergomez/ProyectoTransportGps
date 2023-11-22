@@ -78,14 +78,12 @@ Route::get('/logout', 'App\Http\Controllers\Auth\AuthenticatedSessionController@
 
  Route::delete('/admin/perfil/{user}', [UserController::class, 'destroy'])->name('admin.perfil.delete');
 
- //RUTAS COMENTARIOS -> FORO
+ 
 
- Route::get('/foro', [ForoController::class, 'foroContenido']);
+ Route::get('/users', [UserController::class, 'index']);
 
- Route::post('/posts/{post}/comments', [CommentController::class, 'store'])->name('comments.store');
+ Route::post('/assign-role/{user}', 'UserController@assignRole')->name('assign.role');
 
- Route::get('/posts/{postId}', [CommentController::class, 'show'])->name('posts.show');
+ Route::post('/assign-role/{id}', 'UserController@asignarRol')->name('assign.role');
 
- Route::delete('/comments/{comment}', [CommentController::class, 'destroy'])->name('comments.destroy');
-
-/////////////
+ Route::get('/users', [UserController::class, 'index'])->name('admin.perfil');
