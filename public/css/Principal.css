@@ -210,6 +210,7 @@
     cursor: pointer;
     color: white;
     margin-right: 10px;
+    text-decoration: none;
  }
  
  .ayudita:hover{

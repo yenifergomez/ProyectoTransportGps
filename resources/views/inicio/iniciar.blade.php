@@ -11,13 +11,12 @@
 <body>
     <header class="bg_animate">
 
-             
+              
 
                 <nav class="ctboton">
                     <h1 class="titulito">TRANSPORT&GPS</h1>
                     <a href="{{ url('login') }}" class="boton1">Iniciar sesión</a>
                     <a href="{{ url('register') }}"  class="boton2">Registrate</a>
-                    <a href="{{ url('') }}"  class="boton3">Administrar</a>
                 </nav> 
         
         

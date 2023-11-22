@@ -36,7 +36,7 @@
      <a class="barri" href="#empresas">Empresas de transporte</a>
      <a class="barri" href="#comentarios">Expectativas</a>
      <a class="barri" href="#desarrolladores">Creadores</a>
-     <a href="{{ url('foro') }}" class="ayudita">Foro</a>
+     <!-- <a href="{{ url('foro') }}" class="ayudita">Foro</a> -->
      <a class="barri" href="calificar.html">Calificar</a>
      <button id="mostrarFormulario" class="ayudita">Ayuda</button>
      <a href="{{ url('perfil') }}" class="ayudita">Administracion</a>
