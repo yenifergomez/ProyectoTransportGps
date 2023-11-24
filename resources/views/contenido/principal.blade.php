@@ -28,7 +28,7 @@
 
    <nav class="vlogo">
       <img src="img/logoac.png" class="logo">
-   </nav>
+   </nav> 
       
    <a class="tex" >AAAA</a>
      <a class="barri" href="#inicio" >Inicio</a>
