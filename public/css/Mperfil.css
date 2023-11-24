@@ -1,0 +1,10 @@
+img {
+    max-width: 200px; /* Cambia el tamaño máximo según tus preferencias */
+    max-height: 200px;
+    border-radius: 50%; /* Para hacer la imagen redondeada */
+    border: 2px solid #ccc; /* Añadir un borde a la imagen */
+    margin: 10px; /* Agregar márgenes alrededor de la imagen */
+
+
+
+}

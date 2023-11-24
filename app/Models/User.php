@@ -24,6 +24,8 @@ class User extends Authenticatable
         'usuario',
         'email',
         'password',
+        'profile_image',
+
     ];
 
     public $timestamps=false;
@@ -58,6 +60,8 @@ class User extends Authenticatable
 
     return view('perfil', compact('usuario'));
 }
+
+
 
 
 }

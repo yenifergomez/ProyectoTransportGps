@@ -95,11 +95,10 @@ Route::get('/logout', 'App\Http\Controllers\Auth\AuthenticatedSessionController@
  Route::get('/users', [UserController::class, 'index'])->name('admin.perfil');
 
 
-
-
-
  //RUTAS PERFIL DE USUARIO
 
  Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
 
  Route::put('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
+
+ Route::post('/perfil', 'App\Http\Controllers\updateProfile@updateProfile')->name('perfil.update');
