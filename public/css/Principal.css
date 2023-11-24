@@ -938,7 +938,9 @@ font-size:20px;
   cursor: default;
  }
 
-    
+ .r6l > .at {
+   font-size:20px;
+    }
     .btn-left2,
     .btn-right2 {
         display: flex;
