@@ -34,7 +34,7 @@
     <h2>Registro</h2>
     
     <input type="text" placeholder="Usuario" name="usuario">
-    <input type="email" placeholder="Correo" name="email">
+    <input type="email" placeholder="Correo | usuario@example.com" name="email">
     <input type="password" placeholder="Contraseña" name="password">
     <input type="password" placeholder="Confirmar Contraseña" name="password_confirmation"> <!-- Nuevo campo para confirmar contraseña -->
     <input class="btnayu" type="submit" value="Registrar">

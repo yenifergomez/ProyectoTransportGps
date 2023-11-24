@@ -17,8 +17,7 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\PerfilUserController;
 use App\Http\Controllers\PostController;
-
-
+use App\Http\Controllers\ProfileController;
 
 
 /*
@@ -64,7 +63,7 @@ Route::get('/contenido', [ContenidoController::class, 'indexContenido']);
 
 Route::get('/iniciar', [InicioController::class, 'iniciarContenido']);
 
-Route::get('/perfil', [MperfilController::class, 'perfilEdit']);
+Route::get('/perfil', [ProfileController::class, 'perfilUser']);
 
 
 //RUTAS LOGOUT
@@ -101,7 +100,6 @@ Route::get('/logout', 'App\Http\Controllers\Auth\AuthenticatedSessionController@
 
  //RUTAS PERFIL DE USUARIO
 
- Route::get('perfilUsuario', [PerfilUserController::class, 'perfilUser']);
- 
- Route::get('/perfil', 'PerfilUserController@mostrarPerfil')->name('perfil.mostrar');
+ Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
 
+ Route::put('/profile/update', [ProfileController::class, 'update'])->name('profile.update');

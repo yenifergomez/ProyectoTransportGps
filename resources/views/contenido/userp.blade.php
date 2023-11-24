@@ -7,44 +7,20 @@
 </head>
 <body>
 
+<form action="{{ route('profile.update') }}" method="POST">
+    @csrf
+    @method('PUT')
 
-@extends('contenido.userp')
+    <label for="usuario">Usuario:</label>
+    <input type="text" id="usuario" name="usuario" value="{{ Auth::user()->usuario }}">
 
-@section('content')
-    <h1>Perfil de Usuario</h1>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" value="{{ Auth::user()->email }}">
 
-    @if(isset($usuario))
-        <p>Usuario: {{ $usuario->usuario }}</p>
-        <p>Email: {{ $usuario->email }}</p>
-        <!-- Botón para editar -->
-        <a href="{{ route('perfil.editar', $usuario->id) }}">Editar Perfil</a>
-    @else
-        <p>No se ha encontrado el usuario.</p>
-    @endif
-@endsection
+    <button type="submit">Actualizar perfil</button>
+</form>
 
-@section('editar')
-    <h1>Editar Perfil</h1>
-
-
-
-    @if(isset($usuario))
-    <form action="{{ route('perfil.actualizar', $usuario->id) }}" method="POST">
-        @csrf
-        @method('PUT')
-
-        <label for="usuario">Usuario:</label>
-        <input type="text" name="usuario" value="{{ $usuario->usuario }}" required><br><br>
-
-        <label for="email">Email:</label>
-        <input type="email" name="email" value="{{ $usuario->email }}" required><br><br>
-
-        <button type="submit">Guardar Cambios</button>
-    </form>
-@else
-    <p>No se ha encontrado el usuario.</p>
-@endif
-
+<a href="{{ route('logout.get') }}">Cerrar sesión</a>
 
 
 </body>

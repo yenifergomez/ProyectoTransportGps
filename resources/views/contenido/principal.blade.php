@@ -38,7 +38,7 @@
      <!-- <a href="{{ url('foro') }}" class="ayudita">Foro</a> -->
      <a class="barri" href="calificar.html">Calificar</a>
      <button id="mostrarFormulario" class="ayudita">Ayuda</button>
-     <a href="{{ url('perfilUsuario') }}" class="ayudita">Perfil</a>
+     <a href="{{ url('perfil') }}" class="ayudita">Perfil</a>
      <a href="{{ url('admin') }}" class="ayudita">Administracion</a>
 
 
