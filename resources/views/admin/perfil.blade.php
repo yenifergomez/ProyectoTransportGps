@@ -41,7 +41,7 @@
     </td>
     <td>
         <p>{{ $user->name }}</p>
-        <form method="POST" action="{{ route('assign.role', $user->id) }}">
+        <form method="POST" action="{{ route('assign.role', $user) }}">
             @csrf
             <select name="role">
                 <option value="Administrador">Administrador</option>

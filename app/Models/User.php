@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Spatie\Permission\Traits\HasRoles;
+use App\Models\Usuario;
 
 class User extends Authenticatable
 {
@@ -51,6 +52,13 @@ class User extends Authenticatable
     public function setPasswordAttribute($value){
         $this->attributes['password']= bcrypt($value);
     }
+
+
+    public function mostrarPerfil($id) {
+    $usuario = User::find($id);
+
+    return view('perfil', compact('usuario'));
+}
 
 
 }

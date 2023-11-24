@@ -31,7 +31,6 @@
    </nav>
       
    <a class="tex" >AAAA</a>
-     <a class="barri" href="#inicio" >Inicio</a>
      <a class="barri" href="#info">Informacion </a>
      <a class="barri" href="#empresas">Empresas de transporte</a>
      <a class="barri" href="#comentarios">Expectativas</a>
@@ -39,7 +38,10 @@
      <!-- <a href="{{ url('foro') }}" class="ayudita">Foro</a> -->
      <a class="barri" href="calificar.html">Calificar</a>
      <button id="mostrarFormulario" class="ayudita">Ayuda</button>
-     <a href="{{ url('perfil') }}" class="ayudita">Administracion</a>
+     <a href="{{ url('perfilUsuario') }}" class="ayudita">Perfil</a>
+     <a href="{{ url('admin') }}" class="ayudita">Administracion</a>
+
+
 
 
 </nav>

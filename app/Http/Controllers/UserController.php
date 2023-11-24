@@ -40,15 +40,14 @@ class UserController extends Controller
 
     }
 
-    public function destroy($id)
-    {
-        $user = User::find($id);
-        if ($user) {
-            $user->delete();
-            return Redirect::route('admin.perfil')->with('success', 'Usuario eliminado exitosamente');
-        }
-        return Redirect::route('admin.perfil')->with('error', 'No se pudo eliminar el usuario');
+    public function destroy(User $user)
+{
+    if ($user) {
+        $user->delete();
+        return redirect()->route('admin.perfil')->with('success', 'Usuario eliminado exitosamente');
     }
+    return redirect()->route('admin.perfil')->with('error', 'No se pudo eliminar el usuario');
+}
 
     public function showUsers()
 {
@@ -56,12 +55,10 @@ class UserController extends Controller
 }
 
 
-public function assignRole(User $user) {
-
-    $users = User::all();
-    $roles = Role::all(); // Obtener todos los roles
-    return view('admin.perfil', ['users' => $users, 'roles' => $roles]);
-
+public function assignRole(User $user, Request $request)
+{
+    $roles = Role::all();
+    return view('admin.assign_role', ['user' => $user, 'roles' => $roles]);
 }
 
 
