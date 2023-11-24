@@ -17,9 +17,8 @@ class AuthController extends Controller
    * Register by user
    *
    * @param Request $request
-   * @return void
    */
-  public function register(Request $request): JsonResponse
+  public function register(Request $request)
   {
     $validator = Validator::make($request->all(), [
       'usuario'         => 'required|string|max:255',
@@ -30,8 +29,9 @@ class AuthController extends Controller
 
 
     if ($validator->fails()) {
-      return response()->json($validator->errors());
+      return response()->json(['errors' => $validator->errors()], 422);
     }
+
 
     $user =  User::create([
       'usuario'         => $request->usuario,
@@ -48,9 +48,8 @@ class AuthController extends Controller
    * Login by user
    *
    * @param Request $request
-   * @return void
    */
-  public function login(Request $request): JsonResponse
+  public function login(Request $request)
   {
     if (!Auth::attempt($request->only('email', 'password'))) {
       return response()
@@ -69,5 +68,4 @@ class AuthController extends Controller
         'user'         => $user,
       ]);
   }
-  
 }
