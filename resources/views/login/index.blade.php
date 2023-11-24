@@ -27,25 +27,21 @@
  
         <!--Formulario de Login y registro-->
         <div class="contenedor__login-register">
-            <!--Login-->
+            <!--REGISTRO-->
             
             <form action="/register" method="POST">
-                @csrf
-             <h2>Registro</h2>
-                
-             <input type="text" placeholder="Usuario" name="usuario">
-             <input type="email" placeholder="Correo" name="email" >
-             <input type="password" placeholder="Contraseña" name="password">
-             <input class="btnayu" type="submit" value="Registrar">
+    @csrf
+    <h2>Registro</h2>
+    
+    <input type="text" placeholder="Usuario" name="usuario">
+    <input type="email" placeholder="Correo" name="email">
+    <input type="password" placeholder="Contraseña" name="password">
+    <input type="password" placeholder="Confirmar Contraseña" name="password_confirmation"> <!-- Nuevo campo para confirmar contraseña -->
+    <input class="btnayu" type="submit" value="Registrar">
+    
+    <a href="{{ url('login') }}" class="boton1">Ya tengo una Cuenta</a>
+</form>
 
-             <a href="{{ url('login') }}" class="boton1">Ya tengo una Cuenta</a>
-
-
-
-
-                
-               
-            </form> 
 
 
         </div>
