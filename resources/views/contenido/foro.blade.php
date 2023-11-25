@@ -8,13 +8,15 @@
     <title>Foro</title>
 </head>
 <body>
-    <h1>FORO TRANSPORT GPS</h1>
-    <h3>Comparte que pasa en Popayan y sus Vias</h3>
+    <header>
+        <h1>Foro de últimas novedades</h1>
+    </header>
 
     <h1>Crear Comentario</h1>
-
+<section class="card-container">
+    
 @if ($errors->any())
-    <div>
+<div class="card">
         <ul>
             @foreach ($errors->all() as $error)
                 <li>{{ $error }}</li>
@@ -30,7 +32,6 @@
         <input type="text" id="name" name="name" required>
     </div>
 
-    <!-- Your form inputs -->
     <div>
         <label for="comment">Comentario:</label>
         <textarea id="comment" name="comment" required></textarea>
@@ -44,14 +45,13 @@
     <button type="submit">Enviar Comentario</button>
 </form>
 
-<!-- Displaying comments -->
 <div>
     <h2>Comentarios:</h2>
 
     @if(isset($comments) && count($comments) > 0)
         @foreach($comments as $comment)
-            <div>
-                <p><strong>{{ $comment->name }}</strong>: {{ $comment->comment }}</p>
+        <div class="card">
+                <p class="author"><strong>{{ $comment->name }}</strong>: {{ $comment->comment }}</p>
                 @if($comment->image)
                     <img src="{{ asset('images/' . $comment->image) }}" alt="Imagen del comentario">
                 @endif
@@ -62,6 +62,7 @@
     @endif
 </div>
 
+</section>
 
 </body>
 </html>
