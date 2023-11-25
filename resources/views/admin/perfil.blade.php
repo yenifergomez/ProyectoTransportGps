@@ -5,13 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transport&Gps</title>
     <link rel="stylesheet" href="{{ asset('css/admin.css') }}" />
+    <link rel="shortcut icon" href="img/logoac.png" type="image/x-icon">
+
 </head>
-<body>
+<body> 
 
     <nav class="ctboton">
-        <h1 class="titulo">ADMINISTRACIÓN TRANSPORT&GPS</h1>
-        <a href="{{ url('contenido') }}" class="boton1">VOLVER</a>
+        <h1 class="titulo">ADMINISTRACIÓN</h1>
+        <a href="{{ url('foro') }}" class="boton3">Foro</a>
+     <button id="mostrarFormulario" class="ayudita">Ayuda</button>
+     <a href="{{ url('perfil') }}" class="boton2">Perfil</a>
+        <a href="{{ url('contenido') }}" class="boton1">Volver</a>
     </nav>
+
+       <!-- Ventana ayuda-->
+<div id="ventanaEmergente">
+   <div id="formularioEmergente">
+       
+           <form class="formulario__aid">
+               <div class="ayuda-box">
+                   <h1 class="textoo1">¿En qué podemos ayudarte?</h1>
+                   <br>
+                   <input type="text" class="cajita" placeholder="¿Cuál es tu dificultad?">
+                   <input type="text" class="cajita" placeholder="Correo">
+                   <br><br>
+                   
+                       <button type="submit" class="btnayu">Enviar</button>
+                   
+                   <h1 class="textoo2">“Tu búsqueda te ayuda, coopera y prospera”</h1>
+               </div>
+           </form>
+       
+   </div>
+</div>
+<!-- fin ayuda -->
     
 @if(isset($users) && count($users) > 0)
 <div class="tablad">
@@ -68,4 +95,5 @@
     @endif
 
 </body>
+<script src="{{ asset('js/home.js') }}"></script>
 </html>
