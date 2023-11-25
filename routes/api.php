@@ -1,8 +1,8 @@
 <?php
 
+use App\Http\Controllers\Api\AuthController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Contracts\Http\Kernel;
 use App\Http\Controllers\API\UserController;
 
 /*
@@ -16,16 +16,15 @@ use App\Http\Controllers\API\UserController;
 |
 */
 
-Route::get('register', [AuthController::class,'register']);
+Route::post('register', [AuthController::class, 'register']);
 
+Route::post('login', [AuthController::class, 'login']);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
-
-    Route::prefix('users')->group(function () {
+Route::prefix('users')->group(function () {
     Route::get('/', [UserController::class, 'index']);
     Route::post('/', [UserController::class, 'store']);
     Route::get('/{id}', [UserController::class, 'show']);
