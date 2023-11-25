@@ -35,7 +35,6 @@
      <a class="barri" href="#empresas">Empresas de transporte</a>
      <a class="barri" href="#comentarios">Expectativas</a>
      <a class="barri" href="#desarrolladores">Creadores</a>
-     <!-- <a href="{{ url('foro') }}" class="ayudita">Foro</a> -->
      <a href="{{ url('foro') }}" class="ayudita">Foro</a>
      <button id="mostrarFormulario" class="ayudita">Ayuda</button>
      <a href="{{ url('perfil') }}" class="ayudita">Perfil</a>
@@ -356,14 +355,14 @@
                    <li>ESMERALDA</li>
                </ul><button class="num">4</button></div>
            <div class="r6l">
-                <h1 class="at">FALTA</h1>
-               <h1 class="lp">CHUNE</h1>
-               <ul class="cm"><li>ESTADIO</li>
-                   <li>HOSPITAL</li>
-                   <li>BOLIVAR</li>
-                   <li>TELECOM</li>
-                   <li>CALLE 13</li>
-                   <li>SAUCES</li>
+                <h1 class="at">AUTOPISTA</h1>
+               <h1 class="lp">ORTIGAL</h1>
+               <ul class="cm"><li>CAMPANARIO</li>
+                   <li>NUEVA EPS</li>
+                   <li>EXITO</li>
+                   <li>TERMINAL</li>
+                   <li>ESMERALDA</li>
+                   <li>LA MARIA</li>
                </ul><button class="num">5</button></div>
 
                <div class="r6l">
