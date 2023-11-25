@@ -21,7 +21,7 @@
 <h1 class="textoo">Inicia sesión para entrar en la página</h1>
 
             </div>
-        </div>
+        </div> 
 
         <!--Formulario de Login y registro-->
         <div class="contenedor__login-register">

@@ -6,35 +6,28 @@
     <title>Transport&Gps</title>
     <link rel="stylesheet" href="{{ asset('css/admin.css') }}" />
     <link rel="shortcut icon" href="img/logoac.png" type="image/x-icon">
-
-</head>
+</head> 
 <body> 
 
     <nav class="ctboton">
         <h1 class="titulo">ADMINISTRACIÓN</h1>
         <a href="{{ url('foro') }}" class="boton3">Foro</a>
      <button id="mostrarFormulario" class="ayudita">Ayuda</button>
-     <a href="{{ url('perfil') }}" class="boton2">Perfil</a>
         <a href="{{ url('contenido') }}" class="boton1">Volver</a>
     </nav>
 
-       <!-- Ventana ayuda-->
+  <!-- Ventana ayuda-->
 <div id="ventanaEmergente">
    <div id="formularioEmergente">
-       
-           <form class="formulario__aid">
-               <div class="ayuda-box">
-                   <h1 class="textoo1">¿En qué podemos ayudarte?</h1>
-                   <br>
-                   <input type="text" class="cajita" placeholder="¿Cuál es tu dificultad?">
-                   <input type="text" class="cajita" placeholder="Correo">
-                   <br><br>
-                   
-                       <button type="submit" class="btnayu">Enviar</button>
-                   
-                   <h1 class="textoo2">“Tu búsqueda te ayuda, coopera y prospera”</h1>
-               </div>
-           </form>
+
+        <div class="ayuda-box">
+            <h1 class="texto1">¿Comó podemos ayudarte?</h1>
+             <h1 class="texto2">Comunicate con nosotros si tienes alguna dificultad con nuestro sitio web al correo transportgps@gmail.com.</h1>
+            <h1 class="texto3">Seguridad</h1>
+            <h1 class="texto4">Verifica que toda la información que ingreso sea valida en el momento de no utilizar más la aplicacion, asegurate de cerrar tu cuenta para que tus datos esten mas seguros.</h1>
+            <h1 class="texto5">Guía de uso de Transportgps</h1>
+            <h1 class="texto6">Crea una cuenta valida, que todos los datos sean correctos. a la hora de ingresar encontrara informacion sobre la pagina web y logos de la empresa donde al darle click en "ver mas" te mostrara los carteles donde estan los numeros de la rutas de los buses y lugares por los cuales pasan y si te diriges al boton de rutas te enseñara los mapas y sus rutas trazadas para que asi tenga una guia mas detallada. En perfil encontraras tus datos y si deseas lo puedes editar. </h1>
+        </div>
        
    </div>
 </div>
@@ -66,7 +59,7 @@
             <button class="btac" type="submit">Actualizar</button>
         </form>
     </td>
-    <td>
+    <td> 
         <p>{{ $user->name }}</p>
         <form method="POST" action="{{ route('assign.role', $user) }}">
             @csrf
