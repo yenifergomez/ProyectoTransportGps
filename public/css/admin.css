@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-}
+} 
 body{
     width: 100%;
     height: 100vh;
@@ -104,6 +104,7 @@ margin-right: 10px;
     color: black;
     border: 2px solid #0704d3;
     font-weight: 650;
+    cursor: pointer;
 }
 option {
     font-size: 16px;
@@ -116,7 +117,7 @@ option {
     left:0%;
     position: absolute;
 }
-.boton1{
+.boton1{ 
     padding:0.6% 2%;
     border: 2px solid white;
     background: transparent;
@@ -129,25 +130,10 @@ option {
     font-weight:600;
     position: absolute;
     top:32%;
-    left:73%;
+    left:64%;
     text-decoration: none;
 } 
-.boton2{
-    padding:0.6% 2%;
-    border: 2px solid white;
-    background: transparent;
-    cursor: pointer;
-    color: white;
-    outline: none;
-    transition: all 300ms;
-    border-radius:6px;
-    font-size:18px;
-    font-weight:600;
-    position: absolute;
-    top:32%;
-    left:53%;
-    text-decoration: none;
-} 
+
 .boton3{
     padding:0.6% 2%;
     border: 2px solid white;
@@ -182,7 +168,7 @@ a:hover{
     position: absolute;
     text-decoration: none;
     top:32%;
-    left:63%;
+    left:53%;
  }
  .ayudita:hover{
     background: rgba(255, 255, 255, 0.829);
@@ -199,66 +185,65 @@ a:hover{
     background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
     justify-content: center;
     align-items: center;
+    z-index:50;
   }
 
 
-  .btnayu{
-    padding: 9px 18px;
-    text-decoration: none;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 8px;
-    background-color: white;
-    color: #0704d3;
-    border: 2px solid #0704d3;
-    font-weight: 650;
-    margin-top:2%;
+  .ayuda-box {
+    border-radius: 6px;
+    width: 590px;
+    height: 515px;
+    backdrop-filter: blur(3px);
+   background:rgba(255, 255, 255, 0.789);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    overflow: scroll;
+  }
+  
+ .texto1{
+   font-size:30px;
+   font-weight: 600;
+   margin-top:-7%;
+   text-align: center;
+   position: relative;
  }
  
- .btnayu:hover{
-    background:rgb(0, 26, 255);
-    color:white;
-    border: 2px solid  rgb(255, 255, 255);
+ .texto2{
+    font-weight: 400;
+    margin-top:5%;
+    font-size:20px;
+    position: relative;
+
  }
- .btnayu:active{
- background:rgb(26, 26, 26);
+ .texto3{
+   font-size:30px;
+   font-weight: 600;
+   margin-top:5%;
+   text-align: center;
+   position: relative;
+
  }
+ .texto4{
+   font-weight: 400;
+   margin-top:5%;
+   font-size:20px;
+   position: relative;
 
-.formulario__aid{
-text-align:center; 
+} 
+.texto5{
+   font-size:30px;
+   font-weight: 600;
+   margin-top:5%;
+   text-align: center;
+   position: relative;
 
+ }
+ .texto6{
+   font-weight: 400;
+   margin-top:5%;
+   font-size:20px;
+   position: relative;
 
-}
-.cajita{
- padding: 10px 15%;
- border:none;
-    background: #F2F2F2;
-    font-size: 16px;
-    text-align:center;
- border-radius:6px;
-    outline:none;
-    margin:3%;
-}
-
-.ayuda-box {
-border-radius: 6px;
-width: 520px;
-height: 515px;
-backdrop-filter: blur(3px);
-background:rgba(255, 255, 255, 0.596);
-position: absolute;
-transform: translate(-50%, -50%);
-box-sizing: border-box;
-padding: 70px 30px;
-}
-
-.textoo1{
-font-weight: 600;
-
-}
-
-.textoo2{
-font-weight: 600;
-margin-top:10%;
-font-size:25px;
-}
+} 

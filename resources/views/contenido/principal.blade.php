@@ -11,12 +11,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>transport&gps</title>
+    <title>transport&Gps</title>
     <link rel="shortcut icon" href="img/logoac.png" type="image/x-icon">
     <link rel="stylesheet" href="{{ asset('css/Principal.css') }}" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+ 
 </head>
 <body>
  <header class="cabeza" id="inicio">
@@ -56,65 +56,20 @@
    <!-- Ventana ayuda-->
 <div id="ventanaEmergente">
    <div id="formularioEmergente">
-       
-           <form class="formulario__aid">
-               <div class="ayuda-box">
-                   <h1 class="textoo1">¿En qué podemos ayudarte?</h1>
-                   <br>
-                   <input type="text" class="cajita" placeholder="¿Cuál es tu dificultad?">
-                   <input type="text" class="cajita" placeholder="Correo">
-                   <br><br>
-                   
-                       <button type="submit" class="btnayu">Enviar</button>
-                   
-                   <h1 class="textoo2">“Tu búsqueda te ayuda, coopera y prospera”</h1>
-               </div>
-           </form>
+
+        <div class="ayuda-box">
+            <h1 class="texto1">¿Comó podemos ayudarte?</h1>
+             <h1 class="texto2">Comunicate con nosotros si tienes alguna dificultad con nuestro sitio web al correo transportgps@gmail.com.</h1>
+            <h1 class="texto3">Seguridad</h1>
+            <h1 class="texto4">Verifica que toda la información que ingreso sea valida en el momento de no utilizar más la aplicacion, asegurate de cerrar tu cuenta para que tus datos esten mas seguros.</h1>
+            <h1 class="texto5">Guía de uso de Transportgps</h1>
+            <h1 class="texto6">Crea una cuenta valida, que todos los datos sean correctos. a la hora de ingresar encontrara informacion sobre la pagina web y logos de la empresa donde al darle click en "ver mas" te mostrara los carteles donde estan los numeros de la rutas de los buses y lugares por los cuales pasan y si te diriges al boton de rutas te enseñara los mapas y sus rutas trazadas para que asi tenga una guia mas detallada. En perfil encontraras tus datos y si deseas lo puedes editar. </h1>
+        </div>
        
    </div>
 </div>
 <!-- fin ayuda -->
 
-
-<!-- ventana menu -->
- <div id="ventanaEmergente2">
-   <div id="formularioEmergente2">
-       
-      <!--menu-->
-         <div class="caja__trasera">
-
-            <h2 class="ajus">Ajustes</h2>
-
-              <div class="bots">
-                 <button id="" class="vers">Version 3.0</button>
-                 <button id="" class="vers">Eliminar cuenta</button>
-                 <button id="" class="vers">Cerrar sesion</button>
-               </div>
-
-         </div>
- 
-         <!--Formulario de Login y registro-->
-         <div class="contenedor__login-register">
-             <!--Login-->
-
-
-             <form action="php/login_usuario_bd.php" method="POST" class="formulario__login">
-        
-               <img class="proyecto" src="img/logoac.png" >
-             
-              <input type="text" placeholder="Usuario" name="">
-              <input type="text" placeholder="Correo" name="">
-              <input type="password" placeholder="Contraseña" name="">
-              <button type="submit" class="btnregi">Guardar</button>
-                 
-             </form>
- 
-         </div>
-     <!--menu-->
-       
-   </div>
-</div>
-<!-- fin menu -->
 </header>
     <main>
 
@@ -624,5 +579,5 @@
 </body>
 <script src="{{ asset('js/home.js') }}"></script>
 <script src="{{ asset('js/home2.js') }}"></script>
-
+ 
 </html>
