@@ -52,6 +52,12 @@ class CommentController extends Controller
     public function vista()
 {
     $comments = Comment::all();
-    return view('contenido.foro', compact('comments'));
+    //return view('contenido.foro', compact('comments'));
+
+    return view('contenido.foro', ['comments' => $comments]);
+
 }
+
+
+
 }

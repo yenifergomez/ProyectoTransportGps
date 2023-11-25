@@ -22,15 +22,15 @@
         </ul>
     </div>
 @endif
-
 <form action="{{ route('comments.store') }}" method="POST" enctype="multipart/form-data">
+        
     @csrf
-
     <div>
         <label for="name">Nombre:</label>
         <input type="text" id="name" name="name" required>
     </div>
 
+    <!-- Your form inputs -->
     <div>
         <label for="comment">Comentario:</label>
         <textarea id="comment" name="comment" required></textarea>
@@ -42,24 +42,26 @@
     </div>
 
     <button type="submit">Enviar Comentario</button>
-
-
-
-
-
-
-
-    <div>
-    <h2>Comentarios:</h2>
-    @foreach($comments as $comment)
-        <div>
-            <p><strong>{{ $comment->name }}</strong>: {{ $comment->comment }}</p>
-            @if($comment->image)
-                <img src="{{ asset('images/' . $comment->image) }}" alt="Imagen del comentario">
-            @endif
-        </div>
-    @endforeach
-</div>
 </form>
+
+<!-- Displaying comments -->
+<div>
+    <h2>Comentarios:</h2>
+
+    @if(isset($comments) && count($comments) > 0)
+        @foreach($comments as $comment)
+            <div>
+                <p><strong>{{ $comment->name }}</strong>: {{ $comment->comment }}</p>
+                @if($comment->image)
+                    <img src="{{ asset('images/' . $comment->image) }}" alt="Imagen del comentario">
+                @endif
+            </div>
+        @endforeach
+    @else
+        <p>No hay comentarios aún.</p>
+    @endif
+</div>
+
+
 </body>
 </html>
