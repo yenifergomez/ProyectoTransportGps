@@ -28,7 +28,7 @@
         
     @csrf
     <div>
-        <label for="name">Nombre:</label>
+        <label for="name">Titulo:</label>
         <input type="text" id="name" name="name" required>
     </div>
 

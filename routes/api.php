@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\API\CommentApi;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Contracts\Http\Kernel;
@@ -31,4 +32,16 @@ Route::prefix('users')->group(function () {
     Route::get('/{id}', [UserController::class, 'show']);
     Route::put('/{id}', [UserController::class, 'update']);
     Route::delete('/{id}', [UserController::class, 'destroy']);
+});
+
+
+
+//COMENTARIOS API
+
+Route::prefix('comments')->group(function () {
+    Route::get('/', [CommentApi::class, 'index']);
+    Route::post('/', [CommentApi::class, 'store']);
+    Route::get('/{comment}', [CommentApi::class, 'show']);
+    Route::put('/{comment}', [CommentApi::class, 'update']);
+    Route::delete('/{comment}', [CommentApi::class, 'destroy']);
 });
