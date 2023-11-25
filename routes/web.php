@@ -19,6 +19,8 @@ use App\Http\Controllers\ImageController;
 use App\Http\Controllers\PerfilUserController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PasswordController;
+
 
 
 
@@ -115,7 +117,11 @@ Route::get('/logout', 'App\Http\Controllers\Auth\AuthenticatedSessionController@
  Route::post('/comments/store', [CommentController::class, 'store'])->name('comments.store');
 
 
+
  //RECUPERAR CONTRASEÑA
+
+ Route::get('/contraseña', [PasswordController::class, 'password'])->name('contraseña');
+
  Route::get('forgot-password', [App\Http\Controllers\Auth\ForgotPasswordController::class, 'showLinkRequestForm'])->name('password.request');
 
  Route::post('forgot-password', [App\Http\Controllers\Auth\ForgotPasswordController::class, 'sendResetLinkEmail'])->name('password.email');

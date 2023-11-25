@@ -30,10 +30,10 @@ class UserController extends Controller
         $user->usuario = $request->input('usuario');
         $user->save();
 
-        $selectedRoles = $request->input('roles'); // Obtener los roles seleccionados desde el formulario
+        $selectedRoles = $request->input('roles'); 
 
         if ($selectedRoles) {
-            $user->syncRoles($selectedRoles); // Asignar roles al usuario
+            $user->syncRoles($selectedRoles); 
         }
 
         return redirect()->route('admin.perfil')->with('success', 'Usuario actualizado exitosamente');    

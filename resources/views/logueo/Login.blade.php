@@ -39,9 +39,10 @@
 
 
                 
-                <a  href="" class="olvido">Olvidaste tu contraseña?</a>
-               
+             <a href="{{ route('contraseña') }}">Olvidaste Contraseña?</a>
+
             </form> 
+
 
 
         </div>
