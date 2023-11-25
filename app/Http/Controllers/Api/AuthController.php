@@ -3,12 +3,13 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Models\User;
 use Illuminate\Http\JsonResponse;
+use App\Models\User;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Validation\ValidationException;
 
 class AuthController extends Controller
 {
@@ -44,14 +45,9 @@ class AuthController extends Controller
     return response()->json(['data' => $user, 'access_token' => $token, 'token_type' => 'Bearer',]);
   }
 
-  /**
-   * Login by user
-   *
-   * @param Request $request
-   */
   public function login(Request $request)
   {
-    if (!Auth::attempt($request->only('email', 'password'))) {
+    if (Auth::attempt($request->only('email', 'password'))) {
       return response()
         ->json(['message' => 'Unauthorized'], 401);
     }
@@ -68,4 +64,5 @@ class AuthController extends Controller
         'user'         => $user,
       ]);
   }
+
 }
