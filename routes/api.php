@@ -32,3 +32,14 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     Route::put('/{id}', [UserController::class, 'update']);
     Route::delete('/{id}', [UserController::class, 'destroy']);
 });
+
+
+//COMENTARIOS API
+
+Route::prefix('comments')->group(function () {
+    Route::get('/', [CommentApi::class, 'index']);
+    Route::post('/', [CommentApi::class, 'store']);
+    Route::get('/{comment}', [CommentApi::class, 'show']);
+    Route::put('/{comment}', [CommentApi::class, 'update']);
+    Route::delete('/{comment}', [CommentApi::class, 'destroy']);
+});
