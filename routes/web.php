@@ -15,6 +15,7 @@ use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\ImageController;
 use App\Http\Controllers\PerfilUserController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
@@ -102,3 +103,12 @@ Route::get('/logout', 'App\Http\Controllers\Auth\AuthenticatedSessionController@
  Route::put('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
 
  Route::post('/perfil', 'App\Http\Controllers\updateProfile@updateProfile')->name('perfil.update');
+
+
+ //FORO 
+
+ Route::get('/foro', [CommentController::class, 'foroWeb']);
+
+ Route::get('/comments', [CommentController::class, 'index'])->name('comments.index');
+
+ Route::post('/comments/store', [CommentController::class, 'store'])->name('comments.store');

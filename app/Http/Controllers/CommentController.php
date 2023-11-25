@@ -12,49 +12,46 @@ use Illuminate\Support\Facades\Auth;
 class CommentController extends Controller
 {
     //
-    public function store(Request $request, Post $post)
-{
-    $request->validate([
-        'body' => 'required',
-    ]);
 
- 
-    if (!$post) {
-        abort(404); 
+
+    public function foroWeb(){
+        return view('contenido.foro');
     }
 
-    $comment = new Comment();
-    $comment->body = $request->body;
-    $comment->user_id = Auth::id();
-    $comment->post_id = $post->id;
-    $comment->save();
-
-    return redirect()->back()->with('success', 'Comment posted successfully!');
-}
-
-public function show($postId) {
-    $post = Post::find($postId);
-
-    if (!$post) {
-        
-        abort(404);
+    public function index()
+    {
+        $comments = Comment::all();
+        return view('contenido.foro', compact('comments'));
     }
 
-   
+    public function store(Request $request)
+    {
+        $request->validate([
+            'name' => 'required',
+            'comment' => 'required',
+            'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048' // Ajusta según tus necesidades
+        ]);
 
-    return view('contenido.foro')->with('post', $post);
+        $comment = new Comment();
+        $comment->name = $request->name;
+        $comment->comment = $request->comment;
 
-}
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $imageName = time() . '_' . $image->getClientOriginalName();
+            $image->move(public_path('images'), $imageName);
+            $comment->image = $imageName;
+        }
+
+        $comment->save();
+
+        return redirect()->route('comments.index')->with('success', 'Comment created successfully!');
+    }
 
 
-
-public function destroy(Comment $comment)
+    public function vista()
 {
-    $this->authorize('delete', $comment);
-
-    $comment->delete();
-
-    return redirect()->back()->with('success', 'Comment deleted successfully!');
+    $comments = Comment::all();
+    return view('contenido.foro', compact('comments'));
 }
-
 }
