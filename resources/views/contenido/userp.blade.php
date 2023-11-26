@@ -37,52 +37,33 @@
       <div class="caja__trasera">
 
 <h2 class="ajus">Ajustes</h2>
-
      <a class="boton4">Version 3.0</a>
-     <a class="boton5">Eliminar cuenta</a>
-     <a href="{{ route('logout.get') }}" class="boton6">Cerrar sesión</a>
+     <a  class="boton5" >Elegir foto</a>
+     <a class="boton6">Eliminar cuenta</a>
+     <a href="{{ route('logout.get') }}" class="boton7">Cerrar sesión</a>
 
 </div>
-
-<!-- formulario blanco -->
-<!-- <div class="contenedor__login-register">
- 
- <form >
-
-   <img class="proyecto" src="img/logoac.png" >
-
-
-
-
-
-
-   
- 
-  <input type="text" placeholder="Usuario" name="">
-  <input type="text" placeholder="Correo" name="">
-  <input type="password" placeholder="Contraseña" name="">
-  
-  <button type="submit" class="btnregi">Guardar</button>
-     
- </form>
-
-</div> -->
 
 <!--menu-->
 
 <!-- FOTO DE PERFIL -->
 <div class="edita">
+
 <form method="POST" action="{{ route('perfil.update') }}" enctype="multipart/form-data">
     @csrf
-    <input type="file" name="profile_image">
-    <button type="submit">Guardar</button>
+
+    <div class="slfoto">
+        <input class="ex" type="file" name="profile_image" id="profile_image">
+    </div>
+   
+        <button class="listo" type="submit">✓</button>
 </form>
  
 
 @if(Auth::user()->profile_image)
     <img class="proyecto" src="{{ asset(Auth::user()->profile_image) }}" alt="Perfil">
 @else
-    <p>No has subido una imagen de perfil todavía.</p>
+    <p class="emer">Aun no subes una foto de perfil.</p>
 @endif
 
 
@@ -92,13 +73,13 @@
     @csrf
     @method('PUT') 
 
-    <label class="usu" for="usuario">Usuario</label>
-    <input class="user" type="text" id="usuario" name="usuario" value="{{ Auth::user()->usuario }}">
+    <label class="tlu" for="usuario">Usuario</label>
+    <input class="usu" type="text" id="usuario" name="usuario" value="{{Auth::user()->usuario }}">
 
-    <!-- <label for="email">Correo</label> -->
-    <!-- <input type="email" id="email" name="email" value="{{ Auth::user()->email }}"> -->
+    <label class="tlc" for="email">Correo</label>
+    <input class="cor" type="email" id="email" name="email" value="{{ Auth::user()->email }}">
 
-    <!-- <button type="submit">Actualizar perfil</button> -->
+    <button class="btac" type="submit">Guardar</button>
 </form>
 
 </div>
