@@ -35,7 +35,7 @@ main{
    width: 100%;
    padding: 20px;
    margin: auto;
-   margin-top: 70px;/* mueve caja completa */
+   margin-top: 2.5%;/* mueve caja completa */
 }
 
 .contenedor__todo{
@@ -52,7 +52,7 @@ main{
    justify-content: center;
    -webkit-backdrop-filter: blur(10px);
    backdrop-filter: blur(10px);
-   background-color: rgba(0, 128, 255, 0.334);
+   background-color: rgba(0, 38, 255, 0.362);
    border-radius:6px;
 }
 
@@ -207,7 +207,7 @@ main{
 .logo{
    position:absolute;
    left:-5%;
-   top: 1%;
+   top: 12%;
    animation: movimiento 2.5s linear infinite;
    height: 500px;
 }

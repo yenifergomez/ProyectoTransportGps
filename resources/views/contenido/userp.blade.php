@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="img/logoac.png" type="image/x-icon">
     <title>Transport&Gps</title>
 </head>
-<body>
+<body> 
 
 <nav class="ctboton">
         <h1 class="titulo">PERFIL</h1>
@@ -15,7 +15,7 @@
      <button id="mostrarFormulario" class="ayudita">Ayuda</button>
         <a href="{{ url('contenido') }}" class="boton1">Volver</a>
     </nav>
-
+ 
   <!-- Ventana ayuda-->
 <div id="ventanaEmergente">
    <div id="formularioEmergente">
@@ -52,9 +52,7 @@
 <form method="POST" action="{{ route('perfil.update') }}" enctype="multipart/form-data">
     @csrf
 
-    <div class="slfoto">
         <input class="ex" type="file" name="profile_image" id="profile_image">
-    </div>
    
         <button class="listo" type="submit">✓</button>
 </form>
