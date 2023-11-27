@@ -39,7 +39,7 @@
 <h2 class="ajus">Ajustes</h2>
      <a class="boton4">Version 3.0</a>
      <a  class="boton5" >Elegir foto</a>
-     <a class="boton6">Eliminar cuenta</a>
+     <!-- <a class="boton6">Eliminar cuenta</a> -->
      <a href="{{ route('logout.get') }}" class="boton7">Cerrar sesión</a>
 
 </div>
@@ -81,6 +81,26 @@
 </form>
 
 </div>
+
+
+
+<form id="form-eliminar-cuenta" method="POST" action="{{ route('delete.account') }}">
+    @csrf
+    @method('DELETE')
+
+    <!-- Puedes agregar un botón o un enlace para activar este formulario -->
+    
+    <button class="boton6"  onclick="confirmarEliminarCuenta()" class="boton-eliminar">Eliminar cuenta</button>
+    
+</form>
+
+<script>
+    function confirmarEliminarCuenta() {
+        if (confirm('¿Estás seguro que deseas eliminar tu cuenta de Transport GPS.')) {
+            document.getElementById('form-eliminar-cuenta').submit();
+        }
+    }
+</script>
 
 
 

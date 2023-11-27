@@ -20,9 +20,7 @@ use App\Http\Controllers\PerfilUserController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PasswordController;
-
-
-
+use App\Http\Controllers\updateProfile;
 
 /*
 |--------------------------------------------------------------------------
@@ -96,7 +94,7 @@ Route::get('/logout', 'App\Http\Controllers\Auth\AuthenticatedSessionController@
 
  Route::post('/assign-role/{id}', 'UserController@asignarRol')->name('assign.role');
 
- Route::get('/users', [UserController::class, 'index'])->name('admin.perfil');
+ Route::get('/users', [UserController::class, 'index'])->name('delete.account');
 
 
  //RUTAS PERFIL DE USUARIO
@@ -106,6 +104,8 @@ Route::get('/logout', 'App\Http\Controllers\Auth\AuthenticatedSessionController@
  Route::put('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
 
  Route::post('/perfil', 'App\Http\Controllers\updateProfile@updateProfile')->name('perfil.update');
+
+ Route::delete('/eliminar-cuenta', [updateProfile::class, 'deleteAccount'])->name('delete.account');
 
 
  //FORO 
