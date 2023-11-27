@@ -47,7 +47,7 @@
 <!--menu-->
 
 <!-- FOTO DE PERFIL -->
-<div class="edita">
+<div class="edita"> 
 
 <form method="POST" action="{{ route('perfil.update') }}" enctype="multipart/form-data">
     @csrf
@@ -88,15 +88,14 @@
     @csrf
     @method('DELETE')
 
-    <!-- Puedes agregar un botón o un enlace para activar este formulario -->
     
-    <button class="boton6"  onclick="confirmarEliminarCuenta()" class="boton-eliminar">Eliminar cuenta</button>
+    <button class="boton6"  onclick="confirmarEliminarCuenta()" >Eliminar cuenta</button>
     
 </form>
 
 <script>
     function confirmarEliminarCuenta() {
-        if (confirm('¿Estás seguro que deseas eliminar tu cuenta de Transport GPS.')) {
+        if (confirm('¿Estás seguro que deseas eliminar tu cuenta de Transport&Gps.')) {
             document.getElementById('form-eliminar-cuenta').submit();
         }
     }
