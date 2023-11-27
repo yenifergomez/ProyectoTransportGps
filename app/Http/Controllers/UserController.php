@@ -40,6 +40,28 @@ class UserController extends Controller
 
     }
 
+    public function assignRole(User $user)
+    {
+        $user->assignRole('Usuario'); 
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     public function destroy(User $user)
 {
     if ($user) {
@@ -52,14 +74,12 @@ class UserController extends Controller
     public function showUsers()
 {
     
+    $users = User::all();
+    return view('users.index', ['users' => $users]);
 }
 
 
-public function assignRole(User $user, Request $request)
-{
-    $roles = Role::all();
-    return view('admin.assign_role', ['user' => $user, 'roles' => $roles]);
-}
+
 
 
 }

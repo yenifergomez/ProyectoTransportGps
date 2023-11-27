@@ -11,7 +11,6 @@ use App\Http\Controllers\InicioController;
 use App\Http\Controllers\ForoController;
 use App\Http\Controllers\MperfilController;
 use App\Http\Controllers\PerfilController;
-use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\CommentController;
@@ -21,6 +20,8 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PasswordController;
 use App\Http\Controllers\updateProfile;
+use App\Http\Controllers\UserController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -83,10 +84,13 @@ Route::get('/logout', 'App\Http\Controllers\Auth\AuthenticatedSessionController@
  Route::delete('/admin/perfil/{user}', [UserController::class, 'destroy'])->name('admin.perfil.delete');
 
  
-//RUTAS ASIGNAR ROLES
- Route::get('/users', [UserController::class, 'index']);
 
- Route::post('/assign-role/{user}', 'UserController@assignRole')->name('assign.role');
+
+
+//RUTAS ASIGNAR ROLES
+Route::get('/users', [UserController::class, 'index'])->name('users.index');
+
+Route::post('/assign-role/{user}', [UserController::class, 'assignRole'])->name('assign.role');
 
  Route::post('/users/assign-role/{user}', [UserController::class, 'assignRole'])->name('assign.role');
 
@@ -97,6 +101,13 @@ Route::get('/logout', 'App\Http\Controllers\Auth\AuthenticatedSessionController@
  Route::get('/users', [UserController::class, 'index'])->name('delete.account');
 
 
+
+
+
+
+
+
+ 
  //RUTAS PERFIL DE USUARIO
 
  Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
