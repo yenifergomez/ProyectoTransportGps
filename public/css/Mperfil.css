@@ -114,7 +114,7 @@ body{
   color:rgb(0, 12, 176);
 }
 .boton6{
-  padding:1% 2.9%;
+  padding:0.7% 1.7%;
   border: 2px solid white;
   background: transparent;
   cursor: pointer;
@@ -126,7 +126,7 @@ body{
   font-weight:600;
   position: absolute;
   top:66%;
-  left:63%;
+  left:58.5%;
   text-decoration: none;
 } 
 a:hover{
@@ -237,7 +237,7 @@ a:hover{
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   background-color: rgba(0, 38, 255, 0.362);
-  border-radius:6px;
+  border-radius:6px; 
 }
 
 /*Formularios*/
