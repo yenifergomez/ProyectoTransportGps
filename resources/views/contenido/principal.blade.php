@@ -29,7 +29,9 @@
    <nav class="vlogo">
       <img src="img/logoac.png" class="logo">
    </nav> 
-      
+
+
+
    <a class="tex" >AAAA</a>
      <a class="barri" href="#info">Informacion </a>
      <a class="barri" href="#empresas">Empresas de transporte</a>
