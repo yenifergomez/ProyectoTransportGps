@@ -80,16 +80,14 @@
                <section class="slider-section">
                  
                  <h1 class="tlmisi">MISIÓN</h1>
-     
+      
      <div class="txmisi">
       <p class="txmisi2">Se busca orientar a las personas que usan el transporte público brindando información precisa y 
          actualizada sobre las rutas, de modo que se puedan guiar a través del sistema de información . </p>
      </div>  
      
      <div class="caja-video2">
-        <video autoplay loop>
-          <source src="img/vprin.mp4" type="video/mp4">
-        </video>
+    <img src="img/bus0.jpg" >
       </div> 
      
      
@@ -104,9 +102,7 @@
      </div>
      
      <div class="caja-video3">
-        <video autoplay loop>
-          <source src="img/vprin.mp4" type="video/mp4">
-        </video>
+        <img src="img/vision0.jpg" >
       </div> 
      
               </section>

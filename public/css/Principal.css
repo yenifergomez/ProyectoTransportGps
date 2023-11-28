@@ -279,7 +279,7 @@
     position: absolute;
     width:30%;
  }
- .caja-video2 video {
+ .caja-video2  img{
     width: 40%;
     height: 55vh;
     object-fit: cover;
@@ -310,7 +310,7 @@
     position: absolute;
     width:30%;
  }
- .caja-video3 video {
+ .caja-video3 img {
     width: 40%;
     height: 55vh;
     object-fit: cover;
@@ -396,8 +396,13 @@
     cursor: pointer;
     margin-left:45%;
     margin-top:2%;
+    transition: all 300ms;
     }
-    .ruta-box {
+    .btn:hover{
+      background-color:rgba(255, 255, 255, 0.16);
+
+    }
+    .ruta-box { 
         border-radius: 6px;
         width: 725px;
         height: 575px;
