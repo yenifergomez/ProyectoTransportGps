@@ -11,7 +11,7 @@
 
     <nav class="ctboton">
         <h1 class="titulo">ADMINISTRACIÓN</h1>
-        <a href="{{ url('foro') }}" class="boton3">Foro</a>
+        <a class="boton3" href="{{ url('/Foro-Administracion') }}">Administrar Foro</a>
      <button id="mostrarFormulario" class="ayudita">Ayuda</button>
         <a href="{{ url('contenido') }}" class="boton1">Volver</a>
     </nav>
@@ -80,7 +80,7 @@
             <form action="{{ route('admin.perfil.delete', $user) }}" method="POST">
                 @csrf
                 @method('DELETE')
-                <button class="btac" type="submit">Eliminar</button>
+                <button class="btacDelete" type="submit">Eliminar Usuario</button>
             </form>
         </td>
         </tr>
@@ -91,6 +91,18 @@
     @else
         <p>Lista de Usuarios TransportGPS vacía!!</p>
     @endif
+
+
+
+<!-- COMENTARIOS ADMINISTRACION FORO -->
+
+
+
+
+
+
+
+
 
 </body>
 <script src="{{ asset('js/home.js') }}"></script>

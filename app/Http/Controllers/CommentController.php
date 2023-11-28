@@ -29,7 +29,7 @@ class CommentController extends Controller
         $request->validate([
             'name' => 'required',
             'comment' => 'required',
-            'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048' // Ajusta según tus necesidades
+            'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048' 
         ]);
 
         $comment = new Comment();
@@ -52,12 +52,47 @@ class CommentController extends Controller
     public function vista()
 {
     $comments = Comment::all();
-    //return view('contenido.foro', compact('comments'));
 
     return view('contenido.foro', ['comments' => $comments]);
 
 }
 
+
+
+
+
+//TRAER COMENTARIOS EDITAR+ELIMINAR
+
+public function indexComment() {
+    $comentarios = Comment::all();
+    return view('layouts.adforo', compact('comentarios'));
+}
+
+public function edit($id) {
+    $comment = Comment::findOrFail($id);
+    return view('layouts.adforo', ['comment' => $comment]);
+}
+
+
+public function update(Request $request, $id) {
+    $comentario = Comment::findOrFail($id);
+    $comentario->nombre = $request->input('nombre');
+    $comentario->comentario = $request->input('comentario');
+    
+    if ($request->hasFile('image')) {
+        $imagePath = $request->file('image')->store('public/images');
+        $comentario->imagen = str_replace('public/', '', $imagePath);
+    }
+    
+    $comentario->save();
+    
+    return redirect()->route('layouts.adforo')->with('success', 'Comentario actualizado correctamente');
+}
+
+// public function showCommentForm($commentId) {
+//     $comment = Comment::find($commentId); 
+//     return view('your_blade_template', compact('comment'));
+// }
 
 
 }

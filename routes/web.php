@@ -54,6 +54,7 @@ Route::get('/login', function(){
 
 //RUTAS DE LOGIN
 Route::get('/login', [LoginController::class, 'show']);
+
 Route::post('/login', [LoginController::class, 'login']);
 
 Route::get('/home',[HomeController::class, 'index']);
@@ -83,14 +84,32 @@ Route::get('/logout', 'App\Http\Controllers\Auth\AuthenticatedSessionController@
 
  Route::delete('/admin/perfil/{user}', [UserController::class, 'destroy'])->name('admin.perfil.delete');
 
+
+
+
+
+ //RUTAS COMENTARIOS ADMINISTRACION EDITAR + ELIMINAR
+ Route::get('/Foro-Administracion', function () {
+    return view('layouts.adforo');
+});
+
+Route::get('/layouts/adforo', 'CommentController@indexComment')->name('layouts.adforo');
+
+Route::get('/layouts/adforo/{comment}/edit', 'CommentController@edit')->name('layouts.adforo.edit');
+
+Route::put('/layouts/adforo/{id}', 'CommentController@update')->name('layouts.adforo.update');
+
+Route::delete('/layouts/adforo/{id}', 'CommentController@destroy')->name('layouts.adforo.destroy');
+
+
  
 
 
 
 //RUTAS ASIGNAR ROLES
-Route::get('/users', [UserController::class, 'index'])->name('users.index');
+ Route::get('/users', [UserController::class, 'index'])->name('users.index');
 
-Route::post('/assign-role/{user}', [UserController::class, 'assignRole'])->name('assign.role');
+ Route::post('/assign-role/{user}', [UserController::class, 'assignRole'])->name('assign.role');
 
  Route::post('/users/assign-role/{user}', [UserController::class, 'assignRole'])->name('assign.role');
 
@@ -140,3 +159,8 @@ Route::post('/assign-role/{user}', [UserController::class, 'assignRole'])->name(
  Route::get('reset-password/{token}', [App\Http\Controllers\Auth\ResetPasswordController::class, 'showResetForm'])->name('password.reset');
 
  Route::post('reset-password', [App\Http\Controllers\Auth\ResetPasswordController::class, 'reset'])->name('password.update');
+
+
+
+
+ 
