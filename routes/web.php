@@ -21,6 +21,8 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PasswordController;
 use App\Http\Controllers\updateProfile;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ReportController;
+
 
 
 /*
@@ -121,11 +123,11 @@ Route::delete('/layouts/adforo/{id}', 'CommentController@destroy')->name('layout
 
 
 
+//RUTAS PARA REPORTAR
 
+ Route::get('/reportes', [ReportController::class, 'notific']);
 
-
-
-
+ Route::match(['get', 'post'], '/reportar', [ReportController::class, 'crearReporte'])->name('reportar');
  
  //RUTAS PERFIL DE USUARIO
 
