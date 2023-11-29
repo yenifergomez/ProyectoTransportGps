@@ -52,6 +52,6 @@ class UserController extends Controller
         $user = User::findOrFail($id);
         $user->delete();
 
-        return ['message' => 'User deleted successfully'];
+        return ['message' => 'Usuario Eliminado Correctamente ..::TransportGPS::..'];
     }
 }

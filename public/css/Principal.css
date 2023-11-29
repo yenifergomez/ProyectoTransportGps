@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
     
     }
     body{
@@ -30,171 +33,7 @@
         text-align: center;
         margin:1%;
     } 
- /* ventana menu */
- #ventanaEmergente2{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
-    justify-content: center;
-    align-items: center;
-  }
- 
- .caja__trasera{
-    width: 61%;
-    height:70%;
-    position: absolute;
-    top:17%;
-    left:20%;
-    display: flex;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background-color: rgba(0, 128, 255, 0.334);
-    border-radius:6px;
- }
- .bots{
-    position: absolute;
-    top:34%;
-    left:58%;
-    width:29%;
-    height:50%;
-    padding: 70px 20px;
- 
- }
- .vers{
-    border: 2px solid white;
-    font-size: 14px;
-    background: transparent;
-    font-weight: 600;
-    cursor: pointer;
-    color: white;
-    outline: none;
-    transition: all 300ms;
-    border-radius:6px;
-    margin:5%;
-    width:100%;
- }
- 
- .vers:hover{
-    background: white;
-    color:rgb(0, 12, 176);
-    
- }
- .vers:active{
-    background:rgb(57, 55, 58);
-    color:white;
-  }
- 
- 
- 
- 
- 
- .caja__trasera button{
-    padding: 10px 40px;
-    border: 2px solid white;
-    font-size: 14px;
-    background: transparent;
-    font-weight: 600;
-    cursor: pointer;
-    color: white;
-    outline: none;
-    transition: all 300ms;
-    border-radius:6px;
- }
- 
- .caja__trasera button:hover{
-    background: white;
-    color:rgb(0, 12, 176);
-    
- }
- .caja__trasera button:active{
-    background:rgb(57, 55, 58);
-    color:white;
-  }
- 
- /*Formularios*/
- 
- .contenedor__login-register{
-    display: flex;
-    text-align: center;
-    width:25%;
-    position:absolute;
-    top:12%; 
-    left:22%;
-    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
- }
- 
- .contenedor__login-register form{
-    width: 100%;
-    padding: 70px 20px;
-    backdrop-filter: blur(4px);
-    background:rgba(255, 255, 255, 0.57);
-    position: absolute;
-    border-radius: 6px;
- 
- }
- 
- .ajus{
-    font-size:250%;
-    position: absolute;
-    top:10%;
-    left:65%;
-    color:white;
- }
- 
- .contenedor__login-register form input{
-    width: 100%;
-    margin-top: 20px;
-    padding: 10px;
-    border: none;
-    background: #F2F2F2;
-    font-size: 16px;
-    outline: none;
-    border-radius:6px;
- }
- .btnregi {
-    padding: 9px 40px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 8px;
-    background-color: white;
-    color: rgb(0, 12, 176);
-    border: 2px solid rgb(0, 12, 176);
-    font-weight: 650;
-    margin-top:5%;
- }
- .btnregi:hover{
-    background:rgba(0, 26, 255, 0.873);
-    color:white;
-    border: 2px solid  rgb(255, 255, 255);
- 
- }
- .btnregi:active{
-    background:rgb(57, 55, 58);
-  }
- 
- .formulario__login{
-    opacity: 1;
-    display: block;
- }
- 
- .formulario__login .proyecto{
-    width: 170px;
-    height: 170px;
-    border-radius: 100%;
-    margin: 30px 58px;/*AQUI*/
-    position:relative;
-    background-color:rgba(163, 163, 163, 0.599);
- }
- 
- 
-  
- 
-   
- 
+
  
  /* modal ayuda */
  
@@ -210,7 +49,8 @@
     cursor: pointer;
     color: white;
     margin-right: 10px;
- }
+    text-decoration: none;
+ } 
  
  .ayudita:hover{
     color:blue;
@@ -226,71 +66,72 @@
         background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
         justify-content: center;
         align-items: center;
+        z-index:50;
       }
- 
- 
-      .btnayu{
-        padding: 9px 18px;
-        text-decoration: none;
-        transition-duration: 0.4s;
-        cursor: pointer;
-        border-radius: 8px;
-        background-color: white;
-        color: #0704d3;
-        border: 2px solid #0704d3;
-        font-weight: 650;
-        margin-top:2%;
-     }
-     
-     .btnayu:hover{
-        background:rgb(0, 26, 255);
-        color:white;
-        border: 2px solid  rgb(255, 255, 255);
-     }
-     .btnayu:active{
-     background:rgb(26, 26, 26);
-     }
+
   
-  .formulario__aid{
-   text-align:center; 
-    
-   
-  }
-  .cajita{
-     padding: 10px 15%;
-     border:none;
-        background: #F2F2F2;
-        font-size: 16px;
-        text-align:center;
-     border-radius:6px;
-        outline:none;
-        margin:3%;
-  }
+
+
   
   .ayuda-box {
     border-radius: 6px;
-    width: 520px;
+    width: 590px;
     height: 515px;
     backdrop-filter: blur(3px);
-   background:rgba(255, 255, 255, 0.596);
+   background:rgba(255, 255, 255, 0.789);
     position: absolute;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
     padding: 70px 30px;
+    overflow: scroll;
   }
   
- .textoo1{
-    font-weight: 600;
- 
+ .texto1{
+   font-size:30px;
+   font-weight: 600;
+   margin-top:-7%;
+   text-align: center;
+   position: relative;
  }
  
- .textoo2{
-    font-weight: 600;
-    margin-top:10%;
-    font-size:25px;
+ .texto2{
+    font-weight: 400;
+    margin-top:5%;
+    font-size:20px;
+    position: relative;
+
  }
- 
- /* fin modal */
+ .texto3{
+   font-size:30px;
+   font-weight: 600;
+   margin-top:5%;
+   text-align: center;
+   position: relative;
+
+ }
+ .texto4{
+   font-weight: 400;
+   margin-top:5%;
+   font-size:20px;
+   position: relative;
+
+} 
+.texto5{
+   font-size:30px;
+   font-weight: 600;
+   margin-top:5%;
+   text-align: center;
+   position: relative;
+
+ }
+ .texto6{
+   font-weight: 400;
+   margin-top:5%;
+   font-size:20px;
+   position: relative;
+
+} 
+ /* fin modal */ 
  
  /* cabeza */
  .logo{
@@ -571,20 +412,7 @@
         grid-template-rows: repeat(5, 1fr);    /* 5 filas de igual tamaño */
         gap: 10px; /* Espacio entre elementos */
       }
-      .ruta{
-         background:transparent;
-         border-radius: 6px;
-       border: 0.5px solid #ffffffc5;
-       font-size:60px;
-     cursor: pointer;
-     margin-top:2%;
-        position:relative;
-        color: rgb(13, 10, 163);
-      }
-      .ruta:hover{
-         background:rgba(140, 130, 255, 0.455);
-         transition-duration: 0.4s;
-      }
+
       .at{
        position:relative;
        color: rgb(0, 0, 0);
@@ -606,7 +434,7 @@
          padding:30px 20px;
          overflow-x: scroll;
         display: grid;
-         grid-template-columns: repeat(14, 1fr); /* 4 columnas de igual tamaño */
+         grid-template-columns: repeat(9, 1fr); /* 4 columnas de igual tamaño */
          grid-template-rows: repeat(1, 1fr);    /* 5 filas de igual tamaño */
          gap: 10px; /* Espacio entre elementos */
        }
@@ -617,6 +445,72 @@
          cursor: default;
        }
        #ventanaEmergente4{
+         display: none;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.542); /* Fondo semi-transparente */
+         justify-content: center;
+         align-items: center;
+       }
+       #ventanaEmergente5{
+         display: none;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.542); /* Fondo semi-transparente */
+         justify-content: center;
+         align-items: center;
+       }
+       #ventanaEmergente6{
+         display: none;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.542); /* Fondo semi-transparente */
+         justify-content: center;
+         align-items: center;
+       }
+       #ventanaEmergente7{
+         display: none;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.542); /* Fondo semi-transparente */
+         justify-content: center;
+         align-items: center;
+       }
+       #ventanaEmergente8{
+         display: none;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.542); /* Fondo semi-transparente */
+         justify-content: center;
+         align-items: center;
+       }
+       #ventanaEmergente9{
+         display: none;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.542); /* Fondo semi-transparente */
+         justify-content: center;
+         align-items: center;
+       }
+       #ventanaEmergente10{
          display: none;
          position: fixed;
          top: 0;
@@ -668,131 +562,225 @@
     margin-top:-20%;
     font-size:60px;
  }
-      .r1{
-        border-radius: 6px;
-        width: 165px;
-        height: 200px;
-        backdrop-filter: blur(3px);
-       background:rgba(226, 226, 226, 0.666);
-       padding:6px 15px;
-       cursor: default;
-      }
-      .r2{
-        border-radius: 6px;
-        width: 165px;
-        height: 200px;
-        backdrop-filter: blur(3px);
-        background:rgba(226, 226, 226, 0.666);
-        padding:6px 15px;
-        cursor: default;
-        margin-left:-19%;
-      }
-      .r3{
-        border-radius: 6px;
-        width: 165px;
-        height: 200px;
-        backdrop-filter: blur(3px);
-        background:rgba(226, 226, 226, 0.666);
-        padding:6px 15px;
-        cursor: default;
-        margin-left:-47%;
-      }
-      .r4{
-        border-radius: 6px;
-        width: 165px;
-        height: 200px;
-        backdrop-filter: blur(3px);
-        background:rgba(226, 226, 226, 0.666);
-        padding:6px 15px;
-        cursor: default;
-      }
-      .r5{
-       border-radius: 6px;
-       width: 165px;
-       height: 200px;
-       backdrop-filter: blur(3px);
-       background:rgba(226, 226, 226, 0.666);
-       padding:6px 15px;
-       cursor: default;
-       
-      }
-      .r6{
-       border-radius: 6px;
-       width: 165px;
-       height: 200px;
-       backdrop-filter: blur(3px);
-       background:rgba(226, 226, 226, 0.666);
-       padding:6px 15px;
-       cursor: default;
-       margin-left:-19%;
- 
-      }
-      .r7{
-       border-radius: 6px;
-       width: 165px;
-       height: 200px;
-       backdrop-filter: blur(3px);
-       background:rgba(226, 226, 226, 0.666);
-       padding:6px 15px;
-       cursor: default;
-       margin-left:-47%;
- 
-      }
+ .ruta{
+   background:transparent;
+   border-radius: 6px;
+ border: 0.5px solid #ffffffc5;
+ font-size:60px;
+cursor: pointer;
+margin-top:2%;
+  position:relative;
+  color: rgb(13, 10, 163);
+  width: 165px;
+  height: 200px;
+}
+.ruta:hover{
+   background:rgba(140, 130, 255, 0.455);
+   transition-duration: 0.4s;
+}
+.ruta2{
+   background:transparent;
+   border-radius: 6px;
+ border: 0.5px solid #ffffffc5;
+ font-size:60px;
+cursor: pointer;
+margin-top:2%;
+  position:relative;
+  color: rgb(177, 149, 10);
+  width: 165px;
+  height: 200px;
+}
+.ruta2:hover{
+   background:rgba(255, 232, 130, 0.455);
+   transition-duration: 0.4s;
+}
+.ruta3{
+   background:transparent;
+   border-radius: 6px;
+ border: 0.5px solid #ffffffc5;
+ font-size:60px;
+cursor: pointer;
+margin-top:2%;
+  position:relative;
+  color: rgb(177, 10, 10);
+  width: 165px;
+  height: 200px;
+}
+.ruta3:hover{
+   background:rgba(255, 130, 130, 0.455);
+   transition-duration: 0.4s;
+}
+.ruta4{
+   background:transparent;
+   border-radius: 6px;
+ border: 0.5px solid #ffffffc5;
+ font-size:60px;
+cursor: pointer;
+margin-top:2%;
+  position:relative;
+  color: rgb(50, 138, 122);
+  width: 165px;
+  height: 200px;
+}
+.ruta4:hover{
+   background: rgba(50, 138, 122, 0.353);
+   transition-duration: 0.4s;
+}
+  .r1{
+    border-radius: 6px;
+    width: 165px;
+    height: 200px;
+    backdrop-filter: blur(3px);
+   background:rgba(226, 226, 226, 0.666);
+   padding:6px 15px;
+   cursor: default;
+   margin-left:-19%;
+  }
+  .r2{
+    border-radius: 6px;
+    width: 165px;
+    height: 200px;
+    backdrop-filter: blur(3px);
+    background:rgba(226, 226, 226, 0.666);
+    padding:6px 15px;
+    cursor: default;
+    margin-left:-48%;
+  }
+  .r3{
+    border-radius: 6px;
+    width: 165px;
+    height: 200px;
+    backdrop-filter: blur(3px);
+    background:rgba(226, 226, 226, 0.666);
+    padding:6px 15px;
+    cursor: default;
+    margin-left:-49%;
+  }
+  .r4{
+    border-radius: 6px;
+    width: 165px;
+    height: 200px;
+    backdrop-filter: blur(3px);
+    background:rgba(226, 226, 226, 0.666);
+    padding:6px 15px;
+    cursor: default;
+  }
+  .r5{
+   border-radius: 6px;
+   width: 165px;
+   height: 200px;
+   backdrop-filter: blur(3px);
+   background:rgba(226, 226, 226, 0.666);
+   padding:6px 15px;
+   cursor: default;
+   margin-left:-19%;
+  }
+  .r6{
+   border-radius: 6px;
+   width: 165px;
+   height: 200px;
+   backdrop-filter: blur(3px);
+   background:rgba(226, 226, 226, 0.666);
+   padding:6px 15px;
+   cursor: default;
+   margin-left:-48%;
+  }
+  .r6 > .at {
+   font-size:21px;
+    }
+.r6 > .lp {
+      font-size:21px;
+       }
+  .r7{
+   border-radius: 6px;
+   width: 165px;
+   height: 200px;
+   backdrop-filter: blur(3px);
+   background:rgba(226, 226, 226, 0.666);
+   padding:6px 15px;
+   cursor: default;
+   margin-left:-49%;
+  }
+  .r8{
+   border-radius: 6px;
+   width: 205px;
+   height: 200px;
+   backdrop-filter: blur(3px);
+   background:rgba(226, 226, 226, 0.666);
+   padding:6px 15px;
+   cursor: default;
+  }
+  .r9{
+   border-radius: 6px;
+   width: 205px;
+   height: 200px;
+   backdrop-filter: blur(3px);
+   background:rgba(226, 226, 226, 0.666);
+   padding:6px 15px;
+   cursor: default;
+  }
+ /* rutas libertad */
+ .r1l{
+   border-radius: 6px;
+   width: 165px;
+   height: 200px;
+   backdrop-filter: blur(3px);
+  background:rgba(226, 226, 226, 0.666);
+  padding:6px 15px;
+  cursor: default;
+ }
+ .r1l > .at {
+font-size:20px;
+ }
+ .r2l{
+   border-radius: 6px;
+   width: 165px;
+   height: 200px;
+   backdrop-filter: blur(3px);
+   background:rgba(226, 226, 226, 0.666);
+   padding:6px 15px;
+   cursor: default;
+ }
+ .r3l{
+   border-radius: 6px;
+   width: 165px;
+   height: 200px;
+   backdrop-filter: blur(3px);
+   background:rgba(226, 226, 226, 0.666);
+   padding:6px 15px;
+   cursor: default;
+ }
+ .r4l{
+   border-radius: 6px;
+   width: 165px;
+   height: 200px;
+   backdrop-filter: blur(3px);
+   background:rgba(226, 226, 226, 0.666);
+   padding:6px 15px;
+   cursor: default;
+ }
+ .r5l{
+  border-radius: 6px;
+  width: 165px;
+  height: 200px;
+  backdrop-filter: blur(3px);
+  background:rgba(226, 226, 226, 0.666);
+  padding:6px 15px;
+  cursor: default;
+ }
+ .r6l{
+  border-radius: 6px;
+  width: 165px;
+  height: 200px;
+  backdrop-filter: blur(3px);
+  background:rgba(226, 226, 226, 0.666);
+  padding:6px 15px;
+  cursor: default;
+ }
 
-      .r10{
-       border-radius: 6px;
-       width: 165px;
-       height: 200px;
-       backdrop-filter: blur(3px);
-       background:rgba(226, 226, 226, 0.666);
-       padding:6px 15px;
-       cursor: default;
-       margin-left:-19%;
- 
-      }
-      
-      .r11{
-       border-radius: 6px;
-       width: 165px;
-       height: 200px;
-       backdrop-filter: blur(3px);
-       background:rgba(226, 226, 226, 0.666);
-       padding:6px 15px;
-       cursor: default;
-       margin-left:-47%;
-      }
-      .r12{
-       border-radius: 6px;
-       width: 165px;
-       height: 200px;
-       backdrop-filter: blur(3px);
-       background:rgba(226, 226, 226, 0.666);
-       padding:6px 15px;
-       cursor: default;
-       margin-left:27%;
-      }
-      .r13{
-       border-radius: 6px;
-       width: 205px;
-       height: 200px;
-       backdrop-filter: blur(3px);
-       background:rgba(226, 226, 226, 0.666);
-       padding:6px 15px;
-       cursor: default;
-       margin-left:23%;
-      }
-      .r14{
-       border-radius: 6px;
-       width: 205px;
-       height: 200px;
-       backdrop-filter: blur(3px);
-       background:rgba(226, 226, 226, 0.666);
-       padding:6px 15px;
-       cursor: default;
-       margin-left:25%;
-      }
- 
-    
+ .r6l > .at {
+   font-size:20px;
+    }
     .btn-left2,
     .btn-right2 {
         display: flex;
@@ -976,6 +964,7 @@
         font-family:title-font;
  
     }
-    
-    
- 
+
+
+
+   

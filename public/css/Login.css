@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 
 *{
    margin: 5px;
    padding: 0;
    box-sizing: border-box;
    text-decoration: none;
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Rubik', sans-serif;
 }
  
-body{
+body{ 
    background:url(../img/editbus.jpg);
    background-size: cover;
    background-repeat: no-repeat;
@@ -41,7 +43,7 @@ main{
    justify-content: center;
    -webkit-backdrop-filter: blur(10px);
    backdrop-filter: blur(10px);
-   background-color: rgba(0, 128, 255, 0.334);
+   background-color: rgba(0, 38, 255, 0.362);
    border-radius:6px;
 }
 

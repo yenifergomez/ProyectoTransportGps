@@ -30,8 +30,8 @@ class RegisterController extends Controller
     $user-> email=$request->email; 
     $user-> password=$request->password; 
     $user-> save(); 
-    return rasponse()->json(["mensaje"="usuario registrado correctamente"],201);
- }
+    return response()->json(["mensaje" => "usuario registrado correctamente"], 201);
+}
 }
 
 

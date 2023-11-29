@@ -12,19 +12,7 @@ ventanaEmergente.addEventListener("click", (event) => {
   }
 });
 
-//ventana menu
-var botonMostrar2 = document.getElementById("mostrarFormulario2");
-var ventanaEmergente2 = document.getElementById("ventanaEmergente2");
 
-botonMostrar2.addEventListener("click", () => { 
-  ventanaEmergente2.style.display = "flex"; // Mostrar la ventana emergente
-});
-
-ventanaEmergente2.addEventListener("click", (event) => {
-  if (event.target === ventanaEmergente2) {
-    ventanaEmergente2.style.display = "none"; // Ocultar la ventana emergente al hacer clic fuera de ella
-  }
-});
 
 // carrusel  mision-vision
 document.addEventListener("DOMContentLoaded", function () {

@@ -11,12 +11,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>transport&gps</title>
+    <title>transport&Gps</title>
     <link rel="shortcut icon" href="img/logoac.png" type="image/x-icon">
     <link rel="stylesheet" href="{{ asset('css/Principal.css') }}" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+  
 </head>
 <body>
  <header class="cabeza" id="inicio">
@@ -28,18 +28,22 @@
 
    <nav class="vlogo">
       <img src="img/logoac.png" class="logo">
-   </nav>
-     
+   </nav> 
+
+
+
    <a class="tex" >AAAA</a>
-     <a class="barri" href="#inicio" >Inicio</a>
      <a class="barri" href="#info">Informacion </a>
      <a class="barri" href="#empresas">Empresas de transporte</a>
      <a class="barri" href="#comentarios">Expectativas</a>
      <a class="barri" href="#desarrolladores">Creadores</a>
-     <a class="barri" href="mapa.html"> Mapa </a>
-     <a class="barri" href="calificar.html">Calificar</a>
+     <a href="{{ url('foro') }}" class="ayudita">Foro</a>
      <button id="mostrarFormulario" class="ayudita">Ayuda</button>
-     <button id="mostrarFormulario2" class="ayudita">Perfil</button>
+     <a href="{{ url('perfil') }}" class="ayudita">Perfil</a>
+     <a href="{{ url('admin') }}" class="ayudita">Administracion</a>
+
+
+
 
 </nav>
 
@@ -54,64 +58,19 @@
    <!-- Ventana ayuda-->
 <div id="ventanaEmergente">
    <div id="formularioEmergente">
-       
-           <form class="formulario__aid">
-               <div class="ayuda-box">
-                   <h1 class="textoo1">¿En qué podemos ayudarte?</h1>
-                   <br>
-                   <input type="text" class="cajita" placeholder="¿Cuál es tu dificultad?">
-                   <input type="text" class="cajita" placeholder="Correo">
-                   <br><br>
-                   
-                       <button type="submit" class="btnayu">Enviar</button>
-                   
-                   <h1 class="textoo2">“Tu búsqueda te ayuda, coopera y prospera”</h1>
-               </div>
-           </form>
+
+        <div class="ayuda-box">
+            <h1 class="texto1">¿Comó podemos ayudarte?</h1>
+             <h1 class="texto2">Comunicate con nosotros si tienes alguna dificultad con nuestro sitio web al correo transportgps@gmail.com.</h1>
+            <h1 class="texto3">Seguridad</h1>
+            <h1 class="texto4">Verifica que toda la información que ingreso sea valida en el momento de no utilizar más la aplicacion, asegurate de cerrar tu cuenta para que tus datos esten mas seguros.</h1>
+            <h1 class="texto5">Guía de uso de Transportgps</h1>
+            <h1 class="texto6">Crea una cuenta valida, que todos los datos sean correctos. a la hora de ingresar encontrara informacion sobre la pagina web y logos de la empresa donde al darle click en "ver mas" te mostrara los carteles donde estan los numeros de la rutas de los buses y lugares por los cuales pasan y si te diriges al boton de rutas te enseñara los mapas y sus rutas trazadas para que asi tenga una guia mas detallada. En perfil encontraras tus datos y si deseas lo puedes editar. </h1>
+        </div>
        
    </div>
 </div>
 <!-- fin ayuda -->
-
-<!-- ventana menu -->
- <div id="ventanaEmergente2">
-   <div id="formularioEmergente2">
-       
-      <!--menu-->
-         <div class="caja__trasera">
-
-            <h2 class="ajus">Ajustes</h2>
-
-              <div class="bots">
-                 <button id="" class="vers">Version 3.0</button>
-                 <button id="" class="vers">Eliminar cuenta</button>
-                 <button id="" class="vers">Cerrar sesion</button>
-               </div>
-
-         </div>
- 
-         <!--Formulario de Login y registro-->
-         <div class="contenedor__login-register">
-             <!--Login-->
-
-
-             <form action="php/login_usuario_bd.php" method="POST" class="formulario__login">
-        
-               <img class="proyecto" src="img/logoac.png" >
-             
-              <input type="text" placeholder="Usuario" name="">
-              <input type="text" placeholder="Correo" name="">
-              <input type="password" placeholder="Contraseña" name="">
-              <button type="submit" class="btnregi">Guardar</button>
-                 
-             </form>
- 
-         </div>
-     <!--menu-->
-       
-   </div>
-</div>
-<!-- fin menu -->
 
 </header>
     <main>
@@ -166,15 +125,15 @@
            <img src="img/tras pubenza.jpeg">
        </section>
        <section class="slider-section2">
-         <div class="velu2"><br><h1 class="buem">TRANSLIBERTAD</h1><h1 class="disp">NO DISPONIBLE</h1></div>     
+         <div class="velu2"><br><h1 class="buem">TRANSLIBERTAD</h1><h1 class="disp">DISPONIBLE</h1><button class="btn" id="mostrarFormulario5">Ver mas</button></div>     
          <img src="img/tras libertad.jpeg">
        </section>
        <section class="slider-section2">
-         <div class="velu3"><br><h1 class="buem">SOTRACAUCA</h1><h1 class="disp">NO DISPONIBLE</h1></div>     
+         <div class="velu3"><br><h1 class="buem">SOTRACAUCA</h1><h1 class="disp">DISPONIBLE</h1><button class="btn" id="mostrarFormulario7">Ver mas</button></div>     
          <img src="img/sotracauca metro.jpg">
        </section>
        <section class="slider-section2">
-         <div class="velu4"><br><h1 class="buem">TRANSTAMBO</h1><h1 class="disp">NO DISPONIBLE</h1></div>     
+         <div class="velu4"><br><h1 class="buem">TRANSTAMBO</h1><h1 class="disp">DISPONIBLE</h1><button class="btn" id="mostrarFormulario9">Ver mas</button></div>     
            <img src="img/tras tambo.jpeg">
        </section>
        
@@ -191,151 +150,339 @@
             <button class="ruta" id="mostrarFormulario4">Rutas</button>
             <div class="r1">
                <h1 class="at">AUTOPISTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
+               <h1 class="lp">LOMAS G.</h1>
                <ul class="cm"><li>CAMPANARIO</li>
                    <li>EXITO</li>
                    <li>TERMINAL</li>
                    <li>ESMERALDA</li>
                    <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
+                   <li>LAS PALMAS</li>
                </ul><button class="num">1</button></div>
            <div class="r2">
-               <h1 class="cam">CAMPANARIO</h1>
+               <h1 class="cam">ASTURIAS</h1>
                <h1 class="lp">VARIANTE</h1>
-               <ul class="cm"><li>ESTADIO</li>
+               <ul class="cm"><li>CAMPANARIO</li>
+                   <li>ESTADIO</li>
                    <li>TELECOM</li>
-                   <li>PLAZA TOROS</li>
+                   <li>CALLE 13</li>
                    <li>PAJONAL</li>
                    <li>MIRADOR</li>
                </ul><button class="num">2</button></div>
            <div class="r3"> 
-               <h1 class="at">AUTOPISTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
-               <ul class="cm"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
-                   <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
-               </ul><button class="num">2</button></div>
-           <div class="r4"> 
-               <h1 class="at">AUTOPISTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
-               <ul class="cm"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
-                   <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
-               </ul><button class="num">4</button></div>
-           <div class="r5"> 
-               <h1 class="at">AUTOPISTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
-               <ul class="cm"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
-                   <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
-               </ul><button class="num">5</button></div>
-           <div class="r6">
-                <h1 class="at">LACTEOS</h1>
-               <h1 class="lp">CHUNE</h1>
-               <ul class="cm"><li>ESTADIO</li>
-                   <li>HOSPITAL</li>
-                   <li>BOLIVAR</li>
-                   <li>TELECOM</li>
-                   <li>CALLE 13</li>
-                   <li>SAUCES</li>
-               </ul><button class="num">5</button></div>
-           <div class="r7">
-                            <h1 class="at">LACTEOS</h1>
+               <h1 class="at">LACTEOS</h1>
                <h1 class="lp">NARANJOS</h1>
                <ul class="cm"><li>ESTADIO</li>
-                   <li>HOSPITAL</li>
-                   <li>BOLIVAR</li>
+                   <li>B. BOLIVAR</li>
                    <li>TELECOM</li>
                    <li>CALLE 13</li>
+                   <li>ESMERALDA</li>
                    <li>CHUNE</li>
+               </ul><button class="num">4</button></div>
+           <div class="r4"> 
+               <h1 class="at">LACTEOS</h1>
+               <h1 class="lp">SAUCES</h1>
+               <ul class="cm"><li>ESTADIO</li>
+                   <li>HOSPITAL</li>
+                   <li>TELECOM</li>
+                   <li>CENTRO</li>
+                   <li>KELVIN</li>
+               </ul><button class="num">5</button></div>
+           <div class="r5"> 
+               <h1 class="at">LACTEOS</h1>
+               <h1 class="lp">NARANJOS</h1>
+               <ul class="cm"><li>ESTADIO</li>
+                   <li>TELECOM</li>
+                   <li>CALLE 13</li>
+                   <li>ESMERALDA</li>
+                   <li>CHUNE</li>
+                   <li>LA MARIA</li>
                </ul><button class="num">6</button></div>
-
-           <div class="r10"> 
-               <h1 class="at">AUTOPISTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
-               <ul class="cm"><li>CAMPANARIO</li>
+           <div class="r6">
+                <h1 class="at">CAMPANARIO</h1>
+               <h1 class="lp">DOS BRAZOS</h1>
+               <ul class="cm"><li>TERMINAL</li>
                    <li>EXITO</li>
-                   <li>TERMINAL</li>
-                   <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
+                   <li>LOTERIA</li>
+                   <li>TELECOM</li>
+                   <li>CALLE 13</li>
                </ul><button class="num">8</button></div>
-           <div class="r11"> 
-               <h1 class="at">AUTOPISTA</h1>
+           <div class="r7">
+            <h1 class="at">R. BLANCO</h1>
                <h1 class="lp">L. PALMAS</h1>
-               <ul class="cm"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
-                   <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
-               </ul><button class="num">8</button></div>
-           <div class="r12"> 
-               <h1 class="at">H.VIAS</h1>
-               <h1 class="lp">j</h1>
-               <ul class="cm"><li>C</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
-                   <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
-               </ul><button class="num">9</button></div>
-           <div class="r13">
-                <h1 class="at">AUTOPISTA</h1>
-               <h1 class="lp">L. PALMAS</h1>
-               <ul class="ten"><li>CAMPANARIO</li>
-                   <li>EXITO</li>
-                   <li>TERMINAL</li>
-                   <li>ESMERALDA</li>
-                   <li>TOMAS C.</li>
-                   <li>MIRADOR</li>
-               </ul><button class="num">10</button></div>
-           <div class="r14">
-                <h1 class="at">CENTRO</h1>
-               <h1 class="lp">CALIBIO</h1>
-               <ul class="elv"><li>ESTADIO</li>
-                   <li>LACTEOS</li>
-                   <li>TERRAPLAZA</li>
-                   <li>RIO BLANCO</li>
+               <ul class="cm"><li>SENA</li>
+                   <li>CAMPANARIO</li>
+                   <li>HOSPITAL</li>
+                   <li>TELECOM</li>
+                   <li>CALLE 13</li>
                    <li>CABUYERA</li>
+               </ul><button class="num">9</button></div>
+
+           <div class="r8">
+                <h1 class="at">CAMPANARIO</h1>
+               <h1 class="lp">LOMAS G.</h1>
+               <ul class="ten"><li>EXITO</li>
+                   <li>TERMINAL</li>
+                   <li>CHUNE</li>
+                   <li>LA MARIA</li>
+                   <li>LAS GARZAS</li>
+               </ul><button class="num">10</button></div>
+           <div class="r9">
+                <h1 class="at">SENA</h1>
+               <h1 class="lp">L. VIRGEN</h1>
+               <ul class="elv"><li>LACTEOS</li>
+                   <li>B. BOLIVAR</li>
+                   <li>LOTERIA</li>
+                   <li>CRA. 9</li>
+                   <li>ESMERALDA</li>
+                   <li>CARVAJAL</li>
                </ul><button class="num">11</button></div>
          </div>
       </div>
       </div>
 
-      <!-- fotos mapas -->
+      <!--mapas pubenza -->
    <div id="ventanaEmergente4" >     
     <div id="formularioEmergente4">  
       <div class="mapa-box">
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  <img class="mp" src="img/r1.png" >
-  
+  <img class="mp" src="img/r1pub.png" >
+  <img class="mp" src="img/r2pub.png" >
+  <img class="mp" src="img/r4pub.png" >
+  <img class="mp" src="img/r5pub.png" >
+  <img class="mp" src="img/r6pub.png" >
+  <img class="mp" src="img/r8pub.png" >
+  <img class="mp" src="img/r9pub.png" >
+  <img class="mp" src="img/r10pub.png" >
+  <img class="mp" src="img/r11pub.png" >
       </div>
     </div>
      </div>
 
 </div>
+<!-- translibertad -->
+<div id="ventanaEmergente5" >
+      <div id="formularioEmergente5">
+         <div class="ruta-box">
+            <button class="ruta2" id="mostrarFormulario6">Rutas</button>
+            <div class="r1l">
+               <h1 class="at">CAMPANARIO</h1>
+               <h1 class="lp">ORTIGAL</h1>
+               <ul class="cm"><li>B. BOLIVAR</li>
+                   <li>TELECOM</li>
+                   <li>FLORESTA</li>
+                   <li>COMUNEROS</li>
+                   <li>H. VIAS</li>
+                   <li>LAS PALMAS</li>
+               </ul><button class="num">1</button></div>
+           <div class="r2l">
+               <h1 class="cam">MICROBUS</h1>
+               <h1 class="lp">CHUNE</h1>
+               <ul class="cm"><li>ASTURIAS</li>
+                   <li>CAMPANARIO</li>
+                   <li>HOSPITAL</li>
+                   <li>CRA 9</li>
+                   <li>CALLE 4</li>
+                   <li>ESMERALDA</li>
+               </ul><button class="num">1</button></div>
+           <div class="r3l"> 
+               <h1 class="at">AUTOPISTA</h1>
+               <h1 class="lp">L. PALMAS</h1>
+               <ul class="cm"><li>CAMPANARIO</li>
+                   <li>EXITO</li>
+                   <li>TERMINAL</li>
+                   <li>ESMERALDA</li>
+                   <li>MIRADOR</li>
+               </ul><button class="num">2</button></div>
+           <div class="r4l"> 
+               <h1 class="at">LACTEOS</h1>
+               <h1 class="lp">LA MARIA</h1>
+               <ul class="cm"><li>B. BOLIVAR</li>
+                   <li>TELECOM</li>
+                   <li>CALLE 13</li>
+                   <li>ESMERALDA</li>
+                   <li>CHUNE</li>
+               </ul><button class="num">3</button></div>
+           <div class="r5l"> 
+           <h1 class="at">LA PAZ</h1>
+               <h1 class="lp">LA MARIA</h1>
+               <ul class="cm"><li>LACTEOS</li>
+                   <li>B. BOLIVAR</li>
+                   <li>TELECOM</li>
+                   <li>CALLE 13</li>
+                   <li>JUZGADOS</li>
+                   <li>ESMERALDA</li>
+               </ul><button class="num">4</button></div>
+           <div class="r6l">
+                <h1 class="at">AUTOPISTA</h1>
+               <h1 class="lp">ORTIGAL</h1>
+               <ul class="cm"><li>CAMPANARIO</li>
+                   <li>NUEVA EPS</li>
+                   <li>EXITO</li>
+                   <li>TERMINAL</li>
+                   <li>ESMERALDA</li>
+                   <li>LA MARIA</li>
+               </ul><button class="num">5</button></div>
+
+               <div class="r6l">
+                <h1 class="at">CAMPANARIO</h1>
+               <h1 class="lp">ORTIGAL</h1>
+               <ul class="cm"><li>EXITO</li>
+                   <li>TERMINAL</li>
+                   <li>ESMERALDA</li>
+                   <li>CHUNE</li>
+                   <li>NARANJOS</li>
+               </ul><button class="num">7</button></div>
+         </div>
+      </div>
+      </div>
+
+       <!--mapas libertad -->
+   <div id="ventanaEmergente6" >     
+    <div id="formularioEmergente6">  
+      <div class="mapa-box">
+  <img class="mp" src="img/r1l.png" >
+  <img class="mp" src="img/r1mrb.png" >
+  <img class="mp" src="img/r2l.png" >
+  <img class="mp" src="img/r3l.png" >
+  <img class="mp" src="img/r4l.png" >
+  <img class="mp" src="img/r5l.png" >
+  <img class="mp" src="img/r7l.png" >
+
+      </div>
+    </div>
+     </div>
+
+     <!-- metro -->
+<div id="ventanaEmergente7" >
+      <div id="formularioEmergente7">
+         <div class="ruta-box">
+            <button class="ruta3" id="mostrarFormulario8">Rutas</button>
+            <div class="r1l">
+               <h1 class="at">CAMPANARIO</h1>
+               <h1 class="lp">ORTIGAL</h1>
+               <ul class="cm"><li>TRANSITO</li>
+                   <li>TELECOM</li>
+                   <li>FLORESTA</li>
+                   <li>COMUNEROS</li>
+                   <li>H. VIAS</li>
+                   <li>LAS PALMAS</li>
+               </ul><button class="num">1</button></div>
+           <div class="r2l">
+               <h1 class="cam">CAMPANARIO</h1>
+               <h1 class="lp">JULUMITO</h1>
+               <ul class="cm"><li>EXITO</li>
+                   <li>TERMINAL</li>
+                   <li>CRA 9</li>
+                   <li>CALLE 4</li>
+                   <li>ESMERALDA</li>
+                   <li>LOMAS G.</li>
+               </ul><button class="num">2</button></div>
+           <div class="r3l"> 
+               <h1 class="at">AUTOPISTA</h1>
+               <h1 class="lp">JULUMITO</h1>
+               <ul class="cm"><li>CAMPANARIO</li>
+                   <li>HOSPITAL</li>
+                   <li>CALLE 13</li>
+                   <li>ESMERALDA</li>
+                   <li>CHUNE</li>
+                   <li>LOMAS G.</li>
+               </ul><button class="num">7</button></div>
+           <div class="r4l"> 
+               <h1 class="at">LACTEOS</h1>
+               <h1 class="lp">FIGUEROA</h1>
+               <ul class="cm"><li>ESTADIO</li>
+                   <li>LOTERIA</li>
+                   <li>CENTRO</li>
+                   <li>ESMERALDA</li>
+                   <li>CHUNE</li>
+                   <li>V. TORRES</li>
+               </ul><button class="num">8</button></div>
+           <div class="r5l"> 
+           <h1 class="at">R. BLANCO</h1>
+               <h1 class="lp">JULUMITO</h1>
+               <ul class="cm"><li>TERRAPLAZA</li>
+                   <li>LACTEOS</li>
+                   <li>ESTADIO</li>
+                   <li>TELECOM</li>
+               </ul><button class="num">9</button></div>
+         </div>
+      </div>
+      </div>
+
+       <!--mapas metro -->
+   <div id="ventanaEmergente8" >     
+    <div id="formularioEmergente8">  
+      <div class="mapa-box">
+  <img class="mp" src="img/r1m.png" >
+  <img class="mp" src="img/r2m.png" >
+  <img class="mp" src="img/r7m.png" >
+  <img class="mp" src="img/r8m.png" >
+  <img class="mp" src="img/r9m.png" >
+
+      </div>
+    </div>
+     </div>
+
+          <!-- tambo -->
+<div id="ventanaEmergente9" >
+      <div id="formularioEmergente9">
+         <div class="ruta-box">
+            <button class="ruta4" id="mostrarFormulario10">Rutas</button>
+            <div class="r1l">
+               <h1 class="at">PISOJE</h1>
+               <h1 class="lp">CAJETE</h1>
+               <ul class="cm"><li>LACTEOS</li>
+                   <li>ESTADIO</li>
+                   <li>LOTERIA</li>
+                   <li>CENTRO</li>
+                   <li>CHUNE</li>
+                   <li>LAS PALMAS</li>
+               </ul><button class="num">1</button></div>
+           <div class="r2l">
+               <h1 class="cam">SENA</h1>
+               <h1 class="lp">ORTIGAL</h1>
+               <ul class="cm"><li>CAMPANARIO</li>
+                   <li>TERMINAL</li>
+                   <li>ESMERALDA</li>
+                   <li>CHUNE</li>
+                   <li>LA MARIA</li>
+                   <li>NARANJOS</li>
+               </ul><button class="num">2</button></div>
+           <div class="r3l"> 
+               <h1 class="at">PENAL</h1>
+               <h1 class="lp">L. PALMAS</h1>
+               <ul class="cm"><li>LA PAZ</li>
+                   <li>LACTEOS</li>
+                   <li>LOTERIA</li>
+                   <li>CENTRO</li>
+                   <li>CHUNE</li>
+                   <li>TOMAS C.</li>
+               </ul><button class="num">4</button></div>
+           <div class="r4l"> 
+           <h1 class="at">PENAL</h1>
+               <h1 class="lp">CAJETE</h1>
+               <ul class="cm"><li>LA PAZ</li>
+                   <li>CAMPANARIO</li>
+                   <li>EXITO</li>
+                   <li>TERMINAL</li>
+                   <li>ESMERALDA</li>
+                   <li>LA MARIA</li>
+               </ul><button class="num">6</button></div>
+           
+         </div>
+      </div>
+      </div>
+
+       <!--mapas tambo -->
+   <div id="ventanaEmergente10" >     
+    <div id="formularioEmergente10">  
+      <div class="mapa-box">
+  <img class="mp" src="img/r1t.png" >
+  <img class="mp" src="img/r2t.png" >
+  <img class="mp" src="img/r4t.png" >
+  <img class="mp" src="img/r6t.png" >
+      </div>
+    </div>
+     </div>
 
 <!-- comentarios -->
       <section class="coment" id="comentarios">
@@ -434,5 +581,5 @@
 </body>
 <script src="{{ asset('js/home.js') }}"></script>
 <script src="{{ asset('js/home2.js') }}"></script>
-
+ 
 </html>

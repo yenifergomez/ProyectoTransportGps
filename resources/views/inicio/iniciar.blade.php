@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>transport&gps</title>
+    <title>Transport&gps</title>
     <link rel="stylesheet" href="{{ asset('css/inicio.css') }}" />
         <link rel="shortcut icon" href="img/logoac.png" type="image/x-icon">
 </head>
 <body>
     <header class="bg_animate">
 
-             
+              
 
                 <nav class="ctboton">
                     <h1 class="titulito">TRANSPORT&GPS</h1>
@@ -23,7 +23,6 @@
         <section class="banner contenedor">
             <div class="banner_title">
                 <h2>Si no sabes como ubicarte, <br> nosotros podemos ayudarte.</h2>
-                <button id="map" class="ubicar">Conoce tu ubicacion</button>
             </div>
             
                 <img src="img/logoac.png" class="loguito">
@@ -39,7 +38,6 @@
     
      </div>
  </header>
- <script src="js/inicio.js"></script>
 </body>
 </html>
 

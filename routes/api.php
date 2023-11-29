@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\API\CommentApi;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Contracts\Http\Kernel;
 use App\Http\Controllers\API\UserController;
 
 /*
@@ -33,6 +35,7 @@ Route::prefix('users')->group(function () {
 });
 
 
+
 //COMENTARIOS API
 
 Route::prefix('comments')->group(function () {
@@ -42,6 +45,7 @@ Route::prefix('comments')->group(function () {
     Route::put('/{comment}', [CommentApi::class, 'update']);
     Route::delete('/{comment}', [CommentApi::class, 'destroy']);
 });
+
 
 //ELIMINAR CUENTA API
 Route::middleware('auth:api')->delete('/delete-account', 'UserController@deleteAccount');
