@@ -130,6 +130,25 @@ Route::prefix('admin')->group(function () {
  Route::get('/reportes', [ReportController::class, 'notific']);
 
  Route::match(['get', 'post'], '/reportar', [ReportController::class, 'crearReporte'])->name('reportar');
+
+
+ //RUTAS ADMINISTRACION REPORTAR
+
+ Route::get('/reportes-admin', function () {
+    return view('admin.reportad');
+ });
+
+ Route::get('/reportes', 'ReportController@mostrarReportes')->name('ruta_para_mostrar_reportes');
+ 
+ Route::delete('/reportes/{id}', 'ReportController@eliminarReporte')->name('ruta_para_eliminar_reporte');
+
+
+
+
+
+
+
+
  
  //RUTAS PERFIL DE USUARIO
 

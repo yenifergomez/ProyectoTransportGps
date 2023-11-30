@@ -12,26 +12,12 @@
     <nav class="ctboton">
         <h1 class="titulo">ADMINISTRACIÓN</h1>
         <a class="boton3" href="{{ url('/Foro-Administracion') }}">Administrar Foro</a>
-     <button id="mostrarFormulario" class="ayudita">Ayuda</button>
+
+    <a href="{{ url('reportes-admin') }}"class="ayudita">Ayuda</a>
+
         <a href="{{ url('contenido') }}" class="boton1">Volver</a>
     </nav>
 
-  <!-- Ventana ayuda-->
-<div id="ventanaEmergente">
-   <div id="formularioEmergente">
-
-        <div class="ayuda-box">
-            <h1 class="texto1">¿Comó podemos ayudarte?</h1>
-             <h1 class="texto2">Comunicate con nosotros si tienes alguna dificultad con nuestro sitio web al correo transportgps@gmail.com.</h1>
-            <h1 class="texto3">Seguridad</h1>
-            <h1 class="texto4">Verifica que toda la información que ingreso sea valida en el momento de no utilizar más la aplicacion, asegurate de cerrar tu cuenta para que tus datos esten mas seguros.</h1>
-            <h1 class="texto5">Guía de uso de Transportgps</h1>
-            <h1 class="texto6">Crea una cuenta valida, que todos los datos sean correctos. a la hora de ingresar encontrara informacion sobre la pagina web y logos de la empresa donde al darle click en "ver mas" te mostrara los carteles donde estan los numeros de la rutas de los buses y lugares por los cuales pasan y si te diriges al boton de rutas te enseñara los mapas y sus rutas trazadas para que asi tenga una guia mas detallada. En perfil encontraras tus datos y si deseas lo puedes editar. </h1>
-        </div>
-       
-   </div>
-</div>
-<!-- fin ayuda -->
     
 @if(isset($users) && count($users) > 0)
 <div class="tablad">

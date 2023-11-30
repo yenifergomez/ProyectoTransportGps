@@ -17,14 +17,12 @@ class ReportController extends Controller
 
     public function crearReporte(Request $request)
     {
-        // Validar datos del formulario de reporte
         $request->validate([
             'nombre' => 'required|string',
             'reporte' => 'required|string',
         ]);
     
         try {
-            // Intentar crear un nuevo reporte
             $reporte = Report::create([
                 'nombre' => $request->nombre,
                 'reporte' => $request->reporte,
