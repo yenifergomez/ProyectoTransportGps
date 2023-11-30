@@ -1,0 +1,142 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.titulo {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Estilos para la barra de navegación */
+.ctboton {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.boton1,
+.boton3 {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.boton1 {
+    background-color: #4CAF50;
+}
+
+.boton3 {
+    background-color: #2196F3;
+}
+.btac {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #2195f3;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+
+    
+}
+
+.btacDelete{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f32121;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+
+    
+}
+
+/* Estilos para la tabla de comentarios */
+.tabla-comentarios {
+    margin: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Estilos para el botón de ayuda */
+.ayudita {
+    padding: 10px 20px;
+    background-color: #FFC107;
+    color: #333;
+    border: 2px solid #FFC107;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.ayudita:hover {
+    background-color: #FFEB3B;
+    color: #333;
+    border-color: #FFEB3B;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.titulos {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Estilos para los formularios de edición y eliminación */
+form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+input[type="text"],
+textarea {
+    margin-bottom: 10px;
+    flex: 1;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para la imagen del comentario */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el botón de eliminar */
+button[type="submit"].eliminar {
+    background-color: #f32121;
+    color: white;
+}

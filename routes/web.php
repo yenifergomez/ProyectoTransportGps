@@ -22,6 +22,7 @@ use App\Http\Controllers\PasswordController;
 use App\Http\Controllers\updateProfile;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ReportController;
+use App\Http\Controllers\ForoadminController;
 
 
 
@@ -90,21 +91,22 @@ Route::get('/logout', 'App\Http\Controllers\Auth\AuthenticatedSessionController@
 
 
 
- //RUTAS COMENTARIOS ADMINISTRACION EDITAR + ELIMINAR
- Route::get('/Foro-Administracion', function () {
-    return view('layouts.adforo');
+//RUTAS COMENTARIOS ADMINISTRACION EDITAR + ELIMINAR
+Route::get('/Foro-Administracion', function () {
+    return view('admin.adforo');
 });
 
-Route::get('/layouts/adforo', 'CommentController@indexComment')->name('layouts.adforo');
+Route::prefix('admin')->group(function () {
 
-Route::get('/layouts/adforo/{comment}/edit', 'CommentController@edit')->name('layouts.adforo.edit');
+    Route::get('/admin/adforo', [ForoadminController::class, 'index'])->name('admin.adforo');
 
-Route::put('/layouts/adforo/{id}', 'CommentController@update')->name('layouts.adforo.update');
-
-Route::delete('/layouts/adforo/{id}', 'CommentController@destroy')->name('layouts.adforo.destroy');
-
-
- 
+    Route::get('/admin/editar-comentario/{id}', [ForoadminController::class, 'editComment'])->name('admin.editar_comentario');
+    
+    Route::put('/admin/actualizar-comentario/{id}', [ForoadminController::class, 'updateComment'])->name('admin.actualizar_comentario');
+    
+    Route::delete('/admin/eliminar-comentario/{id}', [ForoadminController::class, 'deleteComment'])->name('admin.eliminar_comentario');
+});
+//
 
 
 

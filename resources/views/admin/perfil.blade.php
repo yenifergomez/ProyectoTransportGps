@@ -93,17 +93,6 @@
     @endif
 
 
-
-<!-- COMENTARIOS ADMINISTRACION FORO -->
-
-
-
-
-
-
-
-
-
 </body>
 <script src="{{ asset('js/home.js') }}"></script>
 </html>

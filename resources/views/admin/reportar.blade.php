@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Reportar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <h1>Reportar un problema</h1>
+
+<h1>Reportar un problema</h1>
     @if(session('success'))
     <div>{{ session('success') }}</div>
 @endif
@@ -19,6 +22,6 @@
     <textarea name="reporte" placeholder="Reporte"></textarea>
     <button type="submit">Enviar Reporte</button>
 </form>
-
+    
 </body>
 </html>
