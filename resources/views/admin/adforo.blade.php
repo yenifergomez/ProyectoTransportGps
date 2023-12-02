@@ -4,80 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/foroadm.css') }}" />
-    <title>Foro-Admin</title>
+    <title>Foro_Administracion</title>
 </head>
-
-
+<body>
+    
 <?php
 $comments = App\Models\Comment::all(); 
 ?>
 
-
 <nav class="ctboton">
-    <h1 class="titulo">ADMINISTRACIÓN</h1>
+    <h1 class="titulo">ADMINISTRACIÓN FORO</h1>
     <a class="boton3" href="{{ url('/admin') }}">Administracion General</a>
-    <button id="mostrarFormulario" class="ayudita">Reportes</button>
     <a href="{{ url('admin') }}" class="boton1">Volver</a>
-
-
 </nav>
-<div class="tablad">
-    <table>
-        <thead>
+
+
+
+
+
+
+<div class="similar-table"> 
+        <div class="container">
+            <table>
             <tr>
-                <th>ID</th>
-                <th>TITULO</th>
-                <th>COMENTARIO</th>
-                <th>IMAGEN</th>
-                <th>ACCIONES</th>
+                <th class="similar-til">ID</th>
+                <th class="similar-til">TITULO</th>
+                <th class="similar-til">COMENTARIO</th>
+                <th class="similar-til">IMAGEN</th>
+                <th class="similar-til">ACCIONES</th>
             </tr>
         </thead>
-        <tbody>
-            @if($comments->isEmpty())
-                <tr>
-                    <td colspan="5">No hay comentarios disponibles</td>
-                </tr>
-            @else
-                @foreach($comments as $comment)
-                    <tr>
-                        <td>{{ $comment->id }}</td>
-                        <td><input type="text" value="{{ $comment->name }}" ></td>
-                        <td><textarea >{{ $comment->comment }}</textarea></td>
-                        <td>
-                            @if($comment->image)
-                                <img src="{{ asset('images/' . $comment->image) }}" alt="Imagen del comentario" style="max-width: 100px;">
-                            @else
-                                No imagen
-                            @endif
-                        </td>
-                        <td>
-                            <form action="{{ route('admin.actualizar_comentario', ['id' => $comment->id]) }}" method="POST">
-                                <!-- Formulario para actualizar -->
-                                @csrf
-                                @method('PUT') 
-                                <button class="btac" type="submit">Guardar cambios</button>
-                            </form>
-                            <form action="{{ route('admin.eliminar_comentario', ['id' => $comment->id]) }}" method="POST">
-                                <!-- Formulario para eliminar -->
-                                @csrf
-                                @method('DELETE') 
-                                <button class="btacDelete"  type="submit">Eliminar</button>
-                            </form>
-                        </td>
-                    </tr>
-                @endforeach
-            @endif
-        </tbody>
-    </table>
-</div>
+            <div class="row justify-content-center">
+                    @if(session('success'))
+                        <!-- ... -->
+                    @endif
+                    @if(session('error'))
+                    <div class="alert alert-danger">                    
+                        @endif
+                    <div class="card">
+                        <div class="card-body">
+                            @foreach($comments as $comment)
+                            <div class="mb-3 comentario">
+                                    <form action="{{ route('admin.updateComment', ['id' => $comment->id]) }}" method="POST">
+                                        @csrf
+                                        @method('PUT')
+                                        <!-- Campos para editar el comentario -->
+                                        <input type="text" name="name" value="{{ $comment->name }}" required>
+                                        <textarea name="comment" required>{{ $comment->comment }}</textarea>
+                                        <!-- Botón para guardar cambios -->
+                                        <input type="submit" class="btn btn-primary" value="Guardar">
+                                    </form>
+                                    <form action="{{ route('admin.deleteComment', ['id' => $comment->id]) }}" method="POST" style="display: inline-block;">
+                                        @csrf
+                                        @method('DELETE')
+                                        <!-- Botón para eliminar el comentario -->
+                                        <button type="submit" class="btn btn-danger" onclick="return confirm('¿Estás seguro?')">Eliminar</button>
+                                    </form>
+                                    <!-- Mostrar detalles del comentario -->
+                                    <p>{{ $comment->id }}</p>
+                                    <p>{{ $comment->title }}
+                                    @if($comment->image)
+                                        <img src="{{ asset('images/' . $comment->image) }}" alt="Imagen del comentario" style="max-width: 100px;">
+                                    @else
+                                        <p>No hay imagen</p>
+                                    @endif
+                                </div>
+                                <hr>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </table>
+    </div>
+
 
 
 </body>
 </html>
-
-
-
-
-
-
-

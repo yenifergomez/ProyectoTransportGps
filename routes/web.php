@@ -62,6 +62,8 @@ Route::post('/login', [LoginController::class, 'login']);
 
 Route::get('/home',[HomeController::class, 'index']);
 
+Route::get('/contraseña', [PasswordController::class, 'password'])->name('contraseña');
+
 
 Route::post('/register', [RegisterController::class, 'register']);
 
@@ -95,18 +97,16 @@ Route::get('/logout', 'App\Http\Controllers\Auth\AuthenticatedSessionController@
 Route::get('/Foro-Administracion', function () {
     return view('admin.adforo');
 });
+Route::get('/admin/adforo', [ForoadminController::class, 'index'])->name('admin.adforo');
 
-Route::prefix('admin')->group(function () {
 
-    Route::get('/admin/adforo', [ForoadminController::class, 'index'])->name('admin.adforo');
+Route::get('/admin/editar_comentario/{id}', [ForoadminController::class, 'editComment'])->name('admin.editComment');
 
-    Route::get('/admin/editar-comentario/{id}', [ForoadminController::class, 'editComment'])->name('admin.editar_comentario');
-    
-    Route::put('/admin/actualizar-comentario/{id}', [ForoadminController::class, 'updateComment'])->name('admin.actualizar_comentario');
-    
-    Route::delete('/admin/eliminar-comentario/{id}', [ForoadminController::class, 'deleteComment'])->name('admin.eliminar_comentario');
-});
-//
+Route::put('/admin/actualizar_comentario/{id}', [ForoadminController::class, 'updateComment'])->name('admin.updateComment');
+
+Route::delete('/admin/eliminar_comentario/{id}', [ForoadminController::class, 'deleteComment'])->name('admin.deleteComment');
+
+Route::get('/admin/adforo', [ForoadminController::class, 'index'])->name('admin.adforo');
 
 
 
@@ -120,35 +120,15 @@ Route::prefix('admin')->group(function () {
  Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('admin.perfil.delete');
 
  Route::post('/assign-role/{id}', 'UserController@asignarRol')->name('assign.role');
-
+ Route::get('/contraseña', [PasswordController::class, 'password'])->name('contraseña');
  Route::get('/users', [UserController::class, 'index'])->name('delete.account');
 
 
 
-//RUTAS PARA REPORTAR
-
- Route::get('/reportes', [ReportController::class, 'notific']);
-
- Route::match(['get', 'post'], '/reportar', [ReportController::class, 'crearReporte'])->name('reportar');
-
-
- //RUTAS ADMINISTRACION REPORTAR
-
- Route::get('/reportes-admin', function () {
-    return view('admin.reportad');
- });
 
  Route::get('/reportes', 'ReportController@mostrarReportes')->name('ruta_para_mostrar_reportes');
  
  Route::delete('/reportes/{id}', 'ReportController@eliminarReporte')->name('ruta_para_eliminar_reporte');
-
-
-
-
-
-
-
-
  
  //RUTAS PERFIL DE USUARIO
 
@@ -171,14 +151,4 @@ Route::prefix('admin')->group(function () {
 
 
 
- //RECUPERAR CONTRASEÑA
-
- Route::get('/contraseña', [PasswordController::class, 'password'])->name('contraseña');
-
- Route::get('forgot-password', [App\Http\Controllers\Auth\ForgotPasswordController::class, 'showLinkRequestForm'])->name('password.request');
-
- Route::post('forgot-password', [App\Http\Controllers\Auth\ForgotPasswordController::class, 'sendResetLinkEmail'])->name('password.email');
-
- Route::get('reset-password/{token}', [App\Http\Controllers\Auth\ResetPasswordController::class, 'showResetForm'])->name('password.reset');
-
- Route::post('reset-password', [App\Http\Controllers\Auth\ResetPasswordController::class, 'reset'])->name('password.update');
+ 

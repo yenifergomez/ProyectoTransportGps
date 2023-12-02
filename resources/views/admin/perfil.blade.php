@@ -28,7 +28,7 @@
         <th class="til">CORREO</th>
         <th class="til">EDITAR</th>
         <th class="til">ROLES</th>
-        <th class="til"></th>
+        <th class="til">ACCIONES</th>
         </tr>
     </thead>
     <tbody>
@@ -45,12 +45,7 @@
             <button class="btac" type="submit">Actualizar</button>
         </form>
     </td>
-    <td> 
-
-
-
-
-    
+    <td>     
         <p>{{ $user->name }}</p>
         <form method="POST" action="{{ route('assign.role', $user) }}">
             @csrf
