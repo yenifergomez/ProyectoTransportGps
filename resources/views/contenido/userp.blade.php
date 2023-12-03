@@ -59,7 +59,7 @@
  
 
 @if(Auth::user()->profile_image)
-    <img class="proyecto" src="{{ asset(Auth::user()->profile_image) }}" alt="Perfil">
+    <img class="proyecto" src="{{ asset(Auth::user()->profile_image) }}">
 @else
     <p class="emer">Aun no subes una foto de perfil.</p>
 @endif

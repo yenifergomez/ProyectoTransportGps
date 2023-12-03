@@ -65,10 +65,10 @@ class User extends Authenticatable
     return view('perfil', compact('usuario'));
 }
 
-public function roles()
-{
-    return $this->belongsToMany(Role::class);
-}
+// public function roles()
+// {
+//     return $this->belongsToMany(Role::class);
+// }
 
 
 
