@@ -35,7 +35,7 @@ class updateProfile extends Controller
     
             return redirect('/')->back()->with('success', 'Perfil actualizado correctamente');
         } catch (\Exception $e) {
-            return redirect('/perfil')->back()->with('error', 'Error al actualizar el perfil: ' . $e->getMessage());
+            return redirect('/perfil')->with('error', 'Error al actualizar el perfil: ' . $e->getMessage());
         }
     }
     
