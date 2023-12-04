@@ -23,6 +23,8 @@ use App\Http\Controllers\updateProfile;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\ForoadminController;
+use App\Http\Controllers\RoleController;
+
 
 
 
@@ -89,6 +91,18 @@ Route::get('/logout', 'App\Http\Controllers\Auth\AuthenticatedSessionController@
 
  Route::delete('/admin/perfil/{user}', [UserController::class, 'destroy'])->name('admin.perfil.delete');
 
+//RUTAS ASIGNAR ROLES
+Route::get('/users', [UserController::class, 'index'])->name('users.index');
+
+Route::post('/assign-role/{user}', [UserController::class, 'assignRole'])->name('assign.role');
+
+Route::post('/users/assign-role/{user}', [UserController::class, 'assignRole'])->name('assign.role');
+
+Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('admin.perfil.delete');
+
+Route::post('/assign-role/{id}', 'UserController@asignarRol')->name('assign.role');
+Route::get('/contraseña', [PasswordController::class, 'password'])->name('contraseña');
+Route::get('/users', [UserController::class, 'index'])->name('delete.account');
 
 
 
@@ -99,7 +113,6 @@ Route::get('/Foro-Administracion', function () {
 });
 Route::get('/admin/adforo', [ForoadminController::class, 'index'])->name('admin.adforo');
 
-
 Route::get('/admin/editar_comentario/{id}', [ForoadminController::class, 'editComment'])->name('admin.editComment');
 
 Route::put('/admin/actualizar_comentario/{id}', [ForoadminController::class, 'updateComment'])->name('admin.updateComment');
@@ -108,21 +121,28 @@ Route::delete('/admin/eliminar_comentario/{id}', [ForoadminController::class, 'd
 
 Route::get('/admin/adforo', [ForoadminController::class, 'index'])->name('admin.adforo');
 
+Route::get('/admin/perfil/search', [UserController ::class, 'search'])->name('admin.perfil.search');
 
 
-//RUTAS ASIGNAR ROLES
- Route::get('/users', [UserController::class, 'index'])->name('users.index');
+//RUTAS ROLES
 
- Route::post('/assign-role/{user}', [UserController::class, 'assignRole'])->name('assign.role');
+ Route::get('/roles', [RoleController::class, 'index'])->name('roles.index');
 
- Route::post('/users/assign-role/{user}', [UserController::class, 'assignRole'])->name('assign.role');
+ Route::get('/roles/create', [RoleController::class, 'create'])->name('roles.create');
 
- Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('admin.perfil.delete');
+ Route::post('/roles', [RoleController::class, 'store'])->name('roles.store');
 
- Route::post('/assign-role/{id}', 'UserController@asignarRol')->name('assign.role');
- Route::get('/contraseña', [PasswordController::class, 'password'])->name('contraseña');
- Route::get('/users', [UserController::class, 'index'])->name('delete.account');
+ Route::get('/roles/{id}/edit', [RoleController::class, 'edit'])->name('roles.edit');
 
+ Route::put('/roles/{id}', [RoleController::class, 'update'])->name('roles.update');
+
+ Route::delete('/roles/{id}', [RoleController::class, 'destroy'])->name('roles.destroy');
+
+ Route::get('/users/{userId}', [RoleController::class, 'show'])->name('user.show');
+
+ Route::post('/users/{userId}/assignRole', [RoleController::class, 'assignRole'])->name('user.assignRole');
+ Route::get('/users/{userId}/assignRoleForm', [UserController::class, 'showForm'])->name('user.assignRoleForm');
+Route::post('/users/{userId}/assignRole', [UserController::class, 'assignRole'])->name('user.assignRole');
 
 
 

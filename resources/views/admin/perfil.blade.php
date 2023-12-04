@@ -12,6 +12,11 @@
     <nav class="ctboton">
         <h1 class="titulo">ADMINISTRACIÓN</h1>
         <a class="boton3" href="{{ url('/Foro-Administracion') }}">Administrar Foro</a>
+        <form action="{{ route('admin.perfil.search') }}" method="GET">
+    <input type="text" name="search" placeholder="Buscar por nombre">
+    <button class="btacsearch" type="submit">Buscar</button>
+</form>
+
 
     <a href="{{ url('reportes-admin') }}"class="ayudita">Ayuda</a>
 
@@ -24,16 +29,23 @@
     <table>
         <thead>
         <tr>
+        <th class="til">IMAGEN DE PERFIL</th>
         <th class="til">USUARIO</th>
         <th class="til">CORREO</th>
         <th class="til">EDITAR</th>
-        <th class="til">ROLES</th>
         <th class="til">ACCIONES</th>
         </tr>
     </thead>
     <tbody>
         @foreach($users as $user)
         <tr>
+    <td class="imagen">
+    @if($user->profile_image)
+                            <img src="{{ $user->profile_image }}" alt="Imagen de perfil de {{ $user->usuario }}" width="100" height="100">
+                        @else
+                            <p>No hay imagen de perfil</p>
+                        @endif
+                    </td>
     <td class="usuario"><h1 class="user">{{$user->usuario}}</h1></td>
     <td class="correo"><h1 class="user">{{$user->email}}</h1></td>
     <td class="editar">
@@ -45,18 +57,7 @@
             <button class="btac" type="submit">Actualizar</button>
         </form>
     </td>
-    <td>     
-        <p>{{ $user->name }}</p>
-        <form method="POST" action="{{ route('assign.role', $user) }}">
-            @csrf
-            <select name="role">
-                <option value="Administrador">Administrador</option>
-                <option value="Usuario">Usuario</option>
-            </select>
-            <button class="btac" type="submit">Asignar Rol</button>
-        </form>
-        
-        </td>
+   
         <td>
             <form action="{{ route('admin.perfil.delete', $user) }}" method="POST">
                 @csrf
@@ -73,6 +74,10 @@
         <p>Lista de Usuarios TransportGPS vacía!!</p>
     @endif
 
+
+
+
+    
 
 </body>
 <script src="{{ asset('js/home.js') }}"></script>

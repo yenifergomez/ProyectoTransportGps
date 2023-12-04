@@ -40,9 +40,26 @@ class UserController extends Controller
 
     }
 
-    public function assignRole(User $user)
-    {
-        $user->assignRole('Usuario'); 
-    
-    }
+
+    public function search(Request $request)
+{
+    $search = $request->input('search');
+
+    $users = User::where('usuario', 'LIKE', "%{$search}%")->get();
+
+    return view('admin.perfil', ['users' => $users]);
 }
+
+    public function assignRole(Request $request, User $user)
+    {
+        $role = $request->input('role'); // Obtener el rol seleccionado desde el formulario
+    
+        if ($role) {
+            $user->assignRole($role); // Asignar el rol al usuario
+        }
+    
+        }
+    
+}
+
+

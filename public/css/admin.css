@@ -104,6 +104,26 @@ select {
 
 }
 
+.btacsearch{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #2195f3;
+    color: rgb(0, 0, 0);
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
 .btac {
     padding: 5px 10px;
     border: none;
