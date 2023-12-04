@@ -18,7 +18,7 @@
 </form>
 
 
-    <a href="{{ url('reportes-admin') }}"class="ayudita">Ayuda</a>
+    <a href="{{ url('roles') }}"class="ayudita">Asignar Roles</a>
 
         <a href="{{ url('contenido') }}" class="boton1">Volver</a>
     </nav>
@@ -43,7 +43,7 @@
     @if($user->profile_image)
                             <img src="{{ $user->profile_image }}" alt="Imagen de perfil de {{ $user->usuario }}" width="100" height="100">
                         @else
-                            <p>No hay imagen de perfil</p>
+                            <p>Sin foto de Perfil</p>
                         @endif
                     </td>
     <td class="usuario"><h1 class="user">{{$user->usuario}}</h1></td>

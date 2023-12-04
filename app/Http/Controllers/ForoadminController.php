@@ -32,7 +32,7 @@ class ForoadminController extends Controller{
         $validatedData = $request->validate([
             'name' => 'required|max:50',
             'comment' => 'required|max:255',
-            'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048' // Validación para la imagen
+            'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048' 
         ]);
 
         $comment->name = $validatedData['name'];

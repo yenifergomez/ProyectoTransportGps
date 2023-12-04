@@ -42,9 +42,4 @@ class User extends Authenticatable
         return view('perfil', compact('usuario'));
     }
 
-    // Si tienes un método roles, puedes definirlo aquí:
-    // public function roles()
-    // {
-    //     return $this->belongsToMany(Role::class);
-    // }
 }

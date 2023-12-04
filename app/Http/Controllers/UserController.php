@@ -50,15 +50,6 @@ class UserController extends Controller
     return view('admin.perfil', ['users' => $users]);
 }
 
-    public function assignRole(Request $request, User $user)
-    {
-        $role = $request->input('role'); // Obtener el rol seleccionado desde el formulario
-    
-        if ($role) {
-            $user->assignRole($role); // Asignar el rol al usuario
-        }
-    
-        }
     
 }
 

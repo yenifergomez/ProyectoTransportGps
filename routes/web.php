@@ -126,30 +126,21 @@ Route::get('/admin/perfil/search', [UserController ::class, 'search'])->name('ad
 
 //RUTAS ROLES
 
- Route::get('/roles', [RoleController::class, 'index'])->name('roles.index');
+Route::get('/roles', [RoleController::class, 'rolle']);
 
- Route::get('/roles/create', [RoleController::class, 'create'])->name('roles.create');
+Route::get('/asignar-rol', [RoleController::class, 'showAssignRoleForm'])->name('asignar-rol');
 
- Route::post('/roles', [RoleController::class, 'store'])->name('roles.store');
+Route::post('/asignar-rol', [RoleController::class, 'assignRole'])->name('assignar_rol');
 
- Route::get('/roles/{id}/edit', [RoleController::class, 'edit'])->name('roles.edit');
-
- Route::put('/roles/{id}', [RoleController::class, 'update'])->name('roles.update');
-
- Route::delete('/roles/{id}', [RoleController::class, 'destroy'])->name('roles.destroy');
-
- Route::get('/users/{userId}', [RoleController::class, 'show'])->name('user.show');
-
- Route::post('/users/{userId}/assignRole', [RoleController::class, 'assignRole'])->name('user.assignRole');
- Route::get('/users/{userId}/assignRoleForm', [UserController::class, 'showForm'])->name('user.assignRoleForm');
-Route::post('/users/{userId}/assignRole', [UserController::class, 'assignRole'])->name('user.assignRole');
-
-
-
- Route::get('/reportes', 'ReportController@mostrarReportes')->name('ruta_para_mostrar_reportes');
  
- Route::delete('/reportes/{id}', 'ReportController@eliminarReporte')->name('ruta_para_eliminar_reporte');
- 
+
+Route::get('/asignar-rol', [RoleController::class, 'showAssignRoleForm'])->name('asignar_rol');
+Route::post('/asignar-rol', [RoleController::class, 'assignRole'])->name('asignar_rol_post');
+
+
+
+
+
  //RUTAS PERFIL DE USUARIO
 
  Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
