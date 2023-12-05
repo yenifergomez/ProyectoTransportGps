@@ -8,6 +8,9 @@
 <!-- admin.roles.blade.php -->
 
 @php
+use App\Models\User;
+    use App\Models\Role;
+
     $users = User::all();
     $roles = Role::all(); // Assuming you have a Role model
 @endphp
