@@ -41,8 +41,20 @@ class UserController extends Controller
 
     }
 
+    public function search(Request $request)
+    {
+        $searchTerm = $request->input('search');
 
-// error
+        // Utiliza Eloquent para buscar usuarios por el campo 'name'
+        $users = User::where('usuario', 'LIKE', '%' . $searchTerm . '%')->get();
+
+        // Puedes devolver los resultados a una vista para mostrarlos
+        return view('admin.perfil', ['users' => $users]);
+    }
+
+
+
+
 public function destroy($user)
 {
     try {
