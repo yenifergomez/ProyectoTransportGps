@@ -74,10 +74,10 @@
         <div class="card">
                 <p class="author"><strong>{{ $comment->name }}</strong>: {{ $comment->comment }}</p>
                 @if($comment->image)
-                    <img src="{{ asset('images/' . $comment->image) }}" alt="Imagen del comentario">
+                    <img class="ifor" src="{{ asset('images/' . $comment->image) }}">
                 @endif
             </div>
-        @endforeach
+        @endforeach 
     @else
         <p class="yuji">No hay comentarios aún.</p>
     @endif

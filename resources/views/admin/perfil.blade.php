@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="img/logoac.png" type="image/x-icon">
 </head> 
 <body> 
-
+ 
     <nav class="ctboton">
         <h1 class="titulo">ADMINISTRACIÓN</h1>
         <a class="boton3" href="{{ url('/Foro-Administracion') }}">Administrar Foro</a>
