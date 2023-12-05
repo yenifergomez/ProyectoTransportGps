@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Asignar Rol a Usuario</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport&Gps</title>
+    <!-- <link rel="stylesheet" href="{{ asset('css/admin.css') }}" /> -->
+    <link rel="shortcut icon" href="img/logoac.png" type="image/x-icon">
+</head> 
 <body>
 
 <!-- admin.roles.blade.php -->
@@ -12,7 +16,7 @@ use App\Models\User;
     use App\Models\Role;
 
     $users = User::all();
-    $roles = Role::all(); // Assuming you have a Role model
+    $roles = Role::all(); 
 @endphp
 
 <!-- Mostrar información de usuarios -->

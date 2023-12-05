@@ -13,7 +13,7 @@
         <h1 class="titulo">ADMINISTRACIÓN</h1>
         <a class="boton3" href="{{ url('/Foro-Administracion') }}">Administrar Foro</a>
         <form action="{{ route('admin.perfil.search') }}" method="GET">
-    <input type="text" name="search" placeholder="Buscar por nombre">
+    <input class="bus" type="text" name="search" placeholder="Buscar por usuario">
     <button class="btacsearch" type="submit">Buscar</button>
 </form>
 
@@ -40,11 +40,11 @@
         @foreach($users as $user)
         <tr>
     <td class="imagen">
-    @if($user->profile_image)
-                            <img src="{{ $user->profile_image }}" alt="Imagen de perfil de {{ $user->usuario }}" width="100" height="100">
-                        @else
-                            <p>Sin foto de Perfil</p>
-                        @endif
+    @if(Auth::user()->profile_image)
+    <img class="perl" src="{{ asset(Auth::user()->profile_image) }}" >
+@else
+    <p>Aun no subes una foto de perfil.</p>
+@endif
                     </td>
     <td class="usuario"><h1 class="user">{{$user->usuario}}</h1></td>
     <td class="correo"><h1 class="user">{{$user->email}}</h1></td>
@@ -52,8 +52,8 @@
         <form action="{{ route('admin.perfil.update', $user) }}" method="POST">
             @csrf
             @method('PUT')
-            <input type="text" name="usuario" value="{{ $user->usuario }}">
-            <input type="email" name="email" value="{{ $user->email }}">
+            <input class="camp" type="text" name="usuario" value="{{ $user->usuario }}">
+            <input class="camp" type="email" name="email" value="{{ $user->email }}">
             <button class="btac" type="submit">Actualizar</button>
         </form>
     </td>
@@ -62,7 +62,7 @@
             <form action="{{ route('admin.perfil.delete', $user) }}" method="POST">
                 @csrf
                 @method('DELETE')
-                <button class="btacDelete" type="submit">Eliminar Usuario</button>
+                <button class="btacDelete" type="submit">Eliminar</button>
             </form>
         </td>
         </tr>

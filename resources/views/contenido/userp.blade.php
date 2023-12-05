@@ -46,7 +46,7 @@
 
 <!--menu-->
 
-<!-- FOTO DE PERFIL -->
+<!-- FOTO DE PERFIL --> 
 <div class="edita"> 
 
 <form method="POST" action="{{ route('perfil.update') }}" enctype="multipart/form-data">

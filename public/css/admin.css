@@ -37,22 +37,29 @@ body {
 .boton1 {
     background-color: #4CAF50;
     font-family: 'Rubik', sans-serif;
-
+    transition: all 300ms;
 }
-
+.boton1:hover{
+    background-color: #196e1c;
+}
 .boton3 {
     background-color: #2196F3;
     font-family: 'Rubik', sans-serif;
-    color: black;
-
+    color: rgb(255, 255, 255);
+    transition: all 300ms;
 }
-
+.boton3:hover{
+    background-color: #0975cd;
+}
 /* Estilos para la tabla de usuarios */
 .tablad {
     margin: 20px;
     overflow-x: auto;
     font-family: 'Rubik', sans-serif;
 
+}
+.user{
+    font-size: 25px;
 }
 
 table {
@@ -91,29 +98,39 @@ form {
     font-family: 'Rubik', sans-serif;
 
 }
-
+.bus{
+ padding: 1%;
+ width:73%;
+ left:13%;
+ margin-left:-15%;
+}
 input[type="text"],
-input[type="email"],
-select {
-    margin-bottom: 10px;
-    flex: 1;
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-family: 'Rubik', sans-serif;
-
+input[type="email"]{
+padding: 8px;
+background:rgb(209, 209, 209);
+font-size: 14px;
+border-radius:6px;
+outline:none;
+border:none;
+}
+.camp{
+    margin-top:10px;
 }
 
 .btacsearch{
-    padding: 5px 10px;
+    padding:9px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
     background-color: #2195f3;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: 'Rubik', sans-serif;
+    margin-left:8%;
+    transition: all 300ms;
 }
-
+.btacsearch:hover{
+    background-color: #0975cd;
+}
 
 
 
@@ -125,27 +142,28 @@ select {
 
 
 .btac {
-    padding: 5px 10px;
+    padding: 8px 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     background-color: #2195f3;
     color: white;
     font-family: 'Rubik', sans-serif;
-
-    
+position:absolute;
+left:82%;
 }
 
 .btacDelete{
-    padding: 5px 10px;
+    padding: 8px 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     background-color: #f32121;
     color: white;
     font-family: 'Rubik', sans-serif;
+position: absolute;
+left:88%;
 
-    
 }
 
 /* Estilos para la ventana emergente de ayuda */
@@ -157,23 +175,24 @@ select {
 /* Estilos para el botón de ayuda */
 .ayudita {
     padding: 10px 20px;
-    background-color: #FFC107;
-    color: #333;
-    border: 2px solid #FFC107;
+    background-color: #ff8f07;
+    color: #ffffff;
+    border:none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
     transition: all 0.3s ease;
     font-family: 'Rubik', sans-serif;
-
+    text-decoration: none;
 }
-
+.perl{
+    width:100px;
+     height:100px;
+     border-radius: 6px;
+}
 .ayudita:hover {
-    background-color: #FFEB3B;
-    color: #333;
-    border-color: #FFEB3B;
+    background-color: #cb740a;
     font-family: 'Rubik', sans-serif;
-
 }
 .similar-table {
     margin: 20px;
@@ -210,6 +229,7 @@ select {
     .boton1,
     .boton3 {
         margin-top: 10px; 
+        color: white;
     }
     
     .usuario,
