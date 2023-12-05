@@ -1,3 +1,4 @@
+
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
@@ -5,6 +6,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
 }
 
 /* Estilos para la barra de navegación */
@@ -34,14 +36,167 @@ body {
 
 .boton1 {
     background-color: #4CAF50;
+    font-family: 'Rubik', sans-serif;
+    transition: all 300ms;
 }
-
+.boton1:hover{
+    background-color: #196e1c;
+}
 .boton3 {
     background-color: #2196F3;
-    color: black;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(255, 255, 255);
+    transition: all 300ms;
+}
+.boton3:hover{
+    background-color: #0975cd;
+}
+/* Estilos para la tabla de usuarios */
+.tablad {
+    margin: 20px;
+    overflow-x: auto;
+    font-family: 'Rubik', sans-serif;
+
+}
+.user{
+    font-size: 25px;
 }
 
-/* Estilos para la tabla de usuarios */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+.til {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.usuario,
+.correo,
+.editar,
+.eliminar {
+    width: 20%;
+    font-family: 'Rubik', sans-serif;
+
+}
+.copp{
+    max-width:0px;
+    width: 30%; 
+}
+/* Estilos para los formularios de edición y asignación de roles */
+form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Rubik', sans-serif;
+
+}
+.bus{
+ padding: 1%;
+ width:73%;
+ left:13%;
+ margin-left:-15%;
+}
+input[type="text"],
+input[type="email"]{
+padding: 8px;
+background:rgb(209, 209, 209);
+font-size: 14px;
+border-radius:6px;
+outline:none;
+border:none;
+}
+.camp{
+    margin-top:10px;
+}
+
+.btacsearch{
+    padding:9px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #2195f3;
+    color: rgb(255, 255, 255);
+    font-family: 'Rubik', sans-serif;
+    margin-left:8%;
+    transition: all 300ms;
+}
+.btacsearch:hover{
+    background-color: #0975cd;
+}
+
+
+
+
+
+
+
+
+
+
+.btac {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #2195f3;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+position:absolute;
+left:82%;
+}
+
+.btacDelete{ 
+    padding: 8px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #f32121;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+position: absolute;
+left:88%;
+margin-top:-1.4%;
+}
+
+/* Estilos para la ventana emergente de ayuda */
+#ventanaEmergente {
+    display: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Estilos para el botón de ayuda */
+.ayudita {
+    padding: 10px 20px;
+    background-color: #ff8f07;
+    color: #ffffff;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+}
+.perl{
+    width:100px;
+     height:100px;
+     border-radius: 6px;
+}
+.ayudita:hover {
+    background-color: #cb740a;
+    font-family: 'Rubik', sans-serif;
+}
 .similar-table {
     margin: 20px;
     overflow-x: auto;
@@ -57,30 +212,43 @@ body {
 .similar-table th,
 .similar-table td {
     padding: 10px;
-    text-align: center;
+    text-align: left;
     border-bottom: 1px solid #ddd;
 }
 
-.btnguardar
-{
-    background-color: #2196F3;
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-button[type="submit"] {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: red;
-    color: white;
+.similar-til {
+    background-color: #f2f2f2;
+    color: #333;
 }
 
-    .comentario {
-        border-bottom: 1px solid #ccc; /* Agrega un borde inferior */
-        padding-bottom: 10px; /* Añade espacio entre cada comentario */
-        margin-bottom: 15px; /* También puede añadir margen inferior */
+
+
+@media screen and (max-width: 768px) {
+    .ctboton {
+        flex-direction: column; 
+        align-items: flex-start;
     }
+    
+    .boton1,
+    .boton3 {
+        margin-top: 10px; 
+        color: white;
+    }
+    
+    .usuario,
+    .correo,
+    .editar,
+    .eliminar {
+        width: auto; 
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .boton1,
+    .boton3 {
+        width: 100%; /* En dispositivos más pequeños, ocuparán todo el ancho disponible */
+        margin-right: 0; /* Elimino el margen derecho en dispositivos más pequeños */
+        margin-bottom: 5px; /* Reduzco el margen inferior para un espacio más compacto */
+    }
+}
