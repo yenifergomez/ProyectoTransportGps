@@ -24,7 +24,7 @@ class RoleController extends Controller
         ]);
     }
     
-
+ 
     public function showRoleAssignmentForm()
     {
         $users = User::all();

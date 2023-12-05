@@ -5,41 +5,36 @@
 </head>
 <body>
 
-
 <!-- admin.roles.blade.php -->
+
+@php
+    $users = User::all();
+    $roles = Role::all(); // Assuming you have a Role model
+@endphp
 
 <!-- Mostrar información de usuarios -->
 <h1>Lista de Usuarios</h1>
 <ul>
-    @foreach($users as $user)
-        <li>{{ $user->name }} - {{ $user->email }}</li>
-    @endforeach
+    <li>{{ $users->first()->name }} - {{ $users->first()->email }}</li>
 </ul>
 
 <!-- Mostrar información de roles -->
 <h1>Lista de Roles</h1>
 <ul>
-    @foreach($roles as $role)
-        <li>{{ $role->name }} - {{ $role->description }}</li>
-    @endforeach
+    <li>{{ $roles->first()->name }} - {{ $roles->first()->description }}</li>
 </ul>
 
 <!-- Mostrar información de usuarios para asignar roles -->
 <h1>Lista de Usuarios para Asignar Roles</h1>
 <ul>
-    @foreach($users as $user)
-        <li>{{ $user->name }} - {{ $user->email }}</li>
-    @endforeach
+    <li>{{ $users->first()->name }} - {{ $users->first()->email }}</li>
 </ul>
 
 <!-- Mostrar información de roles disponibles para asignar -->
 <h1>Lista de Roles Disponibles para Asignar</h1>
 <ul>
-    @foreach($roles as $role)
-        <li>{{ $role->name }} - {{ $role->description }}</li>
-    @endforeach
+    <li>{{ $roles->first()->name }} - {{ $roles->first()->description }}</li>
 </ul>
-
 
 </body>
 </html>

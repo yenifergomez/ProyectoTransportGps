@@ -10,7 +10,6 @@ use Spatie\Permission\Traits\HasRoles;
 use App\Models\Role;
 use App\Models\Image;
 
-
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable, HasRoles;

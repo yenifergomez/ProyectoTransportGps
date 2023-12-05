@@ -87,7 +87,7 @@
 <form id="form-eliminar-cuenta" method="POST" action="{{ route('delete.account') }}">
     @csrf
     @method('DELETE')
-
+ 
     
     <button class="boton6"  onclick="confirmarEliminarCuenta()" >Eliminar cuenta</button>
     
