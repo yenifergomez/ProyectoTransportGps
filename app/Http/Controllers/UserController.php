@@ -39,8 +39,7 @@ class UserController extends Controller
 
         return redirect()->route('admin.perfil')->with('success', 'Usuario actualizado exitosamente');    
 
-    }
-
+    } 
     public function search(Request $request)
     {
         $searchTerm = $request->input('search');
