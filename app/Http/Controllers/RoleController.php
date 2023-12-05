@@ -13,26 +13,24 @@ class RoleController extends Controller
         return view('admin.roles');
     }
 
-    public function showAssignRoleForm()
-    {
-        $users = User::all();
-        $roles = Role::all();
-    
-        return view('admin.roles', [
-            'users' => $users,
-            'roles' => $roles,
-        ]);
-    }
-    
- 
-    public function showRoleAssignmentForm()
+    public function assignRolesView()
     {
         $users = User::all();
         $roles = Role::all();
 
-        return view('admin.role_assignment', [
-            'users' => $users,
-            'roles' => $roles,
-        ]);
+        return view('admin.roles', compact('users', 'roles'));
+    }
+
+    public function assignRoles(Request $request)
+    {
+        $userId = $request->input('user');
+        $roleId = $request->input('role');
+
+        $user = User::find($userId);
+        $role = Role::find($roleId);
+
+        $user->roles()->attach($role);
+
+        return redirect()->route('assign.roles')->with('success', 'Rol asignado correctamente');
     }
 }

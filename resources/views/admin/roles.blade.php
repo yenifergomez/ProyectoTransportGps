@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transport&Gps</title>
-    <!-- <link rel="stylesheet" href="{{ asset('css/admin.css') }}" /> -->
-    <link rel="shortcut icon" href="img/logoac.png" type="image/x-icon">
-</head> 
+    <!-- Metadatos, título, enlaces a estilos, etc. -->
+</head>
 <body>
 
-<!-- admin.roles.blade.php -->
 
 @php
 use App\Models\User;
@@ -19,29 +14,28 @@ use App\Models\User;
     $roles = Role::all(); 
 @endphp
 
-<!-- Mostrar información de usuarios -->
-<h1>Lista de Usuarios</h1>
-<ul>
-    <li>{{ $users->first()->name }} - {{ $users->first()->email }}</li>
-</ul>
+<h1>Asignar Roles</h1>
 
-<!-- Mostrar información de roles -->
-<h1>Lista de Roles</h1>
-<ul>
-    <li>{{ $roles->first()->name }} - {{ $roles->first()->description }}</li>
-</ul>
+<form action="{{ route('assign.roles') }}" method="POST">
+    @csrf
 
-<!-- Mostrar información de usuarios para asignar roles -->
-<h1>Lista de Usuarios para Asignar Roles</h1>
-<ul>
-    <li>{{ $users->first()->name }} - {{ $users->first()->email }}</li>
-</ul>
+    <label for="user">Selecciona un usuario:</label>
+    <select name="user" id="user">
+        @foreach($users as $user)
+            <option value="{{ $user->id }}">{{ $user->name }} - {{ $user->email }}</option>
+        @endforeach
+    </select>
 
-<!-- Mostrar información de roles disponibles para asignar -->
-<h1>Lista de Roles Disponibles para Asignar</h1>
-<ul>
-    <li>{{ $roles->first()->name }} - {{ $roles->first()->description }}</li>
-</ul>
+    <label for="role">Selecciona un rol:</label>
+    <select name="role" id="role">
+        @foreach($roles as $role)
+            <option value="{{ $role->id }}">{{ $role->name }} - {{ $role->description }}</option>
+        @endforeach
+    </select>
+
+    <button type="submit">Asignar Rol</button>
+</form>
+
 
 </body>
 </html>

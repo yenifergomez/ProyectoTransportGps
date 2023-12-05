@@ -130,7 +130,11 @@ Route::get('/roles', [RoleController::class, 'rolle']);
 
 Route::post('/assign-role', [RoleController::class, 'assignRole'])->name('assign.role');
 
+// Ruta para mostrar la vista de asignación de roles
+Route::get('/assign-roles', [RoleController::class, 'assignRolesView'])->name('assign.roles');
 
+// Ruta para manejar la asignación de roles (esta es solo un ejemplo, necesitarás implementar la lógica correspondiente)
+Route::post('/assign-roles', [RoleController::class, 'assignRoles'])->name('assign.roles.submit');
  
 
 
