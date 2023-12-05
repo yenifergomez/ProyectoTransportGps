@@ -40,6 +40,22 @@ class UserController extends Controller
 
     }
 
+    public function destroy($id)
+{
+    $user = User::find($id);
+
+    if (!$user) {
+        return redirect()->route('admin.perfil')->with('error', 'Usuario no encontrado');
+    }
+
+    $user->delete();
+
+    return redirect()->route('admin.perfil')->with('success', 'Usuario eliminado exitosamente');
+}
+
+
+
+
 
     public function search(Request $request)
 {
