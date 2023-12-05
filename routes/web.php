@@ -128,17 +128,10 @@ Route::get('/admin/perfil/search', [UserController ::class, 'search'])->name('ad
 
 Route::get('/roles', [RoleController::class, 'rolle']);
 
-Route::get('/asignar-rol', [RoleController::class, 'showAssignRoleForm'])->name('asignar-rol');
+Route::post('/assign-role', [RoleController::class, 'assignRole'])->name('assign.role');
 
-Route::post('/asignar-rol', [RoleController::class, 'assignRole'])->name('assignar_rol');
 
  
-
-Route::get('/asignar-rol', [RoleController::class, 'showAssignRoleForm'])->name('asignar_rol');
-Route::post('/asignar-rol', [RoleController::class, 'assignRole'])->name('asignar_rol_post');
-
-
-
 
 
  //RUTAS PERFIL DE USUARIO

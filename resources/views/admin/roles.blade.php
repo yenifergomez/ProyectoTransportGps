@@ -4,25 +4,42 @@
     <title>Asignar Rol a Usuario</title>
 </head>
 <body>
-    <h1>Asignar Rol a Usuario</h1>
 
-    <form method="POST" action="{{ route('assignar_rol') }}">
-        @csrf
-        <label for="user_id">Selecciona un usuario:</label>
-        <select name="user_id" id="user_id">
-            @foreach($users as $user)
-                <option value="{{ $user->id }}">{{ $user->name }}</option>
-            @endforeach
-        </select>
 
-        <label for="role">Selecciona un rol:</label>
-        <select name="role" id="role">
-            @foreach($roles as $role)
-                <option value="{{ $role->name }}">{{ $role->name }}</option>
-            @endforeach
-        </select>
+<!-- admin.roles.blade.php -->
 
-        <button type="submit">Asignar Rol</button>
-    </form>
+<!-- Mostrar información de usuarios -->
+<h1>Lista de Usuarios</h1>
+<ul>
+    @foreach($users as $user)
+        <li>{{ $user->name }} - {{ $user->email }}</li>
+    @endforeach
+</ul>
+
+<!-- Mostrar información de roles -->
+<h1>Lista de Roles</h1>
+<ul>
+    @foreach($roles as $role)
+        <li>{{ $role->name }} - {{ $role->description }}</li>
+    @endforeach
+</ul>
+
+<!-- Mostrar información de usuarios para asignar roles -->
+<h1>Lista de Usuarios para Asignar Roles</h1>
+<ul>
+    @foreach($users as $user)
+        <li>{{ $user->name }} - {{ $user->email }}</li>
+    @endforeach
+</ul>
+
+<!-- Mostrar información de roles disponibles para asignar -->
+<h1>Lista de Roles Disponibles para Asignar</h1>
+<ul>
+    @foreach($roles as $role)
+        <li>{{ $role->name }} - {{ $role->description }}</li>
+    @endforeach
+</ul>
+
+
 </body>
 </html>
