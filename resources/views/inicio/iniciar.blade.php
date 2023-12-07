@@ -11,31 +11,29 @@
 <body>
     <header class="bg_animate">
 
-              
+
 
                 <nav class="ctboton">
                     <h1 class="titulito">TRANSPORT&GPS</h1>
                     <a href="{{ url('login') }}" class="boton1">Iniciar sesión</a>
                     <a href="{{ url('register') }}"  class="boton2">Registrate</a>
-                </nav> 
-        
-        
+                </nav>
+
+
         <section class="banner contenedor">
             <div class="banner_title">
                 <h2>Si no sabes como ubicarte, <br> nosotros podemos ayudarte.</h2>
             </div>
-            
+
                 <img src="img/logoac.png" class="loguito">
-            
 
          </section>
      <div class="burbujas">
         <div class="burbuja"></div>
         <div class="burbuja"></div>
-    
 
-        
-    
+
+
      </div>
  </header>
 </body>

@@ -18,6 +18,13 @@ use App\Http\Controllers\API\UserController;
 |
 */
 
+
+
+
+
+
+
+
 Route::post('register', [AuthController::class, 'register']);
 
 Route::post('login', [AuthController::class, 'login']);
@@ -25,6 +32,10 @@ Route::post('login', [AuthController::class, 'login']);
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+
+
 
 Route::prefix('users')->group(function () {
     Route::get('/', [UserController::class, 'index']);

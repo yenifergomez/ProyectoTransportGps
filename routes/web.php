@@ -89,7 +89,7 @@ Route::get('/logout', 'App\Http\Controllers\Auth\AuthenticatedSessionController@
 
  Route::put('/perfil/{user}', [UserController::class, 'update'])->name('admin.perfil.update');
 
- Route::delete('/admin/perfil/{user}', [UserController::class, 'destroy'])->name('admin.perfil.delete');
+//  Route::delete('/admin/perfil/{user}', [UserController::class, 'destroy'])->name('admin.perfil.delete');
 
 
 
@@ -118,7 +118,7 @@ Route::delete('/layouts/adforo/{id}', 'CommentController@destroy')->name('layout
 //RUTAS ASIGNAR ROLES
 Route::get('/users', [UserController::class, 'index'])->name('users.index');
 
-Route::post('/assign-role/{user}', [UserController::class, 'assignRole'])->name('assign.role');
+// Route::post('/assign-role/{user}', [UserController::class, 'assignRole'])->name('assign.role');
 
 
 //  Route::post('/users/assign-role/{user}', [UserController::class, 'assignRole'])->name('assign.role');
@@ -129,11 +129,11 @@ Route::post('/assign-role/{user}', [UserController::class, 'assignRole'])->name(
 
  Route::get('/users', [UserController::class, 'index'])->name('delete.account');
 
-Route::post('/users/assign-role/{user}', [UserController::class, 'assignRole'])->name('assign.role');
+// Route::post('/users/assign-role/{user}', [UserController::class, 'assignRole'])->name('assign.role');
 
 Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('admin.perfil.delete');
 
-Route::post('/assign-role/{id}', 'UserController@asignarRol')->name('assign.role');
+// Route::post('/assign-role/{id}', 'UserController@asignarRol')->name('assign.role');
 Route::get('/contraseña', [PasswordController::class, 'password'])->name('contraseña');
 Route::get('/users', [UserController::class, 'index'])->name('delete.account');
 
@@ -165,7 +165,7 @@ Route::get('/admin/perfil/search', [UserController ::class, 'search'])->name('ad
 
 Route::get('/roles', [RoleController::class, 'rolle']);
 
-Route::post('/assign-role', [RoleController::class, 'assignRole'])->name('assign.role');
+// Route::post('/assign-role', [RoleController::class, 'assignRole'])->name('assign.role');
 
 // Ruta para mostrar la vista de asignación de roles
 Route::get('/assign-roles', [RoleController::class, 'assignRolesView'])->name('assign.roles');

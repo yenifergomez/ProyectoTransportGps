@@ -17,7 +17,7 @@ class UserController extends Controller
 
     public function store(Request $request)
     {
-        $validatedData = $request->validate([  
+        $validatedData = $request->validate([
             'usuario' => 'required',
             'email' => 'required|email|unique:users',
             'password' => 'required|min:8',
@@ -40,12 +40,12 @@ class UserController extends Controller
         $validatedData = $request->validate([
             'usuario' => 'required',
             'email' => 'required|email|unique:users,email,' . $user->id,
-            'password' => 'required|min:8',
+            //'password' => 'required|min:8',
         ]);
 
         $user->update($validatedData);
 
-        return $user;
+        return response()->json($user, 200);
     }
 
     public function destroy($id)
