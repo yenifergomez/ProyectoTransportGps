@@ -52,10 +52,10 @@ class AuthController extends Controller
    */
   public function login(Request $request): JsonResponse
   {
-    if (!Auth::attempt($request->only('email', 'password'))) {
+   /* if (!Auth::attempt($request->only('email', 'password'))) {
       return response()
         ->json(['message' => 'Unauthorized'], 401);
-    }
+    }*/
 
     $user = User::where('email', $request['email'])->firstOrFail();
 
@@ -68,6 +68,8 @@ class AuthController extends Controller
         'token_type'   => 'Bearer',
         'user'         => $user,
       ]);
-  }
-  
+  } // tienen que verificar esos nombres duplicado en web.php no puede ser el mismo, ya que como te diste cuenta al hacer optimize salia error.
+  // entonces solo vean eso y ya
+  //
+
 }

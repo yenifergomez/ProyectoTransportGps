@@ -78,11 +78,11 @@ Route::get('/logout', 'App\Http\Controllers\Auth\AuthenticatedSessionController@
 
 //RUTAS MOSTRAR, EDITAR, ELIMINAR Users...ADMINISTRACION
 
- Route::get('/admin', [UserController::class, 'index'])->name('admin.perfil'); 
+ Route::get('/admin', [UserController::class, 'index'])->name('admin.perfil');
 
- Route::get('/perfil/{user}/edit', [UserController::class, 'edit'])->name('admin.perfil.edit'); 
+ Route::get('/perfil/{user}/edit', [UserController::class, 'edit'])->name('admin.perfil.edit');
 
- Route::put('/perfil/{user}', [UserController::class, 'update'])->name('admin.perfil.update'); 
+ Route::put('/perfil/{user}', [UserController::class, 'update'])->name('admin.perfil.update');
 
  Route::delete('/admin/perfil/{user}', [UserController::class, 'destroy'])->name('admin.perfil.delete');
 
@@ -104,7 +104,7 @@ Route::put('/layouts/adforo/{id}', 'CommentController@update')->name('layouts.ad
 Route::delete('/layouts/adforo/{id}', 'CommentController@destroy')->name('layouts.adforo.destroy');
 
 
- 
+
 
 
 
@@ -113,11 +113,11 @@ Route::delete('/layouts/adforo/{id}', 'CommentController@destroy')->name('layout
 
  Route::post('/assign-role/{user}', [UserController::class, 'assignRole'])->name('assign.role');
 
- Route::post('/users/assign-role/{user}', [UserController::class, 'assignRole'])->name('assign.role');
+//  Route::post('/users/assign-role/{user}', [UserController::class, 'assignRole'])->name('assign.role');
 
- Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('admin.perfil.delete');
+//  Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('admin.perfil.delete');
 
- Route::post('/assign-role/{id}', 'UserController@asignarRol')->name('assign.role');
+//  Route::post('/assign-role/{id}', 'UserController@asignarRol')->name('assign.role');
 
  Route::get('/users', [UserController::class, 'index'])->name('delete.account');
 
@@ -128,7 +128,7 @@ Route::delete('/layouts/adforo/{id}', 'CommentController@destroy')->name('layout
  Route::get('/reportes', [ReportController::class, 'notific']);
 
  Route::match(['get', 'post'], '/reportar', [ReportController::class, 'crearReporte'])->name('reportar');
- 
+
  //RUTAS PERFIL DE USUARIO
 
  Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -137,10 +137,10 @@ Route::delete('/layouts/adforo/{id}', 'CommentController@destroy')->name('layout
 
  Route::post('/perfil', 'App\Http\Controllers\updateProfile@updateProfile')->name('perfil.update');
 
- Route::delete('/eliminar-cuenta', [updateProfile::class, 'deleteAccount'])->name('delete.account');
+//  Route::delete('/eliminar-cuenta', [updateProfile::class, 'deleteAccount'])->name('delete.account');
 
 
- //FORO 
+ //FORO
 
  Route::get('/foro', [CommentController::class, 'foroWeb']);
 

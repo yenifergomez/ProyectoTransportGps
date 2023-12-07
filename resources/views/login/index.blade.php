@@ -8,11 +8,11 @@
     <link rel="shortcut icon" href="img/logoac.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/index.css') }}" />
-    
-</head> 
-<body> 
-  <main> 
- 
+
+</head>
+<body>
+  <main>
+
     <div class="contenedor__todo">
         <div class="caja__trasera">
             <img class="logo"   src="img/logoac.png" alt="">
@@ -24,21 +24,21 @@
 
             </div>
         </div>
- 
+
         <!--Formulario de Login y registro-->
         <div class="contenedor__login-register">
             <!--REGISTRO-->
-            
+
             <form action="/register" method="POST">
     @csrf
     <h2>Registro</h2>
-    
+
     <input type="text" placeholder="Usuario" name="usuario">
     <input type="email" placeholder="Correo" name="email">
     <input type="password" placeholder="Contraseña" name="password">
     <input type="password" placeholder="Confirmar Contraseña" name="password_confirmation"> <!-- Nuevo campo para confirmar contraseña -->
     <input class="btnayu" type="submit" value="Registrar">
-    
+
     <a href="{{ url('login') }}" class="boton1">Ya tengo una Cuenta</a>
 </form>
 
@@ -48,7 +48,7 @@
     </div>
 
 </main>
-  
+
 
 </body>
 </html>
