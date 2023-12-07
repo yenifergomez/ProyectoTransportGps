@@ -34,6 +34,8 @@ class ProfileController extends Controller
             
             $user->save();
         }
+        return view('contenido.userp');
+
     } catch (\Exception $e) {}
 
     }

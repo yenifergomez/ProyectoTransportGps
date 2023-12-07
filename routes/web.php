@@ -22,6 +22,9 @@ use App\Http\Controllers\PasswordController;
 use App\Http\Controllers\updateProfile;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ReportController;
+use App\Http\Controllers\ForoadminController;
+use App\Http\Controllers\RoleController;
+
 
 
 
@@ -61,6 +64,8 @@ Route::post('/login', [LoginController::class, 'login']);
 
 Route::get('/home',[HomeController::class, 'index']);
 
+Route::get('/contraseña', [PasswordController::class, 'password'])->name('contraseña');
+
 
 Route::post('/register', [RegisterController::class, 'register']);
 
@@ -90,6 +95,7 @@ Route::get('/logout', 'App\Http\Controllers\Auth\AuthenticatedSessionController@
 
 
 
+
  //RUTAS COMENTARIOS ADMINISTRACION EDITAR + ELIMINAR
  Route::get('/Foro-Administracion', function () {
     return view('layouts.adforo');
@@ -108,10 +114,12 @@ Route::delete('/layouts/adforo/{id}', 'CommentController@destroy')->name('layout
 
 
 
-//RUTAS ASIGNAR ROLES
- Route::get('/users', [UserController::class, 'index'])->name('users.index');
 
- Route::post('/assign-role/{user}', [UserController::class, 'assignRole'])->name('assign.role');
+//RUTAS ASIGNAR ROLES
+Route::get('/users', [UserController::class, 'index'])->name('users.index');
+
+Route::post('/assign-role/{user}', [UserController::class, 'assignRole'])->name('assign.role');
+
 
 //  Route::post('/users/assign-role/{user}', [UserController::class, 'assignRole'])->name('assign.role');
 
@@ -121,13 +129,51 @@ Route::delete('/layouts/adforo/{id}', 'CommentController@destroy')->name('layout
 
  Route::get('/users', [UserController::class, 'index'])->name('delete.account');
 
+Route::post('/users/assign-role/{user}', [UserController::class, 'assignRole'])->name('assign.role');
+
+Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('admin.perfil.delete');
+
+Route::post('/assign-role/{id}', 'UserController@asignarRol')->name('assign.role');
+Route::get('/contraseña', [PasswordController::class, 'password'])->name('contraseña');
+Route::get('/users', [UserController::class, 'index'])->name('delete.account');
 
 
-//RUTAS PARA REPORTAR
 
- Route::get('/reportes', [ReportController::class, 'notific']);
+
+
+//RUTAS COMENTARIOS ADMINISTRACION EDITAR + ELIMINAR
+Route::get('/Foro-Administracion', function () {
+    return view('admin.adforo');
+});
+Route::get('/admin/adforo', [ForoadminController::class, 'index'])->name('admin.adforo');
+
 
  Route::match(['get', 'post'], '/reportar', [ReportController::class, 'crearReporte'])->name('reportar');
+
+Route::get('/admin/editar_comentario/{id}', [ForoadminController::class, 'editComment'])->name('admin.editComment');
+
+Route::put('/admin/actualizar_comentario/{id}', [ForoadminController::class, 'updateComment'])->name('admin.updateComment');
+
+Route::delete('/admin/eliminar_comentario/{id}', [ForoadminController::class, 'deleteComment'])->name('admin.deleteComment');
+
+Route::get('/admin/adforo', [ForoadminController::class, 'index'])->name('admin.adforo');
+
+Route::get('/admin/perfil/search', [UserController ::class, 'search'])->name('admin.perfil.search');
+
+
+//RUTAS ROLES
+
+Route::get('/roles', [RoleController::class, 'rolle']);
+
+Route::post('/assign-role', [RoleController::class, 'assignRole'])->name('assign.role');
+
+// Ruta para mostrar la vista de asignación de roles
+Route::get('/assign-roles', [RoleController::class, 'assignRolesView'])->name('assign.roles');
+
+// Ruta para manejar la asignación de roles (esta es solo un ejemplo, necesitarás implementar la lógica correspondiente)
+Route::post('/assign-roles', [RoleController::class, 'assignRoles'])->name('assign.roles.submit');
+
+
 
  //RUTAS PERFIL DE USUARIO
 
@@ -150,14 +196,4 @@ Route::delete('/layouts/adforo/{id}', 'CommentController@destroy')->name('layout
 
 
 
- //RECUPERAR CONTRASEÑA
 
- Route::get('/contraseña', [PasswordController::class, 'password'])->name('contraseña');
-
- Route::get('forgot-password', [App\Http\Controllers\Auth\ForgotPasswordController::class, 'showLinkRequestForm'])->name('password.request');
-
- Route::post('forgot-password', [App\Http\Controllers\Auth\ForgotPasswordController::class, 'sendResetLinkEmail'])->name('password.email');
-
- Route::get('reset-password/{token}', [App\Http\Controllers\Auth\ResetPasswordController::class, 'showResetForm'])->name('password.reset');
-
- Route::post('reset-password', [App\Http\Controllers\Auth\ResetPasswordController::class, 'reset'])->name('password.update');

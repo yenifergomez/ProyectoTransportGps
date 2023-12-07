@@ -39,7 +39,7 @@
 
 
                 
-             <a href="{{ route('contraseña') }}">Olvidaste Contraseña?</a>
+             <a style="color: transparent;" href="#"></a>
 
             </form> 
 

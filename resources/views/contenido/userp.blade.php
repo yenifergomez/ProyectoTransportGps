@@ -46,7 +46,7 @@
 
 <!--menu-->
 
-<!-- FOTO DE PERFIL -->
+<!-- FOTO DE PERFIL --> 
 <div class="edita"> 
 
 <form method="POST" action="{{ route('perfil.update') }}" enctype="multipart/form-data">
@@ -59,7 +59,7 @@
  
 
 @if(Auth::user()->profile_image)
-    <img class="proyecto" src="{{ asset(Auth::user()->profile_image) }}" alt="Perfil">
+    <img class="proyecto" src="{{ asset(Auth::user()->profile_image) }}">
 @else
     <p class="emer">Aun no subes una foto de perfil.</p>
 @endif
@@ -87,7 +87,7 @@
 <form id="form-eliminar-cuenta" method="POST" action="{{ route('delete.account') }}">
     @csrf
     @method('DELETE')
-
+ 
     
     <button class="boton6"  onclick="confirmarEliminarCuenta()" >Eliminar cuenta</button>
     

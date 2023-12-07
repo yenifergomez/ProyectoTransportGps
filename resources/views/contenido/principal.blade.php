@@ -11,7 +11,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>transport&Gps</title>
     <link rel="shortcut icon" href="img/logoac.png" type="image/x-icon">
     <link rel="stylesheet" href="{{ asset('css/Principal.css') }}" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -40,7 +39,7 @@
      <a href="{{ url('foro') }}" class="ayudita">Foro</a>
      <button id="mostrarFormulario" class="ayudita">Ayuda</button>
      <a href="{{ url('perfil') }}" class="ayudita">Perfil</a>
-     <a href="{{ url('admin') }}" class="ayudita">Administracion</a>
+     <a href="{{ url('admin') }}" class="ayudita">Administración</a>
 
 
 

@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Spatie\Permission\Models\Role;
+use Illuminate\Support\Facades\DB;
 
 
 
@@ -38,11 +39,38 @@ class UserController extends Controller
 
         return redirect()->route('admin.perfil')->with('success', 'Usuario actualizado exitosamente');    
 
+    } 
+    public function search(Request $request)
+    {
+        $searchTerm = $request->input('search');
+
+        // Utiliza Eloquent para buscar usuarios por el campo 'name'
+        $users = User::where('usuario', 'LIKE', '%' . $searchTerm . '%')->get();
+
+        // Puedes devolver los resultados a una vista para mostrarlos
+        return view('admin.perfil', ['users' => $users]);
     }
 
-    public function assignRole(User $user)
-    {
-        $user->assignRole('Usuario'); 
-    
+
+
+
+public function destroy($user)
+{
+    try {
+        $user = User::findOrFail($user);
+
+        DB::beginTransaction();
+
+        $user->delete();
+
+        DB::commit();
+
+        return redirect('/admin')->with('success', 'Usuario eliminado correctamente');
+    } catch (\Exception $e) {
+        DB::rollback();
+        return redirect('/admin')->with('error', 'Error al eliminar el usuario: ' . $e->getMessage());
     }
 }
+}
+
+
