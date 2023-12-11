@@ -26,8 +26,8 @@
             </div>
 
                 <img src="img/logoac.png" class="loguito">
-
          </section>
+         
      <div class="burbujas">
         <div class="burbuja"></div>
         <div class="burbuja"></div>
