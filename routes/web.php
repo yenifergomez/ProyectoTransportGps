@@ -62,6 +62,9 @@ Route::get('/login', [LoginController::class, 'show']);
 
 Route::post('/login', [LoginController::class, 'login']);
 
+Route::get('/home',[HomeController::class, 'index']);
+
+Route::get('/contraseña', [PasswordController::class, 'password'])->name('contraseña');
 
 
 Route::post('/register', [RegisterController::class, 'register']);
@@ -115,13 +118,25 @@ Route::delete('/layouts/adforo/{id}', 'CommentController@destroy')->name('layout
 //RUTAS ASIGNAR ROLES
 Route::get('/users', [UserController::class, 'index'])->name('users.index');
 
+// Route::post('/assign-role/{user}', [UserController::class, 'assignRole'])->name('assign.role');
+
+
+//  Route::post('/users/assign-role/{user}', [UserController::class, 'assignRole'])->name('assign.role');
+
+//  Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('admin.perfil.delete');
+
+//  Route::post('/assign-role/{id}', 'UserController@asignarRol')->name('assign.role');
 
  Route::get('/users', [UserController::class, 'index'])->name('delete.account');
 
+// Route::post('/users/assign-role/{user}', [UserController::class, 'assignRole'])->name('assign.role');
 
 Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('admin.perfil.delete');
 
+// Route::post('/assign-role/{id}', 'UserController@asignarRol')->name('assign.role');
+Route::get('/contraseña', [PasswordController::class, 'password'])->name('contraseña');
 Route::get('/users', [UserController::class, 'index'])->name('delete.account');
+
 
 
 
@@ -133,6 +148,7 @@ Route::get('/Foro-Administracion', function () {
 Route::get('/admin/adforo', [ForoadminController::class, 'index'])->name('admin.adforo');
 
 
+ Route::match(['get', 'post'], '/reportar', [ReportController::class, 'crearReporte'])->name('reportar');
 
 Route::get('/admin/editar_comentario/{id}', [ForoadminController::class, 'editComment'])->name('admin.editComment');
 
@@ -143,9 +159,6 @@ Route::delete('/admin/eliminar_comentario/{id}', [ForoadminController::class, 'd
 Route::get('/admin/adforo', [ForoadminController::class, 'index'])->name('admin.adforo');
 
 Route::get('/admin/perfil/search', [UserController ::class, 'search'])->name('admin.perfil.search');
-
-Route::delete('/admin/perfil/{user}', [UserController::class, 'destroy'])->name('admin.perfil.delete');
-
 
 
 //RUTAS ROLES

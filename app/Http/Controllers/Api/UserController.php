@@ -17,15 +17,15 @@ class UserController extends Controller
 
     public function store(Request $request)
     {
-    $validatedData = $request->validate([
-        'usuario' => 'required',
-        'email' => 'required|email|unique:users',
-        'password' => 'required|min:8',
-    ]);
+        $validatedData = $request->validate([
+            'usuario' => 'required',
+            'email' => 'required|email|unique:users',
+            'password' => 'required|min:8',
+        ]);
 
-    $user = User::create($validatedData);
+        $user = User::create($validatedData);
 
-    return response()->json($user, 200);
+        return $user;
     }
 
     public function show($id)
